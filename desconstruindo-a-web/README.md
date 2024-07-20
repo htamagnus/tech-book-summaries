@@ -80,7 +80,7 @@ A **glibc**, utilizando pacotes UDP, cria um **socket** (uma abstração criada 
 <h2 id="hypertexto">Transferindo hypertexto 📄➡️📄</h2>
 
 O protocolo HTTP tem duas versões principais: **HTTP/2**, que traz várias inovações, e **HTTP/1.1**, amplamente utilizado e baseado em texto, podendo ser reproduzido com comandos como telnet. O método HTTP mais comum para solicitar uma página é o GET. Uma conexão HTTP/1.1 via telnet começa com o comando GET / HTTP/1.1, que requisita a raiz da aplicação. 
-<img src="https://blog-static.infra.grancursosonline.com.br/wp-content/uploads/2023/02/22170807/Imagem4.artigo.22.02-300x177.png">
+<img src="https://images2.imgbox.com/4b/c1/EWhheaaP_o.png">
 
 O HTTP opera sobre o TCP, que requer o **three-way handshake** antes de estabelecer a conexão. Esse processo inicial envolve três etapas: o cliente envia um SYN, o servidor responde com SYN-ACK, e o cliente finaliza com um ACK, estabelecendo a conexão para troca de dados.
 <img src="https://miro.medium.com/v2/resize:fit:1400/0*abcrVbeLBaZaVqpk.jpg">
@@ -106,7 +106,7 @@ O servidor web pode ser tanto um computador físico num datacenter quanto um sof
 
 O servidor de aplicação que usamos é o **Phusion Passenger**, que recebe as requisições HTTP e interage com a aplicação. Para isso, adicionamos um módulo ao NGINX, que permite que ele se comunique com o Passenger. O Passenger então processa a requisição e retorna o resultado esperado.
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-vKaSU4nLUWnFREDkyiyVBXWlBmPjXxb3AQ&s">
+<img src="https://miro.medium.com/v2/resize:fit:1276/0*m_Rey9rU_HIi674J.jpg">
 
 ---
 
