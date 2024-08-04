@@ -17,4 +17,6 @@ Bem-vindo ao repositório de resumos de livros de tecnologia! Este repositório 
 
 </p>
 
+</div>
+
 ---
