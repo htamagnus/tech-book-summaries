@@ -25,3 +25,5 @@ Este repositório contém resumos detalhados dos livros de tecnologia que li nos
 </div>
 
 ---
+
+ *Feito com <img src="https://github.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/blob/master/Emojis/Smilies/Heart%20Exclamation.png" alt="Rocket" width="26" height="26" />por hta* 
