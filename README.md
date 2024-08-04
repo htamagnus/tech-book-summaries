@@ -10,7 +10,7 @@ Bem-vindo ao repositório de resumos de livros de tecnologia! Este repositório 
 ---
 
 </div>
-<h3 align="left">Sumário 📄</h3>
+<h3 align="left">Livros 📄</h3>
 <p align="left">
   
   - [Desconstruindo a Web: As tecnologias por trás de uma requisição 🔍](desconstruindo-a-web/README.md)
