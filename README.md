@@ -19,6 +19,7 @@
 <p align="left">
   
   - [Desconstruindo a Web: As tecnologias por trás de uma requisição 🔍](desconstruindo-a-web/README.md)
+  - [Scrum 360: Um guia completo e prático de agilidade ⚙️](scrum-360/README.md)
 
 </p>
 

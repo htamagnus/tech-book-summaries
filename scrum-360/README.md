@@ -1,4 +1,4 @@
-<h1 align="center" style="font-weight: bold;">Scrum 360: Um guia completo e prático de agilidade</h1>
+<h1 align="center" style="font-weight: bold;">Scrum 360: Um guia completo e prático de agilidade ⚙️</h1>
 
 <div align="center">
   
