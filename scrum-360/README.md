@@ -119,3 +119,44 @@ No contexto da agilidade, o equilíbrio é essencial e se manifesta em diversas 
 ---
 
 <h2 id="teorias"> Sobre os ombros de gigantes 📝</h2>
+
+"Veremos mais longe se estivermos sobre os ombros de gigantes." Essa frase reflete a importância de aprender e se basear nas grandes teorias que têm sido aplicadas ao longo dos anos. No livro, o autor explora várias teorias e leis fundamentais, mas vou destacar as que considero mais relevantes para o resumo:
+
+**2.1: Lei Yerkes-Dodson(1805)**
+
+Essa [lei](https://amenteemaravilhosa.com.br/lei-de-yerkes-dodson/) surgiu de uma pesquisa realizada por psicólogos, que demonstrou que nossa performance é positivamente afetada pelo nosso estado de felicidade fisiológica ou mental. Também foi observado que há uma diferença ao executar tarefas mais complexas ou menos complexas. Tarefas mais simples demandam nossa atenção, acesso à memória rápida e apresentam um risco moderado. Já as tarefas complexas exigem atenção dividida, memória de trabalho, multitarefa e adaptabilidade. Essa lei é relevante em ambientes profissionais porque ajuda a explicar por que pressão e estresse geram bugs, dívidas técnicas, falta de qualidade e sistemas que são considerados legados logo após a entrega.
+
+---
+
+**2.2: Teoria da Dissonância Cognitiva(1957)**
+
+Essa teoria explica que, quando nossa mente consciente enfrenta uma angústia sem solução ou explicação, ocorre uma dissonância. Para lidar com isso, o inconsciente ativa mecanismos de defesa psíquica. A psicanálise identifica várias dessas defesas, como negação, projeção, racionalização e substituição, que servem para aliviar a tensão emocional. No entanto, é importante não abusar desses mecanismos, pois, ao culpar os outros ou negar problemas, acabamos fugindo da solução verdadeira. Cada mecanismo tem seu papel em como lidamos com angústias, mas deve-se ter cuidado para não usá-los como uma forma de evitar a resolução real dos problemas.
+
+---
+
+**2.3: Teoria da contingência (1958)**
+
+Essa teoria sustenta que não existe um único modelo organizacional ideal. Cada organização deve adaptar sua estrutura e processos com base em seu ambiente interno e externo. A ideia central é que o sucesso organizacional não depende apenas de copiar práticas bem-sucedidas de outras empresas, mas sim de entender como esses métodos se aplicam ao contexto específico de cada organização. Os gestores da toyota afirmavam que quanto mais os americanos tentavam copiar seus processos, menos isso dava certo. O segredo estava na interação entre a cultura da organização e a microcultura do time.
+
+---
+
+**2.4: Curva de Tuckman (1965)**
+
+A Curva de Tuckman descreve as fases pelas quais os grupos passam ao se formarem e evoluírem. Tuckman identificou [quatro etapas](https://www.opus-software.com.br/insights/modelo-de-tuckman/): Forming, Storming, Norming e Performing e Adjourning. A teoria destaca que a evolução de um grupo não é linear, podendo haver retrocessos ou avanços devido a mudanças internas, como a entrada ou saída de membros, ou crises.
+
+A formação e desenvolvimento de um grupo são essenciais, mas desafiadores. Algumas equipes podem ficar presas entre as fases de Forming e Storming devido a problemas organizacionais ou individuais. Cabe ao gestor perceber essas dinâmicas e trabalhar para construir uma cultura que promova bem-estar, produtividade e inovação, apoiando-se em insights da psicologia, sociologia e ciências sociais para facilitar esse processo.
+
+---
+
+**2.5: A Teoria das Restrições (TOC) (1984)**
+
+A [Teoria das Restrições](https://crmpiperun.com/blog/teoria-das-restricoes-toc/) é uma metodologia de gestão que se baseia em princípios científicos para melhorar o desempenho de uma organização. A ideia central é identificar e resolver a principal restrição que limita o desempenho do sistema, em vez de desperdiçar recursos tentando melhorar todas as áreas de forma indiscriminada.
+Assim como em uma corrente, onde a força é determinada pelo elo mais fraco, as organizações devem concentrar seus esforços em fortalecer o ponto mais fraco para melhorar o desempenho geral. É um processo contínuo de identificar e resolver restrições, similar à filosofia Lean, que também valoriza a eliminação de desperdícios e a criação de fluxos contínuos.
+
+---
+
+**Gamification (2002)**
+
+[Gamification](https://www.linkedin.com/pulse/o-termo-gamification-criado-em-2002-nick-pelling-ficou-silvana-medina/), introduzida por Nick Pelling, aplica elementos de jogos para tornar o trabalho mais envolvente e inovador. Ela transforma a forma de trabalhar, tornando-o menos repetitivo e mais motivador. Ao variar ambientes, utilizar elementos visuais e prolongar as experiências, Gamification melhora o engajamento e a sustentabilidade, alinhando-se bem com os princípios ágeis e a valorização das pessoas.
+
+---
