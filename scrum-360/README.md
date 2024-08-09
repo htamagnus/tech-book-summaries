@@ -66,21 +66,9 @@ Estamos migrando de uma sociedade industrial para uma sociedade do conhecimento,
 > “Os problemas significativos que enfrentamos não podem ser resolvidos no mesmo modelo mental que os criou.”
 > –Albert Einstein
 
-Métodos ágeis, management 3.0, equipes de alto desempenho – é essencial tornar o trabalho um local que valha a pena passar mais de 10 horas por dia. O primeiro passo é o autoconhecimento, entender como você e os outros se comportam no trabalho. No livro, o autor destaca alguns tipos de funcionários:
+Métodos ágeis e equipes de alto desempenho exigem que o trabalho seja um lugar onde valha a pena passar muito tempo. O primeiro passo é o autoconhecimento, entendendo seu comportamento e o dos outros no ambiente de trabalho. O autor destaca diferentes **perfis de funcionários**: os apaixonados, que são felizes e dedicados, sempre querendo crescer e colaborar, mesmo sem reconhecimento; os bem-resolvidos, que são racionais e focados, agregando valor enquanto estão presentes; os acomodados, que se satisfazem em cumprir o que lhes é proposto; os indecisos, que, ansiosos, mudam de opinião constantemente, afetando a empresa e os colegas; os insatisfeitos, que se orgulham de sua insatisfação, mas não buscam soluções; e os problemáticos, que criam desconforto sem um objetivo claro.
 
-- Apaixonados: Estão onde querem, querem crescer e colaborar. São minoria, fazem seu melhor e sentem-se felizes mesmo sem reconhecimento;
-
-- Bem-resolvidos: Racionais e focados, agregam valor e fazem a diferença enquanto estão presentes;
-
-- Acomodados: Satisfeitos em fazer a sua parte conforme proposto ou ordenado;
-
-- Indecisos: Ansiosos e inquietos, alternam suas posições e opiniões, projetando isso na empresa e colegas;
-
-- Insatisfeitos: Orgulham-se de suas insatisfações, mas não buscam soluções e desconstruem o ambiente ao redor;
-
-- Problemáticos: Frequentemente geram problemas e provocam desconforto sem objetivo claro;
-
-Devemos dar nosso melhor no trabalho, de forma racional, madura e objetiva, mesmo que não tenhamos orgulho do que fazemos ou com quem trabalhamos. Isso nos proporcionará aprendizado, crescimento, maturidade e visibilidade, abrindo oportunidades para alcançar nossos objetivos, que podem estar em outro lugar.
+Independentemente do ambiente, devemos sempre dar o nosso melhor no trabalho, com racionalidade e maturidade, pois isso nos proporciona aprendizado e novas oportunidades.
 
 ---
 
@@ -107,29 +95,15 @@ Nosso cérebro foca nas mudanças e ignora muita informação sensorial. Vivemos
 
 **2.7 Equilíbrio:**
 
-No contexto da agilidade, o equilíbrio é essencial e se manifesta em diversas dualidades:
-
-- Individualismo x Coletivo: A agilidade necessita do coletivo para maximizar resultados, mas sem suprimir a individualidade e opiniões divergentes.
-
-- Qualidade x Entrega: Existe um equilíbrio saudável entre cumprir prazos e elevar a qualidade. É importante argumentar e buscar um meio-termo entre resultados imediatos e continuidade futura.
-
-- Conforto x Mudança: Mudar é difícil, mas necessário. Pessoas e empresas devem repensar seus valores e lutar contra a rotina para tentar novas abordagens.
-
-- Felicidade x Resultado: Ambientes inspiradores e felicidade estão ligados aos resultados. O objetivo é sempre o negócio, mesmo quando se busca inovação e superação.
-
-- Inovação x Domínio: Inovação vem da inspiração e do risco de tentar e errar. No entanto, há momentos em que é necessário ter domínio e não arriscar.
-
-- Transparência x Educação: Transparência deve ser acompanhada de bom senso e educação. Comportamentos inadequados, como prepotência e desrespeito, devem ser evitados.
-
-- Planejado x Extras: Aceitar mudanças no final de um processo deve ser racional e com valor real para o negócio. A equipe deve sentir o projeto como seu e buscar sempre o que é certo.
-
-- Multidisciplinaridade x Especialista: Embora a multidisciplinaridade seja importante para evitar gargalos, especialistas são necessários para construir produtos diferenciados, combinando profundidade e flexibilidade.
+No contexto da agilidade, o equilíbrio é fundamental e se manifesta em várias **dualidades**. O coletivo é essencial, mas sem anular a individualidade. A qualidade e a entrega devem ser balanceadas, assim como o conforto e a mudança, com foco em inovação e resultados. Transparência e bom senso andam juntos, e mudanças no final do processo só devem ser aceitas se realmente agregarem valor. A multidisciplinaridade é importante, mas especialistas são necessários para criar produtos diferenciados.
 
 ---
 
 <h2 id="teorias"> 3. Sobre os ombros de gigantes 🏛️</h2>
 
 "Veremos mais longe se estivermos sobre os ombros de gigantes." Essa frase reflete a importância de aprender e se basear nas grandes teorias que têm sido aplicadas ao longo dos anos. No livro, o autor explora várias teorias e leis fundamentais, mas vou destacar as que considero mais relevantes para o resumo:
+
+---
 
 **3.1 Lei Yerkes-Dodson(1805)**
 
@@ -174,6 +148,7 @@ Assim como em uma corrente, onde a força é determinada pelo elo mais fraco, as
 
 Os métodos ágeis são guiados por princípios que enfatizam a colaboração, a antecipação de valor e a adaptação constante, em vez de apenas velocidade. O termo "ágil" se refere à capacidade de responder rapidamente às mudanças e entregar valor contínuo ao cliente, não necessariamente à rapidez na conclusão dos projetos. Um exemplo ilustrativo compara a construção tradicional, focada em finalizar rapidamente, com a abordagem ágil, que prioriza a entrega antecipada de partes prontas e decoradas do projeto, permitindo ajustes e melhorias ao longo do tempo. A essência da agilidade está em transformar percepções em fatos, corrigir erros precocemente e garantir a satisfação de todos os envolvidos, promovendo resultados de alta qualidade.
 
+---
 
 **4.1 Granularidade Agil**
 
@@ -205,6 +180,8 @@ A gestão do tempo é fundamental para o sucesso ágil e para o autoconhecimento
 > –Ken Schwaber e Jeff Shuterland
 
 Scrum é um método ágil de desenvolvimento de produtos que se baseia na comunicação regular, auto-organização das equipes e foco na entrega de valor. O termo "Scrum" vem do rugby, onde os jogadores se unem para reiniciar o jogo, simbolizando a colaboração e apoio mútuo necessários nas equipes. O Scrum é, portanto, uma abordagem que humaniza o desenvolvimento, ajudando equipes a se comprometerem com objetivos compartilhados e a melhorar continuamente.
+
+---
 
 **5.1 Método Scrum**
 
