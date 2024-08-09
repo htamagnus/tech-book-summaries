@@ -20,7 +20,7 @@
   <a href="#intro">5. Introdução ao método 📚</a><br>
   <a href="#discovery">6. Discovery 🔍</a><br>
   <a href="#delivery">7. Delivery 🚚</a><br>
-  <a href="#melhora">8. Melhoria contínua 🔄</a><br>
+  <a href="#melhoria">8. Melhoria contínua 🔄</a><br>
   <a href="#gestao">9. Gestão e liderança 👔</a><br>
   <a href="#outros">10. Outros métodos 🧩</a><br>
   <a href="#ecossistema">11. Ecossistema 🌍</a><br>
@@ -446,5 +446,52 @@ Dojos promovem aprendizado contínuo, inovação, e a aplicação prática de co
 - A programação deve estar alinhada com as necessidades atuais da equipe.
 - Evite reclamações sem propósito; foque em soluções e melhorias.
 - A motivação principal é ter orgulho do trabalho realizado e da colaboração com a equipe.
+
+---
+
+<h2 id="gestao"> 9. Gestão e liderança 👔</h2>
+
+> “Você pode encarar um erro como uma besteira a ser esquecida, ou como um resultado que aponta uma nova direção”.
+> –Steve Jobs
+
+A seção aborda a importância de respeitar as esferas de atuação entre cliente, fornecedor e equipe de desenvolvimento. O conceito de Genba destaca a necessidade de estar presente no local certo com as pessoas certas para tomar decisões eficazes. Cada parte deve entender seu papel, evitando discussões fora de sua alçada para prevenir tensões e mal-entendidos. A confiança, transparência e clareza nos relacionamentos são fundamentais para um ambiente de trabalho produtivo e harmonioso.
+
+---
+
+**9.1 Gestão e liderança ágil**
+
+Esta seção fala sobre  como os gestores desempenham um papel crucial em apoiar e fortalecer equipes auto-organizadas. Enquanto as equipes ágeis focam em projetos e resultados, os gestores garantem que essas equipes tenham os recursos, o suporte e o ambiente necessário para prosperar.
+
+Os gestores precisam motivar e inspirar as equipes a serem proativas e inovadoras. É importante que eles deem autonomia aos times, permitindo que as equipes tomem decisões dentro de suas áreas de atuação. Além disso, é essencial estabelecer papéis e responsabilidades de forma clara, direcionando a auto-organização para a criação de valor. Gerenciar as competências dos membros da equipe também é fundamental, desenvolvendo e acompanhando as habilidades individuais e coletivas para que os objetivos sejam alcançados.
+
+---
+
+**9.2 Agile é uma revolução permanente**
+
+> “Temos o destino que merecemos. O nosso destino está de acordo com os nossos méritos.”
+> –Albert Einstein
+
+A ideia central dessa seção é que Agile representa uma mudança contínua e profunda, não apenas uma implementação superficial de metodologias como Scrum e Kanban. Implantar Agile vai além de simplesmente seguir novos processos; exige uma transformação cultural verdadeira e permanente dentro da organização.
+
+A verdadeira revolução começa nas equipes, mas precisa se expandir para toda a organização, criando um ecossistema sustentável que envolve todas as partes interessadas, incluindo clientes, parceiros e fornecedores. A cultura Agile deve ser integrada de forma intrínseca, e não apenas adotada de forma superficial.
+
+Em última análise, a adoção de Agile requer uma mudança cultural profunda e contínua. Sem essa mudança, a prática Agile pode se tornar apenas uma nova forma de comando e controle, perdendo seu verdadeiro propósito. Agilidade é sobre estar em constante evolução, sempre buscando melhorar e se orgulhar do que se faz e com quem se faz. Na área de TI, essa mentalidade é essencial, pois estamos sempre aprendendo, evoluindo e experimentando.
+
+---
+
+**9.3 Evite ser ágil só enquanto tudo dá certo**
+
+Ser ágil significa manter a mentalidade colaborativa e focada no aprendizado, mesmo quando surgem problemas. Em vez de buscar culpados, equipes e gestores devem analisar os erros, aprender com eles, e melhorar continuamente. A verdadeira agilidade envolve antecipar riscos e lidar com desafios de forma transparente, usando os problemas como oportunidades para evolução, em vez de abandonar os princípios ágeis quando as coisas não saem como planejado.
+
+---
+
+**9.4 Ensaio sobre estimativas**
+
+> “A qualidade não acontece por casualidade, ela deve ser planejada e executada.”
+> –Joseph M. Juran
+
+Estimativas no desenvolvimento de software são comparadas a um orçamento de conserto em uma oficina: são imprecisas até que o trabalho comece e novos detalhes apareçam. O texto destaca a importância da comunicação transparente, onde o cliente é informado sobre mudanças no orçamento à medida que novos problemas surgem, o que é essencial para manter a confiança. A falta de comunicação, onde o trabalho extra é realizado sem aviso, pode levar a desentendimentos e perda de confiança. 
+
+Por outro lado, omitir problemas e realizar apenas o trabalho inicialmente orçado pode resultar em falhas graves. A ideia central é que a agilidade depende de confiança e comunicação clara, já que as estimativas são apenas aproximações e podem mudar.
 
 ---
