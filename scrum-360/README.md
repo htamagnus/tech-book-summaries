@@ -100,6 +100,7 @@ Nosso cérebro foca nas mudanças e ignora muita informação sensorial. Vivemos
 ---
 
 **2.7 Equilíbrio:**
+
 No contexto da agilidade, o equilíbrio é essencial e se manifesta em diversas dualidades:
 
 - Individualismo x Coletivo: A agilidade necessita do coletivo para maximizar resultados, mas sem suprimir a individualidade e opiniões divergentes.
@@ -160,5 +161,34 @@ Assim como em uma corrente, onde a força é determinada pelo elo mais fraco, as
 **3.6 Gamification (2002)**
 
 [Gamification](https://www.linkedin.com/pulse/o-termo-gamification-criado-em-2002-nick-pelling-ficou-silvana-medina/), introduzida por Nick Pelling, aplica elementos de jogos para tornar o trabalho mais envolvente e inovador. Ela transforma a forma de trabalhar, tornando-o menos repetitivo e mais motivador. Ao variar ambientes, utilizar elementos visuais e prolongar as experiências, Gamification melhora o engajamento e a sustentabilidade, alinhando-se bem com os princípios ágeis e a valorização das pessoas.
+
+---
+
+<h2 id="principios"> 4. Princípios ágeis 🏃‍♂️</h2>
+
+Os métodos ágeis são guiados por princípios que enfatizam a colaboração, a antecipação de valor e a adaptação constante, em vez de apenas velocidade. O termo "ágil" se refere à capacidade de responder rapidamente às mudanças e entregar valor contínuo ao cliente, não necessariamente à rapidez na conclusão dos projetos. Um exemplo ilustrativo compara a construção tradicional, focada em finalizar rapidamente, com a abordagem ágil, que prioriza a entrega antecipada de partes prontas e decoradas do projeto, permitindo ajustes e melhorias ao longo do tempo. A essência da agilidade está em transformar percepções em fatos, corrigir erros precocemente e garantir a satisfação de todos os envolvidos, promovendo resultados de alta qualidade.
+
+
+**4.1 Granularidade Agil**
+
+A granularidade ágil foca em dividir tarefas em partes menores para facilitar a gestão e a entrega contínua de valor. O processo começa com uma visão clara e estratégia definida, seguido por planejamentos de médio prazo (releases) e ciclos curtos de trabalho (sprints). Reuniões diárias rápidas mantêm a equipe alinhada, e práticas de qualidade garantem que o software seja desenvolvido sem acumular problemas técnicos. Esse método assegura que o valor seja constantemente agregado e as necessidades sejam atendidas de forma eficaz e adaptável.
+
+---
+
+**4.2 Princípios Ágeis**
+
+Os princípios ágeis enfatizam pessoas, colaboração, e adaptação às mudanças. Os valores principais são: priorizar interações humanas, entregar software funcional com frequência, colaborar com o cliente, e ser flexível diante de mudanças. Entre os 12 princípios, destacam-se a satisfação do cliente, aceitação de mudanças, comunicação direta, confiança em equipes motivadas, e foco em simplicidade e excelência técnica. O objetivo é criar um ambiente de trabalho sustentável e continuamente melhorar a eficácia do time.
+
+---
+
+**4.3 Algumas pessoas olham para o lado errado**
+
+Algumas empresas adotam o Agile apenas por moda ou marketing, sem realmente mudar suas práticas e mentalidades. Isso se compara a prefeituras que pregam sustentabilidade, mas continuam poluindo. O sucesso em metodologias ágeis não se resume a ter um produto atraente ou um ambiente moderno, mas sem direção. É essencial integrar todas as áreas de negócio, tecnologia e corporativo, com um foco claro em valor e resultados. O verdadeiro ganho em Agile ocorre quando todos os envolvidos—desde os times de desenvolvimento até fornecedores e backoffice—entendem os princípios, custos, e benefícios, trabalhando juntos para o sucesso coletivo. Sem essa integração e compreensão compartilhada, é difícil alcançar resultados duradouros.
+
+---
+
+**Gestão do tempo**
+
+A gestão do tempo é fundamental para o sucesso ágil e para o autoconhecimento. Muitas vezes, as pessoas se sentem sobrecarregadas, mas ao monitorar seu tempo, descobrem onde realmente estão gastando suas horas. A ideia não é trabalhar mais, mas sim ser mais consciente e eficiente. Perguntas como "Estou investindo tempo no que realmente importa?" e "O que estou fazendo realmente gera valor?" ajudam a refletir sobre prioridades e desperdícios. A organização e a antecipação são chaves, e é útil começar o dia com uma lista de tarefas priorizadas. O objetivo é dominar o tempo, entender hábitos que consomem horas desnecessárias e evitar confundir disciplina com cobrança excessiva. Com essa abordagem, é possível ser mais produtivo e feliz, mantendo um equilíbrio saudável entre urgências e tarefas de menor importância.
 
 ---
