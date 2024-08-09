@@ -187,8 +187,67 @@ Algumas empresas adotam o Agile apenas por moda ou marketing, sem realmente muda
 
 ---
 
-**Gestão do tempo**
+**4.4 Gestão do tempo**
 
 A gestão do tempo é fundamental para o sucesso ágil e para o autoconhecimento. Muitas vezes, as pessoas se sentem sobrecarregadas, mas ao monitorar seu tempo, descobrem onde realmente estão gastando suas horas. A ideia não é trabalhar mais, mas sim ser mais consciente e eficiente. Perguntas como "Estou investindo tempo no que realmente importa?" e "O que estou fazendo realmente gera valor?" ajudam a refletir sobre prioridades e desperdícios. A organização e a antecipação são chaves, e é útil começar o dia com uma lista de tarefas priorizadas. O objetivo é dominar o tempo, entender hábitos que consomem horas desnecessárias e evitar confundir disciplina com cobrança excessiva. Com essa abordagem, é possível ser mais produtivo e feliz, mantendo um equilíbrio saudável entre urgências e tarefas de menor importância.
 
 ---
+
+<h2 id="intro"> 5. Introdução ao método 📚</h2>
+
+> “Scrum humaniza o desenvolvimento de produtos através da introdução de uma comunicação regular, ajudando equipes a se comprometerem com metas compartilhadas.”
+> –Ken Schwaber e Jeff Shuterland
+
+Scrum é um método ágil de desenvolvimento de produtos que se baseia na comunicação regular, auto-organização das equipes e foco na entrega de valor. O termo "Scrum" vem do rugby, onde os jogadores se unem para reiniciar o jogo, simbolizando a colaboração e apoio mútuo necessários nas equipes. O Scrum é, portanto, uma abordagem que humaniza o desenvolvimento, ajudando equipes a se comprometerem com objetivos compartilhados e a melhorar continuamente.
+
+**5.1 Método Scrum**
+
+> “Escolher o seu tempo é ganhar tempo.”
+> –Francis Bacon
+
+O Scrum é um framework ágil que utiliza ciclos iterativos e incrementais chamados de Sprints, onde o trabalho é dividido em pequenas porções para entregas frequentes e com qualidade. Cada Sprint envolve planejamento, execução, e revisão, com a participação ativa de todos os membros da equipe. Os três pilares do Scrum—Transparência, Inspeção, e Adaptação—garantem que todos estejam alinhados e comprometidos com os objetivos do projeto.
+
+<img src="https://cdn.prod.website-files.com/62e89931273b5c21be76c486/65ef2f92f1c5549adcb4cf0b_19559-G4-1280-765%20(1).png">
+
+  **Papéis:**
+
+  - Product Owner: Responsável pela visão, prioridades e aceitação do produto. É o papel de maior responsabilidade e visibilidade no método ágil, representando o cliente e sendo responsável por maximizar o valor do produto. Ele gerencia o Product Backlog, prioriza as tarefas, garante que o trabalho da equipe esteja alinhado com os objetivos e busca o ROI (Retorno sobre Investimento). Embora o PO possa pedir auxílio de outros profissionais, ele é o responsável final pelas decisões de negócio junto ao time. A falta de proximidade do PO pode levar ao fracasso do projeto. Além disso, o PO deve evitar o sentimento de posse e adotar uma abordagem colaborativa, usando a linguagem inclusiva ("nós") para promover o trabalho em equipe e o sucesso compartilhado. 
+
+  - Scrum Master: Facilita o processo e remove impedimentos. O Scrum Master é responsável por facilitar e orientar o time no método Scrum, garantindo que os princípios ágeis sejam seguidos e que os impedimentos sejam removidos. Ele não exerce chefia, mas trabalha nos bastidores para que o time funcione de forma colaborativa e eficiente. Seu sucesso é medido pela qualidade do trabalho do time, e não por destaque individual. O Scrum Master deve estar sempre aprendendo e promovendo boas práticas para melhorar continuamente o processo e o desempenho da equipe.
+
+  - Equipe de Desenvolvimento: Multidisciplinar e focada na entrega de valor. A equipe de desenvolvimento é composta por profissionais especializados, como analistas de SEO, designers de UX, arquitetos de sistemas, programadores e SQA. Embora o Scrum valorize a multidisciplinaridade, na prática, cada membro tem sua especialização. A equipe é responsável por entregar incrementos de produto ao final de cada Sprint, trabalhando de forma autônoma e gerenciando seu próprio trabalho para melhorar a eficiência e eficácia.
+
+  **Artefatos:**
+
+  - Product Backlog: Lista de todas as necessidades do produto.
+  - Sprint Backlog: Subconjunto do Product Backlog escolhido para o Sprint.
+  - Scrum Board: Quadro visual que acompanha o progresso das tarefas.
+
+  **Eventos:**
+
+  - Sprint Planning: Planejamento do trabalho a ser feito no Sprint.
+  - Daily Scrum: Reunião diária para alinhamento da equipe.
+  - Sprint Review: Revisão do trabalho concluído com stakeholders.
+  - Sprint Retrospective: Reflexão sobre o processo para melhorias contínuas.
+
+  **Ciclos de Vida:**
+
+  - Discovery: Planejamento e definição de estratégia.
+  - Delivery: Construção e entrega dos requisitos pactuados.
+
+O Scrum promove um equilíbrio entre as exigências do negócio e a sustentabilidade do projeto, focando na entrega de valor contínuo, melhoria constante e adaptação às mudanças.
+
+---
+
+**5.2 Fases do Scrum: Discovery x Delivery**
+
+No Scrum, as fases de Discovery e Delivery funcionam em ciclos paralelos. Durante o Discovery, o foco é detalhar as funcionalidades prioritárias para o próximo Sprint, preparando a equipe para o planejamento e execução. O Delivery, por sua vez, é o ciclo onde o software é efetivamente construído e incrementado.
+
+<img src="https://jorgeaudy.com/wp-content/uploads/2012/04/discoveryxdelivery1.jpg?w=640">
+
+O processo começa com o pré-game, onde se define a visão do produto e o Release plan. Durante o Sprint Zero, a equipe realiza configurações iniciais e estabelece padrões de trabalho. Cada Discovery deve preparar as funcionalidades para o próximo Sprint, garantindo que estejam bem definidas (Definition of Ready - DoR) para serem desenvolvidas.
+
+A qualidade do software produzido é garantida pelo Definition of Done (DoD), que estabelece critérios claros para considerar uma funcionalidade pronta para produção. A coordenação entre Discovery e Delivery é crucial para o sucesso, com equipes dedicando tempo ao planejamento e desenvolvimento em ciclos contínuos e integrados.
+
+---
+
