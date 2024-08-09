@@ -19,6 +19,12 @@
   <a href="#principios">4. Princípios ágeis 🏃‍♂️</a><br>
   <a href="#intro">5. Introdução ao método 📚</a><br>
   <a href="#discovery">6. Discovery 🔍</a><br>
+  <a href="#delivery">7. Delivery 🚚</a><br>
+  <a href="#melhora">8. Melhoria contínua 🔄</a><br>
+  <a href="#gestao">9. Gestão e liderança 👔</a><br>
+  <a href="#outros">10. Outros métodos 🧩</a><br>
+  <a href="#ecossistema">11. Ecossistema 🌍</a><br>
+  <a href="#conhecimento">12. Gestão do conhecimento 📖</a><br>
 </p>
 
 ---
