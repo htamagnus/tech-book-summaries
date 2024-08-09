@@ -305,19 +305,19 @@ O **Sprint Backlog**, por sua vez, é um subconjunto do Product Backlog, contend
 
 ---
 
-<h2 id="delivery"> 6. Delivery 🚚</h2>
+<h2 id="delivery"> 7. Delivery 🚚</h2>
 
 Essa parte do livro fala sobre a importância de uma equipe estar focada em entregar o que foi acordado, com a melhor qualidade e de forma colaborativa, sempre antecipando oportunidades e evitando desperdícios.
 
 ---
 
-**6.1 Sprint Planning**
+**7.1 Sprint Planning**
 
 O Sprint Planning é uma reunião essencial nesse processo, onde a equipe planeja o que será feito no próximo Sprint. A reunião deve ser produtiva e leve, preferencialmente realizada pela manhã. Durante o Sprint Planning, são discutidas as datas, a velocidade da equipe, as User Stories, e as estimativas de esforço. O planejamento é visual, usando quadros ou post-its para que todos tenham uma visão clara do que foi decidido. Se houver dúvidas durante a reunião, ela pode ser transformada em uma reunião de Discovery para esclarecer tudo antes de continuar. 
 
 ---
 
-**6.2 Planning Poker**
+**7.2 Planning Poker**
 
 > “Não seremos limitados pela informação que temos. Seremos limitados por nossa habilidade de processar essa informação.”
 > –Peter Drucker
@@ -330,7 +330,7 @@ A técnica valoriza o consenso, a aprendizagem contínua e a participação de t
 
 ---
 
-**6.3 Scrum board (quadro de tarefas)**
+**7.3 Scrum board (quadro de tarefas)**
 
 <img src="https://foodsafetybrazil.org/wp-content/uploads/2021/03/SCRUMTASKBOARD-01-01-1024x598.jpg">
 
@@ -341,7 +341,7 @@ O Scrum Board ou Kanban é uma ferramenta visual que organiza tarefas em colunas
 
 ---
 
-**6.4 Burndown**
+**7.4 Burndown**
 
 > “A melhor maneira de começar a implementar o Scrum é estabelecer reuniões diárias de status.”
 > –Ken Schwaber e Jeff Shuterland
@@ -349,5 +349,102 @@ O Scrum Board ou Kanban é uma ferramenta visual que organiza tarefas em colunas
 <img src="https://unichrone.com/blog/wp-content/uploads/Sprint-Burndown-Chart-1.jpg">
 
 O Burndown Chart é um gráfico essencial no Scrum que monitora o progresso do Sprint, mostrando o trabalho restante versus o tempo disponível. Ele ajuda a prever se a equipe conseguirá cumprir os objetivos, identificando possíveis problemas antecipadamente. Para ser eficaz, o Burndown deve ser claro e fácil de entender por todos, e as tarefas precisam ser bem definidas e granularizadas. Usar um único Burndown para toda a equipe pode ocultar problemas específicos, então é importante ajustar conforme necessário para refletir a realidade do trabalho.
+
+---
+
+<h2 id="melhoria"> 8. Melhoria contínua 🔄</h2>
+
+A melhoria contínua é um valor central na abordagem ágil, focando na interação constante entre a equipe e todos os envolvidos, como clientes e fornecedores. Isso evita surpresas e promove o compartilhamento de informações.
+
+---
+
+**8.1 Review**
+
+> “Tudo que se pede é uma chance de trabalhar com orgulho.”
+> –W. Edwards Deming
+
+A Sprint Review é uma reunião crucial para estreitar as relações entre a equipe e os usuários, evitando que o time conheça o negócio apenas por intermediários. É uma oportunidade para apresentar o que foi feito, com o Product Owner mostrando os objetivos e a equipe de desenvolvimento apresentando o trabalho concluído. Essa interação direta fortalece o compromisso, o pertencimento, e facilita o alinhamento da equipe com os valores e necessidades do negócio.
+
+---
+
+**8.2 Retrospectiva**
+
+> “A mente que se abre a uma nova ideia jamais voltará ao seu tamanho original.”
+> –Albert Einstein
+
+A retrospectiva é uma reunião para a equipe refletir sobre o último Sprint, identificando o que funcionou e o que precisa melhorar. O foco é em melhorias contínuas, sem culpar ninguém. A reunião deve ser dinâmica, variando o local e as atividades para manter o engajamento. É importante usar ferramentas visuais, como quadros, para registrar planos de ação e garantir que as melhorias sejam implementadas. A ideia é promover um ambiente de colaboração e crescimento constante.
+
+---
+
+**8.3 Melhoria contínua em TI é com Dojos**
+
+> “O homem que comete um erro e não o corrige está cometendo outro erro.”
+> –Confúcio
+
+Nessa seção o autor destaca a importância dos Dojos como uma ferramenta de treinamento contínuo para aprimorar práticas ágeis, como TDD, Clean Code e colaboração. Inspirados nas artes marciais, os Dojos proporcionam um ambiente descontraído e colaborativo, onde erros são bem-vindos e todos aprendem juntos.
+
+**Tipos de Dojos:**
+
+- **Coding Dojo:** Foca em Pair Programming e TDD para reforçar práticas de desenvolvimento ágil.
+
+- **Management Dojo:** Usado para brainstormings estruturados, identificando problemas e soluções com um plano de ação.
+
+- **UX Dojo:** Equipes analisam e propõem melhorias para experiências de usuário, criando mock-ups.
+
+- **StartUp Dojo:** Centrado em empreendedorismo, onde equipes desenvolvem modelos de negócios usando o Business Model Canvas.
+
+- **Agile Games:** Jogos que simulam conceitos ágeis para fixar conhecimentos de forma prática.
+
+- **Hackathons:** Maratonas de desenvolvimento que incentivam inovação e competição saudável.
+
+- **Coach Dojo:** Dinâmica em que participantes assumem diferentes papéis para simular e resolver situações do dia a dia em ambientes ágeis.
+
+Dojos promovem aprendizado contínuo, inovação, e a aplicação prática de conceitos ágeis em um ambiente colaborativo, ajudando equipes a melhorar constantemente suas habilidades e práticas de trabalho.
+
+---
+
+**8.4 Resumo de 4 dicas em cada momento**
+
+**Sprint Zero:**
+
+- Um bom Discovery e Sprint Zero são essenciais para o sucesso dos Sprints.
+- Envolva o usuário através de brainstorming e consultas.
+- O Product Owner deve contar com o suporte de UX, SEO, SQA e usar referências técnicas da equipe.
+- Começar um Sprint com dúvidas e indefinições aumenta os riscos.
+
+**Planning:**
+
+- Comece com uma visão clara do RoadMap, objetivo da Release, Sprint, e velocidade.
+- Lembre-se das melhorias discutidas na última retrospectiva.
+- Use as paredes para manter o DoD e decisões bem visíveis.
+- Após estimar as User Stories, alinhe com Sprint Zero, Pair Programming, P&D, e outros eventos.
+
+**Daily:**
+
+- Foco total em atingir o objetivo do Sprint, identificando riscos e oportunidades.
+- Cada membro deve ser assertivo e preparado para discutir o que foi feito e o que será feito.
+- Resuma apenas o que é relevante para o Sprint.
+- Se três Dailys passarem sem decisões, investigue possíveis problemas ocultos.
+
+**Quadro (Kanban):**
+
+- O quadro deve refletir claramente o progresso do Sprint e suas tendências.
+- Ele é um reflexo da organização, comprometimento e engajamento da equipe.
+- Se o quadro estiver desatualizado, reveja o valor do Kanban e das Dailys.
+-A cada Sprint, busque melhorar o uso de quadros, linhas, colunas e post-its.
+
+**Review:**
+
+- A Review é coletiva, evite protagonismos; não há "estrela da festa."
+- Se os principais interessados não estiverem presentes, a reunião perde valor.
+- O roteiro e as responsabilidades devem ser claros e acordados.
+- Cada membro deve se preparar, pois a Review gera impressões e fortalece vínculos.
+
+**Retrospectiva:**
+
+- O foco é na melhoria contínua – tanto de processos quanto pessoal e profissional.
+- A programação deve estar alinhada com as necessidades atuais da equipe.
+- Evite reclamações sem propósito; foque em soluções e melhorias.
+- A motivação principal é ter orgulho do trabalho realizado e da colaboração com a equipe.
 
 ---
