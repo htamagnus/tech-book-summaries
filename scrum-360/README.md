@@ -495,3 +495,25 @@ Estimativas no desenvolvimento de software são comparadas a um orçamento de co
 Por outro lado, omitir problemas e realizar apenas o trabalho inicialmente orçado pode resultar em falhas graves. A ideia central é que a agilidade depende de confiança e comunicação clara, já que as estimativas são apenas aproximações e podem mudar.
 
 ---
+
+<h2 id="outros"> 10. Outros métodos 🧩</h2>
+
+No livro, o autor explora vários métodos, mas vou destacar as que considero mais relevantes para o resumo:
+
+**10.1 eXtreme Programming (XP):**
+
+XP foi desenvolvido nos anos 90 por Kent Beck e colegas, promovendo práticas como programação em pares, testes constantes, refatoração diária, simplicidade no design e iterações rápidas. XP enfatiza a colaboração contínua com o cliente e adota um ritmo de trabalho sustentável, com foco na qualidade desde o início.
+
+---
+
+**10.2 Lean Software Development:**
+
+É baseado nos princípios do sistema de produção da Toyota, focando na eliminação de desperdícios, entrega rápida, qualidade e otimização do processo como um todo. Lean propõe adiar decisões até o último momento responsável para garantir a melhor informação possível, e enfatiza a criação de conhecimento contínuo e o respeito pelas pessoas envolvidas.
+
+---
+
+**10.3 Kanban**
+
+Kanban é um sistema de gestão visual, originado no Sistema Toyota, que controla a produção ao limitar o trabalho em andamento e minimizar estoques e desperdícios. Embora criado para a indústria, é amplamente usado em desenvolvimento de software e outros setores para garantir um fluxo de trabalho eficiente, rápido e adaptável. O Kanban promove a auto-organização e a produção contínua, ajudando as equipes a evitar gargalos e responder rapidamente a mudanças na demanda.
+
+---
