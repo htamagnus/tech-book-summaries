@@ -281,6 +281,8 @@ O Business Model Canvas é uma ferramenta útil nesse processo, permitindo que a
 
 **6.2 User Story**
 
+<img src="https://media.licdn.com/dms/image/D5612AQE5Oa3S-i0WjA/article-cover_image-shrink_720_1280/0/1679840337130?e=2147483647&v=beta&t=f1A0lQqrHqVA06GHS6hXfcz0r4e3ek06EoNG4KajuVo">
+
 User Stories são descrições simples e diretas das funcionalidades a serem desenvolvidas, focadas no valor para o usuário. Cada história deve responder a três perguntas: Quem? (o usuário), O quê? (a funcionalidade desejada) e Por quê? (o valor que ela traz). As User Stories devem ser independentes, negociáveis, valiosas, estimáveis, testáveis e pequenas. Durante o Sprint Zero, essas histórias são detalhadas, incluindo design, ergonomia e SEO, e são acompanhadas de critérios de aceitação.
 
 Critérios de Aceitação são fundamentais para definir o sucesso de uma User Story. Eles especificam as condições que devem ser atendidas para que o Product Owner aceite a entrega como concluída. Esses critérios são inicialmente definidos pelo Product Owner, mas são refinados coletivamente durante o Sprint Planning. Eles servem como base para testes e validações, ajudando a garantir a qualidade do produto.
@@ -303,6 +305,8 @@ Existem várias técnicas ágeis de elicitação, incluindo:
 
 **6.4 Mínimo Produto Viável (MVP)**
 
+<img src="hhttps://api-blog.rdstation.com/wp-content/uploads/2024/02/MVP.png">
+
 O Mínimo Produto Viável (MVP) é uma estratégia crucial para validar produtos ou funcionalidades com o mercado, especialmente em ambientes altamente competitivos. Essa abordagem permite testar hipóteses e ajustar a estratégia com base em feedbacks e dados coletados em ciclos curtos.
 
 O MVP deve ser a versão mais simples do produto, contendo apenas as funcionalidades essenciais que oferecem valor ao cliente. Isso ajuda a confirmar se a ideia tem potencial de sucesso antes de investir tempo e recursos significativos no desenvolvimento completo.
@@ -315,6 +319,8 @@ O MVP deve ser a versão mais simples do produto, contendo apenas as funcionalid
 
 > “Genba significa que devemos estar onde as coisas realmente acontecem, envolver-se pessoalmente, na hora e local apropriados.”
 > –Taiichi Ohno
+
+<img src="https://static.wixstatic.com/media/dc6a15_60f8404b9fe6485e9b77f4f85978add5~mv2.jpg/v1/fill/w_640,h_426,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dc6a15_60f8404b9fe6485e9b77f4f85978add5~mv2.jpg">
 
 O **Product Backlog** é uma lista dinâmica e priorizada de todos os requisitos e funcionalidades desejadas para o produto, que são organizados e gerenciados pelo Product Owner. Este backlog deve ser constantemente revisitado e ajustado à medida que novas informações surgem e pressupostos são validados. A lista pode ser gerada usando técnicas como User Story Mapping, brainstorming, e outras dinâmicas de elicitação, sempre considerando a visão do produto e as expectativas dos principais stakeholders.
 
