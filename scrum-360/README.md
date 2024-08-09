@@ -305,3 +305,49 @@ O **Sprint Backlog**, por sua vez, é um subconjunto do Product Backlog, contend
 
 ---
 
+<h2 id="delivery"> 6. Delivery 🚚</h2>
+
+Essa parte do livro fala sobre a importância de uma equipe estar focada em entregar o que foi acordado, com a melhor qualidade e de forma colaborativa, sempre antecipando oportunidades e evitando desperdícios.
+
+---
+
+**6.1 Sprint Planning**
+
+O Sprint Planning é uma reunião essencial nesse processo, onde a equipe planeja o que será feito no próximo Sprint. A reunião deve ser produtiva e leve, preferencialmente realizada pela manhã. Durante o Sprint Planning, são discutidas as datas, a velocidade da equipe, as User Stories, e as estimativas de esforço. O planejamento é visual, usando quadros ou post-its para que todos tenham uma visão clara do que foi decidido. Se houver dúvidas durante a reunião, ela pode ser transformada em uma reunião de Discovery para esclarecer tudo antes de continuar. 
+
+---
+
+**6.2 Planning Poker**
+
+> “Não seremos limitados pela informação que temos. Seremos limitados por nossa habilidade de processar essa informação.”
+> –Peter Drucker
+
+É uma técnica utilizada para estimar o esforço necessário em tarefas dentro de times ágeis. Apesar de não ser uma técnica oficial do Scrum, ela é bastante útil para avaliar a complexidade das tarefas de forma colaborativa e dinâmica. A técnica usa baralhos baseados na sequência de Fibonacci (1, 2, 3, 5, 8, 13, 21) para representar o crescimento da complexidade e incerteza à medida que o tamanho da tarefa aumenta.
+
+Durante o Planning Poker, cada membro da equipe recebe um baralho e, após entender a tarefa ou User Story, escolhe uma carta que represente sua estimativa. Se houver consenso, a estimativa é definida; se não, o time debate as escolhas e tenta chegar a um acordo, repetindo o processo até três vezes. No final, se o consenso não for alcançado, a maior estimativa prevalece.
+
+A técnica valoriza o consenso, a aprendizagem contínua e a participação de todos, destacando diferenças de interpretação que podem ser resolvidas por meio do debate. Embora possa haver erros nas primeiras vezes, a prática leva à melhoria nas estimativas ao longo do tempo.
+
+---
+
+**6.3 Scrum board (quadro de tarefas)**
+
+<img src="https://foodsafetybrazil.org/wp-content/uploads/2021/03/SCRUMTASKBOARD-01-01-1024x598.jpg">
+
+> “Se você não sabe para onde você quer ir, qualquer caminho você pode seguir e nenhum mapa irá lhe ajudar.”
+> –Lewis Carroll, Alice no país das maravilhas
+
+O Scrum Board ou Kanban é uma ferramenta visual que organiza tarefas em colunas de status, como "a fazer," "em progresso," e "concluído." Cada equipe pode personalizar o quadro conforme suas necessidades. A personalização é essencial para que o quadro seja útil e bem aceito pela equipe. Embora demande esforço inicial para configurar, o quadro facilita a comunicação e torna o progresso do Sprint mais claro e transparente
+
+---
+
+**6.4 Burndown**
+
+> “A melhor maneira de começar a implementar o Scrum é estabelecer reuniões diárias de status.”
+> –Ken Schwaber e Jeff Shuterland
+
+<img src="https://unichrone.com/blog/wp-content/uploads/Sprint-Burndown-Chart-1.jpg">
+
+O Burndown Chart é um gráfico essencial no Scrum que monitora o progresso do Sprint, mostrando o trabalho restante versus o tempo disponível. Ele ajuda a prever se a equipe conseguirá cumprir os objetivos, identificando possíveis problemas antecipadamente. Para ser eficaz, o Burndown deve ser claro e fácil de entender por todos, e as tarefas precisam ser bem definidas e granularizadas. Usar um único Burndown para toda a equipe pode ocultar problemas específicos, então é importante ajustar conforme necessário para refletir a realidade do trabalho.
+
+---
