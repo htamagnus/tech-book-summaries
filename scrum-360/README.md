@@ -251,3 +251,68 @@ A qualidade do software produzido é garantida pelo Definition of Done (DoD), qu
 
 ---
 
+<h2 id="discovery"> 6. Discovery 🔍</h2>
+
+No Scrum, as fases de Discovery e Delivery são essenciais e ocorrem simultaneamente. Enquanto o Discovery foca em definir e refinar os requisitos do produto, o Delivery se concentra na construção desses requisitos. A Visão é crucial para alinhar a estratégia do negócio, esclarecendo quem são os clientes, o diferencial competitivo, e como o valor será gerado e medido.
+
+**6.1 Visão**
+
+O Business Model Canvas é uma ferramenta útil nesse processo, permitindo que a equipe mapeie e entenda os seguintes elementos:
+
+<img src="https://media.licdn.com/dms/image/D4D12AQGrSxuPadj9Ow/article-cover_image-shrink_720_1280/0/1687276916660?e=2147483647&v=beta&t=Cb3Qrx5_FHTdVFR3cb4xKw3TuhqnR8Pw8noITWx_hFk">
+
+- **Segmentos de clientes:** Identificar e priorizar os grupos de clientes.
+- **Proposições de valor:** Determinar quais produtos ou serviços agregam valor ao cliente.
+- **Canais:** Definir os meios de venda, distribuição e comunicação.
+- **Relacionamento com clientes:** Estabelecer o tipo de relação desejada com os clientes.
+- **Fontes de receita:** Identificar como a empresa gerará renda e as oportunidades de mudança.
+- **Recursos-chave:** Determinar os recursos necessários para suportar o modelo de negócios.
+- **Atividades-chave:** Identificar as atividades que sustentam o modelo de negócios.
+- **Parcerias-chave:** Reconhecer fornecedores e parceiros estratégicos.
+- **Estrutura de custos:** Analisar os custos envolvidos, incluindo diretos, indiretos, fixos e variáveis.
+
+---
+
+**6.2 User Story**
+
+User Stories são descrições simples e diretas das funcionalidades a serem desenvolvidas, focadas no valor para o usuário. Cada história deve responder a três perguntas: Quem? (o usuário), O quê? (a funcionalidade desejada) e Por quê? (o valor que ela traz). As User Stories devem ser independentes, negociáveis, valiosas, estimáveis, testáveis e pequenas. Durante o Sprint Zero, essas histórias são detalhadas, incluindo design, ergonomia e SEO, e são acompanhadas de critérios de aceitação.
+
+Critérios de Aceitação são fundamentais para definir o sucesso de uma User Story. Eles especificam as condições que devem ser atendidas para que o Product Owner aceite a entrega como concluída. Esses critérios são inicialmente definidos pelo Product Owner, mas são refinados coletivamente durante o Sprint Planning. Eles servem como base para testes e validações, ajudando a garantir a qualidade do produto.
+
+---
+
+**6.3 Reuniões de elicitação**
+
+Reuniões de Elicitação são eventos críticos na fase de Discovery para alinhar, elicitar, e debater os requisitos do produto ou projeto com todos os envolvidos. Essas reuniões ajudam a identificar necessidades, esclarecer objetivos, e minimizar mal-entendidos.
+
+Existem várias técnicas ágeis de elicitação, incluindo:
+
+- **Entrevistas:** Facilitam a compreensão e redução de ruídos na comunicação ao envolver múltiplas partes interessadas.
+- **User Story Mapping:** Documenta as funcionalidades do produto a partir da perspectiva do usuário.
+- **Brainstorming:** Permite a geração de ideias e soluções, organizadas por técnicas como Managing Dojo ou Learning 3.0.
+- **Focus Group:** Apresenta propostas para validação e feedback direto dos usuários.
+- **Grooming:** Sessões para refinar e detalhar a documentação do Discovery, envolvendo o time e os usuários, podendo consumir até 10% do tempo do time durante um Sprint.
+
+---
+
+**6.4 Mínimo Produto Viável (MVP)**
+
+O Mínimo Produto Viável (MVP) é uma estratégia crucial para validar produtos ou funcionalidades com o mercado, especialmente em ambientes altamente competitivos. Essa abordagem permite testar hipóteses e ajustar a estratégia com base em feedbacks e dados coletados em ciclos curtos.
+
+O MVP deve ser a versão mais simples do produto, contendo apenas as funcionalidades essenciais que oferecem valor ao cliente. Isso ajuda a confirmar se a ideia tem potencial de sucesso antes de investir tempo e recursos significativos no desenvolvimento completo.
+
+É importante ressaltar que o MVP não significa entregar o mínimo absoluto em termos de qualidade ou complexidade. O objetivo é encontrar um equilíbrio: criar um produto que, mesmo em sua versão básica, ofereça valor real ao cliente e seja viável como negócio. Além disso, a estratégia envolve o uso de ferramentas ágeis, open-source, e serviços gratuitos para acelerar o desenvolvimento e testar a viabilidade do produto de forma eficiente.
+
+---
+
+**6.5 Product Backlog e Sprint Backlog**
+
+> “Genba significa que devemos estar onde as coisas realmente acontecem, envolver-se pessoalmente, na hora e local apropriados.”
+> –Taiichi Ohno
+
+O **Product Backlog** é uma lista dinâmica e priorizada de todos os requisitos e funcionalidades desejadas para o produto, que são organizados e gerenciados pelo Product Owner. Este backlog deve ser constantemente revisitado e ajustado à medida que novas informações surgem e pressupostos são validados. A lista pode ser gerada usando técnicas como User Story Mapping, brainstorming, e outras dinâmicas de elicitação, sempre considerando a visão do produto e as expectativas dos principais stakeholders.
+
+O **Sprint Backlog**, por sua vez, é um subconjunto do Product Backlog, contendo os itens que serão abordados no próximo Sprint. Este backlog é finalizado durante o planejamento do Sprint, onde a equipe e o Product Owner chegam a um acordo sobre o que será desenvolvido, levando em conta a prioridade e a capacidade do time. Enquanto o Product Backlog cobre todo o escopo do produto, o Sprint Backlog foca nas tarefas que serão executadas a curto prazo, dentro do ciclo atual do Sprint.
+
+---
+
