@@ -305,7 +305,7 @@ Existem várias técnicas ágeis de elicitação, incluindo:
 
 **6.4 Mínimo Produto Viável (MVP)**
 
-<img src="hhttps://api-blog.rdstation.com/wp-content/uploads/2024/02/MVP.png">
+<img src="https://api-blog.rdstation.com/wp-content/uploads/2024/02/MVP.png">
 
 O Mínimo Produto Viável (MVP) é uma estratégia crucial para validar produtos ou funcionalidades com o mercado, especialmente em ambientes altamente competitivos. Essa abordagem permite testar hipóteses e ajustar a estratégia com base em feedbacks e dados coletados em ciclos curtos.
 
