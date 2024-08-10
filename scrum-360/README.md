@@ -52,16 +52,7 @@ O escotismo ensina que agir com alegria torna as situações menos difíceis. O 
 
 ---
 
-**2.2 Sociedade Industrial ou do Conhecimento:**
-
-> “Toda empresa precisa de gente que erra, que não tem medo de errar e que aprenda com o erro.”
-> –Bill Gates
-
-Estamos migrando de uma sociedade industrial para uma sociedade do conhecimento, priorizando pessoas e motivação. A revolução industrial focava na quantidade e não na qualidade, resultando em profissionais frustrados. Mudar esse modelo mental exige esforço e atenção, valorizando o senso de pertença. O novo modelo espera que as pessoas participem e se interessem, gerando valor para a empresa e para si mesmas.
-
----
-
-**2.3 Autoconhecimento:**
+**2.2 Autoconhecimento:**
 
 > “Os problemas significativos que enfrentamos não podem ser resolvidos no mesmo modelo mental que os criou.”
 > –Albert Einstein
@@ -72,19 +63,13 @@ Independentemente do ambiente, devemos sempre dar o nosso melhor no trabalho, co
 
 ---
 
-**2.4 Felicidade:**
-
-A verdadeira felicidade está atrelada a resultados e crescimento. Nosso tempo diário é dividido em três partes iguais (ou deveria estar): descanso, lazer e trabalho. No trabalho, é importante colaborar, contribuir para o sucesso do time, e saber quando é hora de mudar de rumo se o ambiente não valoriza você e busca resultados a qualquer custo. 
-
----
-
-**2.5 Individualismo ou coletivo:**
+**2.3 Individualismo ou coletivo:**
 
 Em equipes ágeis, o foco deve ser no equilíbrio coletivo, não deveria existir espaço para estrelismos. Todos devem colaborar e contribuir para a melhoria contínua. É essencial conhecer e valorizar a contribuição de cada membro da equipe, clientes e fornecedores, investindo no crescimento de todos. Conflitos e desconfianças prejudicam a sinergia, enquanto a colaboração fortalece a equipe. Evite criticar ou elogiar excessivamente, pois isso pode levar a crenças equivocadas. O ambiente de trabalho reflete nossos valores pessoais, e é uma via de mão dupla que pode ser melhorada. O sucesso da equipe é o sucesso de todos, e a contribuição individual se destacará naturalmente em um ambiente saudável e ágil.
 
 ---
 
-**2.6 Mudança de hábito:**
+**2.4 Mudança de hábito:**
 
 > “O hábito nunca é bom, nem sequer o hábito de fazer boas ações. As boas ações, quando se tornam hábito, deixam de ser atos de virtude. O verdadeiro bem só é alcançado com esforço.”
 > –Immanuel Kant 
@@ -93,7 +78,7 @@ Nosso cérebro foca nas mudanças e ignora muita informação sensorial. Vivemos
 
 ---
 
-**2.7 Equilíbrio:**
+**2.5 Equilíbrio:**
 
 No contexto da agilidade, o equilíbrio é fundamental e se manifesta em várias **dualidades**. O coletivo é essencial, mas sem anular a individualidade. A qualidade e a entrega devem ser balanceadas, assim como o conforto e a mudança, com foco em inovação e resultados. Transparência e bom senso andam juntos, e mudanças no final do processo só devem ser aceitas se realmente agregarem valor. A multidisciplinaridade é importante, mas especialistas são necessários para criar produtos diferenciados.
 
@@ -517,3 +502,59 @@ XP foi desenvolvido nos anos 90 por Kent Beck e colegas, promovendo práticas co
 Kanban é um sistema de gestão visual, originado no Sistema Toyota, que controla a produção ao limitar o trabalho em andamento e minimizar estoques e desperdícios. Embora criado para a indústria, é amplamente usado em desenvolvimento de software e outros setores para garantir um fluxo de trabalho eficiente, rápido e adaptável. O Kanban promove a auto-organização e a produção contínua, ajudando as equipes a evitar gargalos e responder rapidamente a mudanças na demanda.
 
 ---
+
+<h2 id="ecossistema"> 11. Ecossistema 🌍</h2>
+
+Somos muito mais que as partes separadas. O conceito de ecossistema em agilidade vai além da equipe ágil e envolve toda a cadeia de stakeholders, incluindo áreas corporativas e outros players no mercado. É essencial compartilhar conhecimento e garantir um entendimento comum em toda a organização para fortalecer a colaboração e a execução eficaz.
+
+---
+
+**11.1 PDCL Ágil**
+
+> “Frente à inovação, se nos mostram algo conhecido, ficamos sossegados.
+> –Friedrich Nietzsche
+
+O PDCL Ágil é uma adaptação do ciclo PDCA, que enfatiza o aprendizado contínuo (Learn) em vez de apenas agir (Act). Esse ciclo é aplicável a qualquer área e promove uma abordagem ágil e eficiente.
+
+Primeiro, define-se a Visão e estratégia, alinhando metas coletivas. No Planejamento (Plan), a equipe se reúne em ciclos curtos para estimar e definir prioridades. Durante a Execução (Do), o trabalho é acompanhado diariamente para garantir que os objetivos sejam atingidos sem surpresas. O Acompanhamento (Check) utiliza gestão visual para monitorar o progresso e ajustar o plano conforme necessário. Finalmente, no Aprendizado (Learn), a equipe reflete sobre as lições aprendidas e ajusta suas práticas para melhoria contínua.
+
+O PDCL Ágil integra esses passos para otimizar processos e promover adaptação constante.
+
+---
+
+<h2 id="gestao"> 12. Gestão do conhecimento 📖</h2>
+
+> “Tudo deveria se tornar o mais simples possível, mas não simplificado.”
+> –Albert Einstein
+
+A gestão do conhecimento vai além da simples adoção de novos processos; o verdadeiro desafio é a prática contínua e a internalização dos princípios no dia a dia. O modelo SECI, criado por Nonaka e Takeuchi, descreve quatro etapas de criação de conhecimento: Socialização (compartilhamento de conhecimento tácito), Externalização (transformação do conhecimento tácito em explícito), Combinação (união de conhecimentos explícitos) e Internalização (conversão do conhecimento explícito em tácito). Além disso, o conceito de Ba, desenvolvido pelos mesmos autores, descreve diferentes tipos de espaços (físicos, virtuais e mentais) que facilitam a criação e o compartilhamento de conhecimento dentro das organizações. Esses espaços permitem que o conhecimento seja gerado, compartilhado e aplicado, promovendo inovação e melhoria contínua.
+
+<img src="https://www.revistaespacios.com/a16v37n19/09-01.png">
+
+---
+
+**12.1 Agile subway maps e dashboards**
+
+A ideia de "mapas de metrô ágeis" e dashboards é similar a usar um mapa em uma grande cidade: eles ajudam a visualizar tecnologias, métodos e técnicas disponíveis, facilitando o planejamento e a evolução dos times. Esses diagramas funcionam como mapas mentais, permitindo que equipes identifiquem seu status atual e evolução, promovendo autodiagnósticos e identificando oportunidades de melhoria contínua. Assim, cada time pode avaliar o que é básico, intermediário ou avançado, e o que é mínimo, necessário ou desejável. Isso reforça a importância de comunidades de prática (CoP) e a interação entre equipes, essenciais para o aprendizado coletivo e a implementação de melhorias constantes.
+
+<img src="https://jorgeaudy.com/wp-content/uploads/2014/11/agile-tribes-subway-map-1-638.jpg">
+
+---
+
+**12.2 Colaboração é a menor distância**
+
+A colaboração é essencial para validar ideias e avançar em projetos, inspirada no conceito da "Ágora" grega, onde todos compartilhavam livremente. Participar de eventos, criar blogs, e contribuir em comunidades fortalece essa prática. Ao preparar apresentações, é crucial adaptar o conteúdo ao público e usar ferramentas como Prezi para manter o engajamento. Evite sobrecarregar slides, considere diferentes estilos de aprendizado, e esteja pronto para improvisar. Registre e compartilhe todo o processo para maximizar o impacto. Por fim, seja autêntico ao apresentar, pois transmitir seus valores e crenças ressoa mais com o público do que apenas passar informações.
+
+---
+
+**12.3 Acho que aprendi algo novo, e agora?**
+
+> “O verdadeiro brilho do processo de design centrado no ser humano é que ele nos mantém humildes.”
+> –Susie Wise (Stanford) 
+
+Ao final de qualquer aprendizado, a pergunta crucial é: "O que farei com o que aprendi?" Se a resposta for vaga, o conhecimento corre o risco de se tornar apenas um desperdício. Para realmente aproveitar o que foi aprendido, é essencial colocar em prática e compartilhar com os outros.
+
+Primeiro, comunique o conhecimento com colegas, seja através de resumos, pequenas palestras ou conversas. Em seguida, fixe o aprendizado aplicando-o na prática, especialmente em grupo, para fortalecer e validar o conhecimento. Por fim, replique o que foi aprendido, reforçando-o através de estudos contínuos, debates e práticas repetitivas. Essa abordagem ajuda a transformar insights em ações concretas, evitando que o conhecimento se perca.
+
+---
+
