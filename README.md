@@ -1,6 +1,6 @@
 <h1 align="center" style="font-weight: bold;"> Tech Book Summaries <img src="https://github.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/blob/master/Emojis/Objects/Books.png" alt="Rocket" width="50" height="50" /> &nbsp;</h1>
 
-<div align="center">
+<div align="left">
 
  <img src="https://github.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/blob/master/Emojis/Hand%20gestures/Waving%20Hand%20Medium-Light%20Skin%20Tone.png" alt="Rocket" width="30" height="30" /> &nbsp; Bem-vindo ao meu repositório de resumos de livros de tecnologia! 
 
