@@ -10,8 +10,6 @@
  <img src="https://github.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/blob/master/Emojis/Hand%20gestures/Handshake.png" alt="Rocket" width="26" height="26" /> &nbsp; Sinta-se à vontade para explorar os resumos, e se você já leu algum desses livros e gostaria de adicionar suas próprias observações ou correções, contribuições são muito bem-vindas!
 
 
-</br>
-
 ---
 
 </div>
