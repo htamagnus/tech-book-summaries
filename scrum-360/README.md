@@ -438,7 +438,7 @@ Dojos promovem **aprendizado contínuo**, inovação, e a aplicação prática d
 > “Você pode encarar um erro como uma besteira a ser esquecida, ou como um resultado que aponta uma nova direção”.
 > –Steve Jobs
 
-A seção aborda a importância de **respeitar** as esferas de atuação entre cliente, fornecedor e equipe de desenvolvimento. O conceito de Genba destaca a necessidade de estar presente no local certo com as pessoas certas para tomar decisões eficazes. Cada parte deve entender seu papel, evitando discussões fora de sua alçada para prevenir tensões e mal-entendidos. A confiança, transparência e clareza nos relacionamentos são fundamentais para um ambiente de trabalho produtivo e harmonioso.
+Respeitar as esferas de atuação entre cliente, fornecedor e equipe de desenvolvimento é **fundamental** para garantir um ambiente de trabalho harmonioso e produtivo. O conceito de **Genba**, que enfatiza a importância de estar presente no local certo, com as pessoas certas, ajuda a tomar decisões mais eficazes. Quando cada parte entende claramente seu papel e evita se envolver em questões fora de sua alçada, evitam-se tensões e mal-entendidos. A base para relacionamentos saudáveis nesse contexto é a **confiança**, a transparência e a clareza na comunicação, permitindo que todos trabalhem em sintonia.
 
 ---
 
