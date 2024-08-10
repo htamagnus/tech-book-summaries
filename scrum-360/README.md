@@ -44,7 +44,7 @@ A vida é marcada por **mudanças** e ritos de passagem, com simbolismos signifi
 
 O escotismo ensina que agir com alegria torna as situações menos difíceis. O autor destaca que: "Aprendi que a felicidade no trabalho vem ao agir como nos fins de semana no escotismo, valorizando um ambiente de trabalho saudável e inteligente".
 
-<h3>2.1 Muros e Feudos:</h3>
+**2.1 Muros e Feudos:**
 
 > “Os membros de uma equipe vencedora lutam contra os seus concorrentes. Os membros de uma equipe perdedora lutam entre si.”
 > –Joseph M. Juran
