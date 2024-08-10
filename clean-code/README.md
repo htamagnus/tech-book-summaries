@@ -16,6 +16,7 @@
   <a href="#descricao">3. Nomes Significativos</a><br>
   <a href="#descricao">4. Funções</a><br>
   <a href="#descricao">5. Comentários</a><br>
+  <a href="#descricao">6. Formatação</a><br>
 </p>
 
 ---
@@ -158,5 +159,13 @@ new ListItemWidget(this, listItemContent, this.level + 1);
 ---
 
 Quando você se depara com a necessidade de adicionar um comentário explicativo em seu código, considere primeiro se é possível substituir o comentário por uma função ou variável bem nomeada. Isso não apenas elimina a necessidade do comentário, mas também melhora a clareza e a legibilidade do código.
+
+---
+
+<h2 id="descricao"> 6. Formatação </h2>
+
+A formatação do código é um aspecto crucial para transmitir profissionalismo e atenção aos detalhes. Um código bem formatado não só facilita a leitura e manutenção, mas também reflete a disciplina e o cuidado dos desenvolvedores.
+
+Não há um tamanho ideal absoluto, mas arquivos menores tendem a ser mais fáceis de gerenciar e compreender. Em JavaScript, isso pode significar dividir grandes módulos em arquivos menores e mais focados, cada um responsável por uma única responsabilidade ou funcionalidade. Use quebras de linha para dividir logicamente diferentes seções de código, como separando funções, classes ou blocos de código relacionados. Isso ajuda a evitar que o código pareça um bloco monolítico e facilita a navegação.
 
 ---
