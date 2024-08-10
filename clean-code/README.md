@@ -17,6 +17,8 @@
   <a href="#descricao">4. Funções</a><br>
   <a href="#descricao">5. Comentários</a><br>
   <a href="#descricao">6. Formatação</a><br>
+  <a href="#descricao">7. Objetos e Estruturas de Dados</a><br>
+  <a href="#descricao">8. Tratamento de Erro</a><br>
 </p>
 
 ---
@@ -169,3 +171,17 @@ A formatação do código é um aspecto crucial para transmitir profissionalismo
 Não há um tamanho ideal absoluto, mas arquivos menores tendem a ser mais fáceis de gerenciar e compreender. Em JavaScript, isso pode significar dividir grandes módulos em arquivos menores e mais focados, cada um responsável por uma única responsabilidade ou funcionalidade. Use quebras de linha para dividir logicamente diferentes seções de código, como separando funções, classes ou blocos de código relacionados. Isso ajuda a evitar que o código pareça um bloco monolítico e facilita a navegação.
 
 ---
+
+<h2 id="descricao"> 7. Objetos e Estruturas de Dados </h2>
+
+Objetos expõem as ações e ocultam os dados, o que facilita a adição de novos tipos de objetos sem precisar modificar as ações existentes, mas torna mais difícil a inclusão de novas atividades em objetos já existentes. Por outro lado, estruturas de dados expõem os dados e não possuem ações significativas, facilitando a adição de novas ações às estruturas de dados existentes, mas dificultando a inclusão de novas estruturas de dados em funções existentes.
+
+Em um sistema, a escolha entre objetos e estruturas de dados depende da flexibilidade desejada. Quando se busca flexibilidade para adicionar novos tipos de dados, a opção por objetos é mais adequada. Quando a necessidade é adicionar novas ações, optar por tipos de dados e procedimentos faz mais sentido.
+
+---
+
+<h2 id="descricao"> 8. Tratamento de Erro </h2>
+
+No passado, quando as linguagens de programação não suportavam exceções, era comum utilizar flags ou códigos de erro para indicar problemas, o que obrigava o chamador a verificar esses erros após cada chamada. Esse método resultava em código confuso e propenso a erros, já que os programadores podiam facilmente esquecer de verificar os erros.
+
+**Exemplo sem Exceções:**
