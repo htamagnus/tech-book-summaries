@@ -185,3 +185,90 @@ Em um sistema, a escolha entre objetos e estruturas de dados depende da flexibil
 No passado, quando as linguagens de programação não suportavam exceções, era comum utilizar flags ou códigos de erro para indicar problemas, o que obrigava o chamador a verificar esses erros após cada chamada. Esse método resultava em código confuso e propenso a erros, já que os programadores podiam facilmente esquecer de verificar os erros.
 
 **Exemplo sem Exceções:**
+
+```javascript
+function sendShutDown() {
+    const handle = getHandle(DEV1);
+    if (handle !== INVALID_HANDLE) {
+        const record = retrieveDeviceRecord(handle);
+        if (record.status !== DEVICE_SUSPENDED) {
+            pauseDevice(handle);
+            clearDeviceWorkQueue(handle);
+            closeDevice(handle);
+        } else {
+            console.log("Device suspended. Unable to shut down");
+        }
+    } else {
+        console.log("Invalid handle for:", DEV1);
+    }
+}
+```
+
+**Exemplo com Exceções:**
+
+```javascript
+function sendShutDown() {
+    try {
+        tryToShutDown();
+    } catch (error) {
+        console.error(error.message);
+    }
+}
+
+function tryToShutDown() {
+    const handle = getHandle(DEV1);
+    if (handle === INVALID_HANDLE) {
+        throw new Error("Invalid handle for: " + DEV1);
+    }
+
+    const record = retrieveDeviceRecord(handle);
+    if (record.status === DEVICE_SUSPENDED) {
+        throw new Error("Device suspended. Unable to shut down");
+    }
+
+    pauseDevice(handle);
+    clearDeviceWorkQueue(handle);
+    closeDevice(handle);
+}
+```
+
+Nesse exemplo, o código principal (tryToShutDown) é separado do tratamento de erros (catch), tornando a lógica mais clara e o código mais fácil de manter.
+
+---
+
+Retornar null de funções ou passar null como argumento é uma prática que deve ser evitada, pois isso pode levar a erros em tempo de execução, como NullPointerException. Em vez de retornar null, é melhor lançar uma exceção ou usar um padrão de caso especial que retorne um objeto com um comportamento padrão.
+
+```javascript
+function registerItem(item) {
+    if (item !== null) {
+        const registry = persistentStore.getItemRegistry();
+        if (registry !== null) {
+            const existing = registry.getItem(item.getID());
+            if (existing.getBillingPeriod().hasRetailOwner()) {
+                existing.register(item);
+            }
+        }
+    }
+}
+
+```
+
+Esse código é propenso a erros porque depende de várias verificações de null.
+
+**Refatoração com Objetos de Caso Especial:**
+
+```javascript
+function getItemRegistry() {
+    return persistentStore.getItemRegistry() || new NullRegistry();
+}
+
+function getItem(itemID) {
+    return registry.getItem(itemID) || new NullItem();
+}
+```
+
+Agora, getItemRegistry e getItem sempre retornam um objeto válido, eliminando a necessidade de verificações de null.
+
+Evitar também passar null para funções é ainda mais importante. Se uma função depende de argumentos não nulos, considere usar uma exceção ou validação antecipada.
+
+---
