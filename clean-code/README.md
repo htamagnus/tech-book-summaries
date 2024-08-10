@@ -19,6 +19,7 @@
   <a href="#descricao">6. Formatação</a><br>
   <a href="#descricao">7. Objetos e Estruturas de Dados</a><br>
   <a href="#descricao">8. Tratamento de Erro</a><br>
+  <a href="#descricao">9. Limites</a><br>
 </p>
 
 ---
@@ -270,5 +271,83 @@ function getItem(itemID) {
 Agora, getItemRegistry e getItem sempre retornam um objeto válido, eliminando a necessidade de verificações de null.
 
 Evitar também passar null para funções é ainda mais importante. Se uma função depende de argumentos não nulos, considere usar uma exceção ou validação antecipada.
+
+---
+
+<h2 id="descricao"> 9. Limites </h2>
+
+Quando usamos bibliotecas de terceiros, é essencial entender como elas funcionam e como podemos integrá-las de forma eficaz ao nosso código. Em vez de apenas ler a documentação ou tentar integrar o código diretamente, podemos criar "testes de aprendizagem" para explorar o comportamento dessas APIs e entender melhor como elas funcionam.
+
+**Exemplo de Teste de Aprendizagem:**
+
+Suponha que queremos usar a biblioteca winston para logging. Podemos começar criando um teste simples para verificar se a configuração básica funciona conforme esperado.
+
+**Teste Inicial:**
+
+```javascript
+const winston = require('winston');
+
+// Teste simples para verificar o funcionamento básico do logger
+function testLogCreate() {
+    const logger = winston.createLogger({
+        level: 'info',
+        transports: [
+            new winston.transports.Console()
+        ]
+    });
+
+    logger.info('hello');
+}
+
+testLogCreate();
+
+```
+
+Após verificar que o logger básico funciona, podemos testar outras configurações, como formatos personalizados de saída:
+
+```javascript
+function testLogWithCustomFormat() {
+    const logger = winston.createLogger({
+        level: 'info',
+        format: winston.format.combine(
+            winston.format.colorize(),
+            winston.format.timestamp(),
+            winston.format.printf(({ timestamp, level, message }) => {
+                return `${timestamp} ${level}: ${message}`;
+            })
+        ),
+        transports: [
+            new winston.transports.Console()
+        ]
+    });
+
+    logger.info('hello with custom format');
+}
+
+testLogWithCustomFormat();
+```
+
+Depois de explorar e aprender como a biblioteca funciona, podemos encapsular esse conhecimento em uma função ou classe para uso em toda a aplicação, mantendo a lógica de configuração separada e reutilizável:
+
+```javascript
+function createLogger() {
+    return winston.createLogger({
+        level: 'info',
+        format: winston.format.combine(
+            winston.format.colorize(),
+            winston.format.timestamp(),
+            winston.format.printf(({ timestamp, level, message }) => {
+                return `${timestamp} ${level}: ${message}`;
+            })
+        ),
+        transports: [
+            new winston.transports.Console()
+        ]
+    });
+}
+
+const logger = createLogger();
+logger.info('Logger is ready to use across the application.');
+```
 
 ---
