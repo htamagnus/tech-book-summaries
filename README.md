@@ -1,6 +1,6 @@
 <h1 align="center" style="font-weight: bold;"> Tech Book Summaries <img src="https://github.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/blob/master/Emojis/Objects/Books.png" alt="Rocket" width="50" height="50" /> &nbsp;</h1>
 
-<div align="left">
+<div align="center">
 
  <img src="https://github.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/blob/master/Emojis/Hand%20gestures/Waving%20Hand%20Medium-Light%20Skin%20Tone.png" alt="Rocket" width="30" height="30" /> &nbsp; Bem-vindo ao meu repositório de resumos de livros de tecnologia! 
 
@@ -9,8 +9,6 @@
 
  <img src="https://github.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/blob/master/Emojis/Hand%20gestures/Handshake.png" alt="Rocket" width="26" height="26" /> &nbsp; Sinta-se à vontade para explorar os resumos, e se você já leu algum desses livros e gostaria de adicionar suas próprias observações ou correções, contribuições são muito bem-vindas!
 
-
-</br>
 
 ---
 
