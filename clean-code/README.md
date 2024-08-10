@@ -20,6 +20,7 @@
   <a href="#descricao">7. Objetos e Estruturas de Dados</a><br>
   <a href="#descricao">8. Tratamento de Erro</a><br>
   <a href="#descricao">9. Limites</a><br>
+  <a href="#descricao">10. Testes de Unidade</a><br>
 </p>
 
 ---
@@ -349,5 +350,29 @@ function createLogger() {
 const logger = createLogger();
 logger.info('Logger is ready to use across the application.');
 ```
+
+---
+
+<h2 id="descricao"> 10. Testes de Unidade </h2>
+
+Os testes de unidade bem escritos e mantidos são a chave para manter o código de produção flexível e fácil de modificar. Testes robustos permitem que os desenvolvedores façam alterações no código com confiança, sabendo que qualquer erro será rapidamente detectado. Isso, por sua vez, facilita a manutenção da arquitetura do código e permite melhorias contínuas.
+
+A qualidade mais importante em um teste é a legibilidade. Testes legíveis são claros, simples e consistentes, facilitando a compreensão e a manutenção. A clareza e a simplicidade nos testes permitem que eles transmitam seu propósito de forma direta, sem sobrecarregar o leitor com detalhes desnecessários.
+
+Considere testes que têm código duplicado ou excesso de detalhes que obscurecem o objetivo do teste. Um exemplo típico seria testes com muitas chamadas repetidas ou detalhes que não contribuem para a compreensão do teste. Refatorar esses testes para eliminar duplicação e tornar a intenção mais clara é essencial para manter a qualidade.
+
+---
+
+Os testes limpos seguem cinco princípios essenciais:
+
+- Rápidos (Fast): Devem ser rápidos para incentivar execuções frequentes e detecção precoce de problemas.
+
+- Independentes (Independent): Devem rodar de forma independente, sem depender de outros testes.
+
+- Repetíveis (Repeatable): Precisam ser repetíveis em qualquer ambiente, garantindo consistência nos resultados.
+
+- Autovalidados (Self-Validating): Devem retornar um resultado claro (passou/falhou) sem necessidade de verificação manual.
+
+- Pontuais (Timely): Devem ser escritos no momento certo, de preferência antes do código de produção, para garantir testabilidade.
 
 ---
