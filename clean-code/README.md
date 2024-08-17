@@ -370,7 +370,8 @@ Em um sistema, a escolha entre objetos e estruturas de dados depende da flexibil
 
 Utilizar getters e setters em objetos é uma prática recomendada porque oferece várias vantagens, como facilitar a modificação do comportamento dos acessos aos dados sem alterar os pontos de chamada no código, permite adicionar validações ao definir valores (set), por encapsular a representação interna dos dados promove maior flexibilidade, e torna mais fácil adicionar logs e tratamentos de erros.
 
-Exemplo ruim:
+**Exemplo ruim:**
+
 ```javascript
 function createProduct() {
   return {
@@ -382,7 +383,7 @@ const product = createProduct();
 product.stock = 50; // Modificação direta
 ```
 
-Jeito correto segundo clean code:
+**Jeito correto segundo clean code:**
 ```javascript
 function createProduct() {
   // Propriedade privada
@@ -416,94 +417,80 @@ console.log(product.getStock()); // Acesso controlado
 
 <h2 id="descricao"> 8. Tratamento de Erro </h2>
 
-No passado, quando as linguagens de programação não suportavam exceções, era comum utilizar flags ou códigos de erro para indicar problemas, o que obrigava o chamador a verificar esses erros após cada chamada. Esse método resultava em código confuso e propenso a erros, já que os programadores podiam facilmente esquecer de verificar os erros.
+Usar exceções é preferível a retornar códigos de erro ou null, pois facilita a identificação e o tratamento de problemas. Exceções tornam o código mais legível e robusto, separando a lógica principal do tratamento de erros. Evitar o uso de null como retorno ou argumento é crucial para prevenir erros inesperados, e o uso de objetos de caso especial pode eliminar a necessidade de verificações constantes de null.
 
-**Exemplo sem Exceções:**
+Sempre trate erros capturados em try/catch com ações concretas, como logar adequadamente, notificar o usuário ou enviar relatórios para serviços de monitoramento. Não ignore promessas rejeitadas em código assíncrono.
 
+**Exemplo ruim:**
 ```javascript
-function sendShutDown() {
-    const handle = getHandle(DEV1);
-    if (handle !== INVALID_HANDLE) {
-        const record = retrieveDeviceRecord(handle);
-        if (record.status !== DEVICE_SUSPENDED) {
-            pauseDevice(handle);
-            clearDeviceWorkQueue(handle);
-            closeDevice(handle);
-        } else {
-            console.log("Device suspended. Unable to shut down");
-        }
+function processOrder(order) {
+  const customer = getCustomer(order.id);
+  if (customer !== null) {
+    const paymentMethod = customer.getPaymentMethod();
+    if (paymentMethod !== null) {
+      if (!paymentMethod.isValid()) {
+        console.log("Invalid payment method");
+      } else {
+        completeOrder(order);
+      }
     } else {
-        console.log("Invalid handle for:", DEV1);
+      console.log("Payment method is null");
     }
+  } else {
+    console.log("Customer not found");
+  }
+}
+
+getOrderData()
+  .then((order) => {
+    processOrder(order);
+  })
+  .catch((error) => {
+    console.log("Error processing order:", error);
+  });
+
+try {
+  updateInventory();
+} catch (error) {
+  console.log(error);
 }
 ```
-
-**Exemplo com Exceções:**
-
-```javascript
-function sendShutDown() {
-    try {
-        tryToShutDown();
-    } catch (error) {
-        console.error(error.message);
-    }
-}
-
-function tryToShutDown() {
-    const handle = getHandle(DEV1);
-    if (handle === INVALID_HANDLE) {
-        throw new Error("Invalid handle for: " + DEV1);
-    }
-
-    const record = retrieveDeviceRecord(handle);
-    if (record.status === DEVICE_SUSPENDED) {
-        throw new Error("Device suspended. Unable to shut down");
-    }
-
-    pauseDevice(handle);
-    clearDeviceWorkQueue(handle);
-    closeDevice(handle);
-}
-```
-
-Nesse exemplo, o código principal (tryToShutDown) é separado do tratamento de erros (catch), tornando a lógica mais clara e o código mais fácil de manter.
+**Problemas:** faz uso de null como valor de retorno e muitas verificações de null,tratamento de erros com console.log, que não oferece um plano real de ação e  promessa rejeitada é tratada com console.log, o que pode ser facilmente ignorado.
 
 ---
 
-Retornar null de funções ou passar null como argumento é uma prática que deve ser evitada, pois isso pode levar a erros em tempo de execução, como NullPointerException. Em vez de retornar null, é melhor lançar uma exceção ou usar um padrão de caso especial que retorne um objeto com um comportamento padrão.
-
+**Jeito correto segundo clean code:**
 ```javascript
-function registerItem(item) {
-    if (item !== null) {
-        const registry = persistentStore.getItemRegistry();
-        if (registry !== null) {
-            const existing = registry.getItem(item.getID());
-            if (existing.getBillingPeriod().hasRetailOwner()) {
-                existing.register(item);
-            }
-        }
-    }
+function processOrder(order) {
+  const customer = getCustomer(order.id) || new NullCustomer();
+  const paymentMethod = customer.getPaymentMethod() || new NullPaymentMethod();
+
+  if (!paymentMethod.isValid()) {
+    throw new Error("Invalid payment method");
+  }
+
+  completeOrder(order);
 }
 
+getOrderData()
+  .then((order) => {
+    processOrder(order);
+  })
+  .catch((error) => {
+    console.error("Error processing order:", error);
+    notifyUserOfError(error);
+    reportErrorToService(error);
+  });
+
+try {
+  updateInventory();
+} catch (error) {
+  console.error("Inventory update failed:", error);
+  reportErrorToService(error);
+}
 ```
 
-Esse código é propenso a erros porque depende de várias verificações de null.
-
-**Refatoração com Objetos de Caso Especial:**
-
-```javascript
-function getItemRegistry() {
-    return persistentStore.getItemRegistry() || new NullRegistry();
-}
-
-function getItem(itemID) {
-    return registry.getItem(itemID) || new NullItem();
-}
-```
-
-Agora, getItemRegistry e getItem sempre retornam um objeto válido, eliminando a necessidade de verificações de null.
-
-Evitar também passar null para funções é ainda mais importante. Se uma função depende de argumentos não nulos, considere usar uma exceção ou validação antecipada.
+**Melhorias:** NullCustomer e NullPaymentMethod eliminam a necessidade de verificações de null. Em vez de console.log, o código usa console.error, notificação ao usuário e relatórios para um serviço, fornecendo um plano de ação claro. Promessas rejeitadas são tratadas com ações adequadas, como logar, notificar e reportar, em vez de simplesmente ignorar.
 
 ---
 
