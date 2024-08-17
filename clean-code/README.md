@@ -30,6 +30,14 @@
 
 ---
 
+<h2 id="descricao"> 1. Descrição 📝</h2>
+
+O livro [Código Limpo: Habilidades Práticas de Agile Software](https://www.amazon.com.br/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882), do Robert C. Martin, é uma leitura essencial para quem quer aprender a escrever códigos que não só funcionem, mas que também sejam fáceis de ler, manter e melhorar com o tempo. Ele ensina boas práticas para garantir que o código seja "limpo", cobrindo temas como nomes descritivos, funções pequenas e focadas, tratamento de erros, formatação, testes e muito mais. A ideia é que, ao seguir esses princípios, você consiga criar um software que evolua de maneira organizada, sem se tornar uma bagunça.
+
+No meu resumo pessoal, ao invés de usar Java, que é a linguagem utilizada pelo autor, eu adaptei os exemplos para JavaScript, já que é minha linguagem principal e acredito que essa abordagem facilita o entendimento dos conceitos dentro do meu contexto de trabalho. Assim, mesmo quem programa em JavaScript poderá aplicar as lições do livro com mais facilidade, sem perder o foco nas boas práticas que ele ensina.
+
+---
+
 <h2 id="descricao"> 2. Código Limpo 🧹</h2>
 
 Não basta apenas escrever um código que funcione; é essencial mantê-lo limpo e organizado. Com o tempo, códigos podem se degradar se não cuidarmos deles ativamente. Uma regra simples da organização de escoteiros dos EUA nos ensina a deixar o acampamento mais limpo do que quando o encontramos, e podemos aplicar essa ideia ao nosso trabalho: sempre deixe o código melhor do que o encontrou. Pequenas melhorias, como renomear variáveis para torná-las mais claras ou simplificar funções, podem prevenir a deterioração do código. Imagine trabalhar em um projeto onde o código melhora continuamente. Isso não é parte do profissionalismo?
