@@ -12,20 +12,20 @@
 <h3 align="left">Sumário 📄</h3>
 <p align="left">
   <a href="#descricao">1. Descrição 📝</a><br>
-  <a href="#descricao">2. Código Limpo 🧹</a><br>
-  <a href="#descricao">3. Nomes Significativos 🏷️</a><br>
-  <a href="#descricao">4. Funções ⚙️</a><br>
-  <a href="#descricao">5. Comentários 💬</a><br>
-  <a href="#descricao">6. Formatação 🖊️</a><br>
-  <a href="#descricao">7. Objetos e Estruturas de Dados 🧱</a><br>
-  <a href="#descricao">8. Tratamento de Erros 🛠️</a><br>
-  <a href="#descricao">9. Limites 🚧</a><br>
-  <a href="#descricao">10. Testes de Unidade ✅</a><br>
-  <a href="#descricao">11. Classes 🏛️</a><br>
-  <a href="#descricao">12. Sistemas 🖥️</a><br>
-  <a href="#descricao">13. Emergência 🚨</a><br>
-  <a href="#descricao">14. Concorrência ⚡</a><br>
-   <a href="#descricao">15. Resumão</a><br>
+  <a href="#clean">2. Código Limpo 🧹</a><br>
+  <a href="#nomes">3. Nomes Significativos 🏷️</a><br>
+  <a href="#funcoes">4. Funções ⚙️</a><br>
+  <a href="#comentarios">5. Comentários 💬</a><br>
+  <a href="#formatacao">6. Formatação 🖊️</a><br>
+  <a href="#objetos">7. Objetos e Estruturas de Dados 🧱</a><br>
+  <a href="#erros">8. Tratamento de Erros 🛠️</a><br>
+  <a href="#limites">9. Limites 🚧</a><br>
+  <a href="#testes">10. Testes de Unidade ✅</a><br>
+  <a href="#classes">11. Classes 🏛️</a><br>
+  <a href="#sistemas">12. Sistemas 🖥️</a><br>
+  <a href="#emergencia">13. Emergência 🚨</a><br>
+  <a href="#concorrencia">14. Concorrência ⚡</a><br>
+  <a href="#resumao">15. Resumão</a><br>
 </p>
 
 ---
@@ -34,11 +34,11 @@
 
 O livro [Código Limpo: Habilidades Práticas de Agile Software](https://www.amazon.com.br/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882), do Robert C. Martin, é uma leitura essencial para quem quer aprender a escrever códigos que não só funcionem, mas que também sejam fáceis de ler, manter e melhorar com o tempo. Ele ensina boas práticas para garantir que o código seja "limpo", cobrindo temas como nomes descritivos, funções pequenas e focadas, tratamento de erros, formatação, testes e muito mais. A ideia é que, ao seguir esses princípios, você consiga criar um software que evolua de maneira organizada, sem se tornar uma bagunça.
 
-No meu resumo pessoal, ao invés de usar Java, que é a linguagem utilizada pelo autor, eu adaptei os exemplos para JavaScript, já que é minha linguagem principal e acredito que essa abordagem facilita o entendimento dos conceitos dentro do meu contexto de trabalho. Assim, mesmo quem programa em JavaScript poderá aplicar as lições do livro com mais facilidade, sem perder o foco nas boas práticas que ele ensina.
+No meu resumo pessoal, ao invés de usar **Java**, que é a linguagem utilizada pelo autor, eu adaptei os exemplos para **JavaScript**, já que é minha linguagem principal e acredito que essa abordagem facilita o entendimento dos conceitos dentro do meu contexto de trabalho. Assim, mesmo quem programa em JavaScript poderá aplicar as lições do livro com mais facilidade, sem perder o foco nas boas práticas que ele ensina.
 
 ---
 
-<h2 id="descricao"> 2. Código Limpo 🧹</h2>
+<h2 id="clean"> 2. Código Limpo 🧹</h2>
 
 Não basta apenas escrever um código que funcione; é essencial mantê-lo limpo e organizado. Com o tempo, códigos podem se degradar se não cuidarmos deles ativamente. Uma regra simples da organização de escoteiros dos EUA nos ensina a deixar o acampamento mais limpo do que quando o encontramos, e podemos aplicar essa ideia ao nosso trabalho: sempre deixe o código melhor do que o encontrou. Pequenas melhorias, como renomear variáveis para torná-las mais claras ou simplificar funções, podem prevenir a deterioração do código. Imagine trabalhar em um projeto onde o código melhora continuamente. Isso não é parte do profissionalismo?
 
@@ -46,7 +46,7 @@ Não basta apenas escrever um código que funcione; é essencial mantê-lo limpo
 
 ---
 
-<h2 id="descricao"> 3. Nomes Significativos 🏷️</h2>
+<h2 id="nomes"> 3. Nomes Significativos 🏷️</h2>
 
 Os nomes no código devem ser **claros** e **autodescritivos**, refletindo sua finalidade sem a necessidade de comentários adicionais. Bons nomes tornam o código mais legível e fácil de manter, ajudando a reduzir a complexidade. Evite nomes confusos ou que possam gerar mal-entendidos. Nomes descritivos facilitam a busca no código e previnem erros.
 
@@ -104,7 +104,7 @@ console.log(address.state);
 
 ---
 
-<h2 id="descricao"> 4. Funções ⚙️</h2>
+<h2 id="funcoes"> 4. Funções ⚙️</h2>
 
 Funções devem ser **pequenas** e realizar apenas uma tarefa, facilitando a compreensão e a manutenção. Elas devem ter poucos parâmetros, preferencialmente zero, e evitar múltiplos níveis de abstração. Nomes descritivos ajudam a entender o código sem precisar de comentários.
 
@@ -186,7 +186,7 @@ function handleUserUpdate(user, updateType, isAdmin = false) {
 
 ---
 
-<h2 id="descricao"> 5. Comentários 💬</h2>
+<h2 id="comentarios"> 5. Comentários 💬</h2>
 
 Comentários devem ser **evitados** sempre que o código puder ser **autoexplicativo**. Refatorar o código para torná-lo claro é preferível a adicionar comentários explicativos. Nomes descritivos para funções, variáveis e classes podem substituir a maioria dos comentários, tornando o código mais legível e menos propenso a se tornar desatualizado.
 
@@ -271,7 +271,7 @@ const config = {
 
 ---
 
-<h2 id="descricao"> 6. Formatação 🖊️</h2>
+<h2 id="formatacao"> 6. Formatação 🖊️</h2>
 
 A formatação é **essencial** para garantir um código legível e profissional. Um código bem formatado facilita a leitura, a manutenção e reflete o cuidado do desenvolvedor. Arquivos menores, bem divididos, são mais fáceis de gerenciar. Ferramentas automáticas de formatação, como linters e formatadores, são recomendadas para evitar discussões desnecessárias sobre estilo.
 
@@ -381,7 +381,7 @@ orderManager.processOrder();
 
 ---
 
-<h2 id="descricao"> 7. Objetos e Estruturas de Dados 🧱</h2>
+<h2 id="objetos"> 7. Objetos e Estruturas de Dados 🧱</h2>
 
 Objetos **expõem** as ações e ocultam os dados, o que facilita a adição de novos tipos de objetos sem precisar modificar as ações existentes, mas torna mais difícil a inclusão de novas atividades em objetos já existentes. Por outro lado, estruturas de dados expõem os dados e não possuem ações significativas, facilitando a adição de novas ações às estruturas de dados existentes, mas dificultando a inclusão de novas estruturas de dados em funções existentes.
 
@@ -434,7 +434,7 @@ console.log(product.getStock()); // Acesso controlado
 
 ---
 
-<h2 id="descricao"> 8. Tratamento de Erros 🛠️</h2>
+<h2 id="erros"> 8. Tratamento de Erros 🛠️</h2>
 
 Usar exceções é **preferível** a retornar códigos de erro ou null, pois facilita a identificação e o tratamento de problemas. Exceções tornam o código mais legível e robusto, separando a lógica principal do tratamento de erros. Evitar o uso de null como retorno ou argumento é crucial para prevenir erros inesperados, e o uso de objetos de caso especial pode eliminar a necessidade de verificações constantes de null.
 
@@ -513,7 +513,7 @@ try {
 
 ---
 
-<h2 id="descricao"> 9. Limites 🚧</h2>
+<h2 id="limites"> 9. Limites 🚧</h2>
 
 Ao integrar bibliotecas de **terceiros**, é importante entender seu funcionamento por meio de "testes de aprendizagem". Esses testes permitem explorar o comportamento da API sem comprometer a lógica principal da aplicação. Uma vez que a funcionalidade é compreendida, encapsule o uso da biblioteca em funções ou classes reutilizáveis para manter a configuração centralizada e clara.
 
@@ -604,7 +604,7 @@ logger.info('Logger pronto para uso na aplicação.');
 
 ---
 
-<h2 id="descricao"> 10. Testes de Unidade ✅</h2>
+<h2 id="testes"> 10. Testes de Unidade ✅</h2>
 
 Testes de unidade são **essenciais** para garantir que o código de produção seja flexível e fácil de modificar. Testes claros e bem escritos permitem que os desenvolvedores façam mudanças com confiança, sabendo que erros serão detectados rapidamente. Para manter a qualidade, os testes devem ser rápidos, independentes, repetíveis, autovalidados e escritos no momento certo.
 
@@ -700,7 +700,7 @@ async function fetchInventory() {
 
 ---
 
-<h2 id="descricao"> 11. Classes 🏛️</h2>
+<h2 id="classes"> 11. Classes 🏛️</h2>
 
 Classes devem ser **pequenas**, focadas em uma única responsabilidade e coesas, seguindo o **Princípio da Responsabilidade Única (SRP)**. Isso facilita a manutenção e evita a necessidade de modificações frequentes. Organize métodos relacionados próximos uns dos outros e prefira composição sobre herança, sempre que possível. Além disso, utilize padrões de design como **injeção de dependência** e o princípio do aberto/fechado para criar classes extensíveis sem a necessidade de alterar código existente.
 
@@ -805,7 +805,7 @@ depreciation.calculate();
 
 ---
 
-<h2 id="descricao"> 12. Sistemas 🖥️</h2>
+<h2 id="sistemas"> 12. Sistemas 🖥️</h2>
 
 > "Complexidade mata. Ela suga a vida dos desenvolvedores, dificulta o planejamento, a construção e o teste dos produtos”.
 > —Ray Ozzie, CTO, Microsoft Corporation
@@ -893,7 +893,7 @@ order.processOrder();
 
 ---
 
-<h2 id="descricao"> 13. Emergência 🚨</h2>
+<h2 id="emergencia"> 13. Emergência 🚨</h2>
 
 Seguir regras simples pode ajudar a criar bons designs de software. Kent Beck sugere as **Quatro Regras do Projeto Simples** para auxiliar no desenvolvimento de projetos claros e eficazes:
 
@@ -966,7 +966,7 @@ class ImageProcessor {
 
 ---
 
-<h2 id="descricao"> 14. Concorrência ⚡</h2>
+<h2 id="concorrencia"> 14. Concorrência ⚡</h2>
 
 Escrever programas **concorrentes limpos** é um **desafio**. Concorrência ajuda a desacoplar a execução de tarefas, mas requer cuidados extras com bugs difíceis de reproduzir, como deadlocks e race conditions.
 
@@ -1022,7 +1022,7 @@ fetchAndSaveData();
 
 ---
 
-<h2 id="descricao"> 15. Resumão </h2>
+<h2 id="resumao"> 15. Resumão </h2>
 
 1. **Código Limpo 🧹:** Incentiva que o código seja continuamente melhorado, fazendo pequenas mudanças como renomear variáveis ou simplificar funções, e mantendo o código organizado.
 
