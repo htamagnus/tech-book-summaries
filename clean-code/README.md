@@ -355,3 +355,14 @@ Os testes limpos seguem cinco princípios essenciais:
 ---
 
 <h2 id="descricao"> 11. Classes </h2>
+
+As classes devem ser pequenas e focadas em uma única responsabilidade, seguindo o Princípio da Responsabilidade Única (SRP). Isso significa que uma classe deve ter apenas um motivo para mudar, e se houver múltiplas razões para alteração, deve-se considerar dividir a classe. Por exemplo, métodos que lidam com diferentes aspectos de um sistema podem ser extraídos em classes menores e mais específicas, assim como no exemplo da SuperDashboard e a extração de responsabilidades relacionadas à versão para uma nova classe.
+
+Na organização das classes em JavaScript, as variáveis privadas (usando o # para encapsulamento) devem ser declaradas no início, seguidas de métodos públicos e privados. Métodos que fazem parte de um comportamento comum devem ser colocados próximos uns dos outros, de modo que o código seja lido de cima para baixo, mantendo uma organização lógica e facilitando a leitura.
+
+A coesão também é essencial. Cada método de uma classe deve manipular uma ou mais variáveis da instância. Quando os métodos compartilham muitas variáveis, isso sugere que a classe é coesa. Porém, se as variáveis e métodos se tornam independentes entre si, a classe perde coesão e deve ser dividida. Um exemplo seria uma classe Stack, onde todos os métodos manipulam diretamente as variáveis de instância, garantindo coesão.
+
+Para manter o código mais isolado de alterações, o uso de interfaces ou classes abstratas (em JavaScript, interfaces podem ser simuladas com classes ou tipos) pode ajudar a separar o comportamento de detalhes de implementação. Isso evita que mudanças em detalhes concretos afetem outras partes do sistema.
+
+---
+
