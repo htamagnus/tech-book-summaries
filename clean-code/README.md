@@ -683,13 +683,106 @@ async function fetchInventory() {
 
 <h2 id="descricao"> 11. Classes </h2>
 
-As classes devem ser pequenas e focadas em uma única responsabilidade, seguindo o Princípio da Responsabilidade Única (SRP). Isso significa que uma classe deve ter apenas um motivo para mudar, e se houver múltiplas razões para alteração, deve-se considerar dividir a classe. Por exemplo, métodos que lidam com diferentes aspectos de um sistema podem ser extraídos em classes menores e mais específicas, assim como no exemplo da SuperDashboard e a extração de responsabilidades relacionadas à versão para uma nova classe.
+Classes devem ser pequenas, focadas em uma única responsabilidade e coesas, seguindo o Princípio da Responsabilidade Única (SRP). Isso facilita a manutenção e evita a necessidade de modificações frequentes. Organize métodos relacionados próximos uns dos outros e prefira composição sobre herança, sempre que possível. Além disso, utilize padrões de design como injeção de dependência e o princípio do aberto/fechado para criar classes extensíveis sem a necessidade de alterar código existente.
 
-Na organização das classes em JavaScript, as variáveis privadas (usando o # para encapsulamento) devem ser declaradas no início, seguidas de métodos públicos e privados. Métodos que fazem parte de um comportamento comum devem ser colocados próximos uns dos outros, de modo que o código seja lido de cima para baixo, mantendo uma organização lógica e facilitando a leitura.
+**Exemplo ruim:**
 
-A coesão também é essencial. Cada método de uma classe deve manipular uma ou mais variáveis da instância. Quando os métodos compartilham muitas variáveis, isso sugere que a classe é coesa. Porém, se as variáveis e métodos se tornam independentes entre si, a classe perde coesão e deve ser dividida. Um exemplo seria uma classe Stack, onde todos os métodos manipulam diretamente as variáveis de instância, garantindo coesão.
+```javascript
+class Car {
+  constructor(brand, model, year) {
+    this.brand = brand;
+    this.model = model;
+    this.year = year;
+    this.color = null;
+  }
 
-Para manter o código mais isolado de alterações, o uso de interfaces ou classes abstratas (em JavaScript, interfaces podem ser simuladas com classes ou tipos) pode ajudar a separar o comportamento de detalhes de implementação. Isso evita que mudanças em detalhes concretos afetem outras partes do sistema.
+  setColor(color) {
+    this.color = color;
+  }
+
+  saveCar() {
+    console.log(`Saving ${this.brand} ${this.model}`);
+  }
+
+  updatePrice(price) {
+    console.log(`Updated price to ${price}`);
+  }
+
+  calculateDepreciation() {
+    const currentYear = new Date().getFullYear();
+    const depreciation = (currentYear - this.year) * 0.1;
+    console.log(`Depreciation: ${depreciation}`);
+  }
+}
+
+const car = new Car('Tesla', 'Model S', 2020);
+car.setColor('red');
+car.saveCar();
+car.updatePrice(70000);
+car.calculateDepreciation();
+```
+
+**Problemas:** falta coesão por que a classe `car` está realizando múltiplas responsabilidades, como cálculo de depreciação e gerenciamento de preços. Há também duplicação no código por que métodos não relacionados estão centralizados em uma classe, dificultando a manutenção.
+
+---
+
+**Exemplo correto segundo clean code:**
+
+```javascript
+class Car {
+  constructor(brand, model, year) {
+    this.brand = brand;
+    this.model = model;
+    this.year = year;
+    this.color = null;
+  }
+
+  setColor(color) {
+    this.color = color;
+    return this;  // Para encadeamento de métodos
+  }
+
+  save() {
+    console.log(`Saving ${this.brand} ${this.model}`);
+    return this;
+  }
+}
+
+class CarPricing {
+  constructor(car) {
+    this.car = car;
+  }
+
+  updatePrice(price) {
+    console.log(`Updated price for ${this.car.brand} ${this.car.model} to ${price}`);
+  }
+}
+
+class DepreciationCalculator {
+  constructor(car) {
+    this.car = car;
+  }
+
+  calculate() {
+    const currentYear = new Date().getFullYear();
+    const depreciation = (currentYear - this.car.year) * 0.1;
+    console.log(`Depreciation: ${depreciation}`);
+  }
+}
+
+// Uso
+const car = new Car('Tesla', 'Model S', 2020)
+  .setColor('blue')
+  .save();
+
+const pricing = new CarPricing(car);
+pricing.updatePrice(75000);
+
+const depreciation = new DepreciationCalculator(car);
+depreciation.calculate();
+```
+
+**Melhorias:** agora o código está visando a responsabilidade única, visto que foi feito a divisão da lógica entre classes Car, CarPricing e DepreciationCalculator, cada uma focada em uma responsabilidade única. O método setColor retorna this, permitindo encadeamento de métodos. Foi utilizado composição ao invés de herança, para separar funcionalidades como cálculo de depreciação e gestão de preços.
 
 ---
 
