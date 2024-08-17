@@ -87,11 +87,83 @@ Em loops e funções, use nomes descritivos para parâmetros, evitando mapeament
 
 <h2 id="descricao"> 4. Funções</h2>
 
-Funções devem ser pequenas e focadas em fazer apenas uma coisa, mantendo a clareza e facilitando a manutenção. Idealmente, devem ter poucos parâmetros, preferencialmente zero, e evitar a complexidade de múltiplos níveis de abstração. Usar nomes descritivos ajuda a entender o código sem necessidade de comentários adicionais.
+Funções devem ser pequenas e realizar apenas uma tarefa, facilitando a compreensão e a manutenção. Elas devem ter poucos parâmetros, preferencialmente zero, e evitar múltiplos níveis de abstração. Nomes descritivos ajudam a entender o código sem precisar de comentários.
 
-Funções com um ou dois parâmetros são aceitáveis, mas, quando há mais, recomenda-se encapsulá-los em objetos. Evitar booleanos como parâmetros também é importante, pois indica que a função está fazendo mais de uma tarefa. Se necessário passar um número variável de parâmetros, listas ou varargs são preferíveis.
+Limitar o número de parâmetros é crucial para facilitar o teste e evitar complexidade. Funções com mais de dois parâmetros devem preferir objetos ou usar desestruturação para melhorar a clareza.
 
 Estruturas como switch devem ser usadas com cautela e encapsuladas em classes, enquanto blocos try/catch devem ser extraídos para manter a lógica clara. Efeitos colaterais, como modificar estados externos, devem ser evitados. Exceções são preferíveis a códigos de erro, separando o fluxo de tratamento de erros da lógica principal.
+
+Em resumo as funções devem fazer apenas uma coisa, o nome deve descrever a ação, evitar efeitos colaterais e flags como parâmetro.
+
+**Exemplo ruim:**
+```javascript
+function handleUserUpdate(user, updateType, isAdmin) {
+  if (isAdmin) {
+    if (updateType === 'password') {
+      user.password = 'newPassword123';
+      console.log(`Password updated for user: ${user.name}`);
+    } else if (updateType === 'email') {
+      user.email = 'newemail@example.com';
+      console.log(`Email updated for user: ${user.name}`);
+    }
+  } else {
+    console.log('User does not have admin privileges to update.');
+  }
+
+  if (updateType === 'notify') {
+    console.log('Sending notification to user...');
+    user.notifications.push('Notification sent!');
+  }
+}
+```
+
+**Problemas:** A função faz várias coisas (atualiza senha, email e notifica o usuário), usa isAdmin como flag, levando a múltiplos caminhos de código, tem efeitos colaterais (modifica diretamente o objeto user e seu estado), o código está duplicado na lógica de atualização e o nome não descreve claramente a ação da função.
+
+---
+
+**Jeito correto segundo clean code:**
+```javascript
+function updateUserPassword(user, newPassword) {
+  user.password = newPassword;
+  logUpdate('Password', user);
+}
+
+function updateUserEmail(user, newEmail) {
+  user.email = newEmail;
+  logUpdate('Email', user);
+}
+
+function logUpdate(updateType, user) {
+  console.log(`${updateType} updated for user: ${user.name}`);
+}
+
+function notifyUser(user) {
+  console.log('Sending notification to user...');
+  user.notifications = [...user.notifications, 'Notification sent!'];
+}
+
+function handleUserUpdate(user, updateType, isAdmin = false) {
+  if (!isAdmin) {
+    console.log('User does not have admin privileges to update.');
+    return;
+  }
+
+  switch (updateType) {
+    case 'password':
+      updateUserPassword(user, 'newPassword123');
+      break;
+    case 'email':
+      updateUserEmail(user, 'newemail@example.com');
+      break;
+    case 'notify':
+      notifyUser(user);
+      break;
+    default:
+      console.log('Invalid update type');
+  }
+}
+```
+**Melhorias:** faz apenas uma coisa por função, o nome está descritivo, sem efeitos colaterais, sem flags desnecessárias e o código duplicado foi removido.
 
 ---
 
