@@ -39,7 +39,7 @@ Não basta apenas escrever um código que funcione; é essencial mantê-lo limpo
 
 <h2 id="descricao"> 3. Nomes Significativos 🏷️</h2>
 
-Os nomes no código devem ser claros e autodescritivos, refletindo sua finalidade sem a necessidade de comentários adicionais. Bons nomes tornam o código mais legível e fácil de manter, ajudando a reduzir a complexidade. Evite nomes confusos ou que possam gerar mal-entendidos. Nomes descritivos facilitam a busca no código e previnem erros.
+Os nomes no código devem ser **claros** e **autodescritivos**, refletindo sua finalidade sem a necessidade de comentários adicionais. Bons nomes tornam o código mais legível e fácil de manter, ajudando a reduzir a complexidade. Evite nomes confusos ou que possam gerar mal-entendidos. Nomes descritivos facilitam a busca no código e previnem erros.
 
 **Exemplo ruim:**
 
@@ -73,10 +73,9 @@ function fetchData(date, numberOfRecords) {
 
 ---
 
-Além disso, nomes de classes devem ser substantivos, como Customer, enquanto métodos devem ser verbos, como save. Interfaces não precisam de prefixos desnecessários, e constantes devem substituir números "mágicos". O contexto deve ser claro, evitando prefixos redundantes.
+Além disso, nomes de classes devem ser **substantivos**, como Customer, enquanto métodos devem ser **verbos**, como save. Interfaces não precisam de prefixos desnecessários, e constantes devem substituir números "mágicos". O **contexto** deve ser claro, evitando prefixos redundantes.
 
 ```javascript
-// Exemplo claro e organizado de uma classe Address
 class Address {
   constructor(firstName, lastName, street, houseNumber, city, state, zipcode) {
     this.firstName = firstName;
@@ -98,13 +97,13 @@ console.log(address.state);
 
 <h2 id="descricao"> 4. Funções ⚙️</h2>
 
-Funções devem ser pequenas e realizar apenas uma tarefa, facilitando a compreensão e a manutenção. Elas devem ter poucos parâmetros, preferencialmente zero, e evitar múltiplos níveis de abstração. Nomes descritivos ajudam a entender o código sem precisar de comentários.
+Funções devem ser **pequenas** e realizar apenas uma tarefa, facilitando a compreensão e a manutenção. Elas devem ter poucos parâmetros, preferencialmente zero, e evitar múltiplos níveis de abstração. Nomes descritivos ajudam a entender o código sem precisar de comentários.
 
-Limitar o número de parâmetros é crucial para facilitar o teste e evitar complexidade. Funções com mais de dois parâmetros devem preferir objetos ou usar desestruturação para melhorar a clareza.
+Limitar o número de parâmetros é **crucial** para facilitar o teste e evitar complexidade. Funções com mais de dois parâmetros devem preferir objetos ou usar desestruturação para melhorar a clareza.
 
-Estruturas como switch devem ser usadas com cautela e encapsuladas em classes, enquanto blocos try/catch devem ser extraídos para manter a lógica clara. Efeitos colaterais, como modificar estados externos, devem ser evitados. Exceções são preferíveis a códigos de erro, separando o fluxo de tratamento de erros da lógica principal.
+Estruturas como switch devem ser usadas com **cautela** e encapsuladas em classes, enquanto blocos try/catch devem ser extraídos para manter a lógica clara. Efeitos colaterais, como modificar estados externos, devem ser evitados. Exceções são preferíveis a códigos de erro, separando o fluxo de tratamento de erros da lógica principal.
 
-Em resumo as funções devem fazer apenas uma coisa, o nome deve descrever a ação, evitar efeitos colaterais e flags como parâmetro.
+Em resumo as funções devem fazer **apenas uma coisa**, o nome deve descrever a ação, evitar efeitos colaterais e flags como parâmetro.
 
 **Exemplo ruim:**
 ```javascript
@@ -180,9 +179,9 @@ function handleUserUpdate(user, updateType, isAdmin = false) {
 
 <h2 id="descricao"> 5. Comentários 💬</h2>
 
-Comentários devem ser evitados sempre que o código puder ser autoexplicativo. Refatorar o código para torná-lo claro é preferível a adicionar comentários explicativos. Nomes descritivos para funções, variáveis e classes podem substituir a maioria dos comentários, tornando o código mais legível e menos propenso a se tornar desatualizado.
+Comentários devem ser **evitados** sempre que o código puder ser **autoexplicativo**. Refatorar o código para torná-lo claro é preferível a adicionar comentários explicativos. Nomes descritivos para funções, variáveis e classes podem substituir a maioria dos comentários, tornando o código mais legível e menos propenso a se tornar desatualizado.
 
-Comentários só são úteis em casos de lógica de negócio complexa ou para alertar sobre algo específico e potencialmente problemático. Comentários como TODO podem ser usados para marcar áreas que precisam de atenção futura.
+Comentários só são úteis em casos de **lógica** de negócio complexa ou para alertar sobre algo específico e potencialmente problemático. Comentários como TODO podem ser usados para marcar áreas que precisam de atenção futura.
 
 Evite manter código comentado na base de código e não registre alterações diretamente nos comentários, pois o controle de versão já lida com isso. Não use marcadores de posição, como linhas de divisão, para separar seções do código.
 
@@ -265,9 +264,9 @@ const config = {
 
 <h2 id="descricao"> 6. Formatação 🖊️</h2>
 
-A formatação é essencial para garantir um código legível e profissional. Um código bem formatado facilita a leitura, a manutenção e reflete o cuidado do desenvolvedor. Arquivos menores, bem divididos, são mais fáceis de gerenciar. Ferramentas automáticas de formatação, como linters e formatadores, são recomendadas para evitar discussões desnecessárias sobre estilo.
+A formatação é **essencial** para garantir um código legível e profissional. Um código bem formatado facilita a leitura, a manutenção e reflete o cuidado do desenvolvedor. Arquivos menores, bem divididos, são mais fáceis de gerenciar. Ferramentas automáticas de formatação, como linters e formatadores, são recomendadas para evitar discussões desnecessárias sobre estilo.
 
-Seja consistente com a capitalização em variáveis, funções e classes. Funções e chamadas de funções devem estar próximas verticalmente para facilitar a leitura, respeitando o fluxo natural de leitura de cima para baixo.
+Seja **consistente** com a capitalização em variáveis, funções e classes. Funções e chamadas de funções devem estar próximas verticalmente para facilitar a leitura, respeitando o fluxo natural de leitura de cima para baixo.
 
 **Exemplo ruim:**
 
@@ -375,11 +374,11 @@ orderManager.processOrder();
 
 <h2 id="descricao"> 7. Objetos e Estruturas de Dados 🧱</h2>
 
-Objetos expõem as ações e ocultam os dados, o que facilita a adição de novos tipos de objetos sem precisar modificar as ações existentes, mas torna mais difícil a inclusão de novas atividades em objetos já existentes. Por outro lado, estruturas de dados expõem os dados e não possuem ações significativas, facilitando a adição de novas ações às estruturas de dados existentes, mas dificultando a inclusão de novas estruturas de dados em funções existentes.
+Objetos **expõem** as ações e ocultam os dados, o que facilita a adição de novos tipos de objetos sem precisar modificar as ações existentes, mas torna mais difícil a inclusão de novas atividades em objetos já existentes. Por outro lado, estruturas de dados expõem os dados e não possuem ações significativas, facilitando a adição de novas ações às estruturas de dados existentes, mas dificultando a inclusão de novas estruturas de dados em funções existentes.
 
-Em um sistema, a escolha entre objetos e estruturas de dados depende da flexibilidade desejada. Quando se busca flexibilidade para adicionar novos tipos de dados, a opção por objetos é mais adequada. Quando a necessidade é adicionar novas ações, optar por tipos de dados e procedimentos faz mais sentido.
+Em um sistema, a escolha entre **objetos** e **estruturas de dados** depende da flexibilidade desejada. Quando se busca flexibilidade para adicionar novos tipos de dados, a opção por objetos é mais adequada. Quando a necessidade é adicionar novas ações, optar por tipos de dados e procedimentos faz mais sentido.
 
-Utilizar getters e setters em objetos é uma prática recomendada porque oferece várias vantagens, como facilitar a modificação do comportamento dos acessos aos dados sem alterar os pontos de chamada no código, permite adicionar validações ao definir valores (set), por encapsular a representação interna dos dados promove maior flexibilidade, e torna mais fácil adicionar logs e tratamentos de erros.
+Utilizar **getters** e **setters** em objetos é uma prática recomendada porque oferece várias vantagens, como facilitar a modificação do comportamento dos acessos aos dados sem alterar os pontos de chamada no código, permite adicionar validações ao definir valores (set), por encapsular a representação interna dos dados promove maior flexibilidade, e torna mais fácil adicionar logs e tratamentos de erros.
 
 **Exemplo ruim:**
 
@@ -428,9 +427,9 @@ console.log(product.getStock()); // Acesso controlado
 
 <h2 id="descricao"> 8. Tratamento de Erros 🛠️</h2>
 
-Usar exceções é preferível a retornar códigos de erro ou null, pois facilita a identificação e o tratamento de problemas. Exceções tornam o código mais legível e robusto, separando a lógica principal do tratamento de erros. Evitar o uso de null como retorno ou argumento é crucial para prevenir erros inesperados, e o uso de objetos de caso especial pode eliminar a necessidade de verificações constantes de null.
+Usar exceções é **preferível** a retornar códigos de erro ou null, pois facilita a identificação e o tratamento de problemas. Exceções tornam o código mais legível e robusto, separando a lógica principal do tratamento de erros. Evitar o uso de null como retorno ou argumento é crucial para prevenir erros inesperados, e o uso de objetos de caso especial pode eliminar a necessidade de verificações constantes de null.
 
-Sempre trate erros capturados em try/catch com ações concretas, como logar adequadamente, notificar o usuário ou enviar relatórios para serviços de monitoramento. Não ignore promessas rejeitadas em código assíncrono.
+Sempre trate erros capturados em try/catch com ações concretas, como **logar** adequadamente, notificar o usuário ou enviar relatórios para serviços de monitoramento. Não ignore promessas rejeitadas em código assíncrono.
 
 **Exemplo ruim:**
 ```javascript
@@ -507,7 +506,7 @@ try {
 
 <h2 id="descricao"> 9. Limites 🚧</h2>
 
-Ao integrar bibliotecas de terceiros, é importante entender seu funcionamento por meio de "testes de aprendizagem". Esses testes permitem explorar o comportamento da API sem comprometer a lógica principal da aplicação. Uma vez que a funcionalidade é compreendida, encapsule o uso da biblioteca em funções ou classes reutilizáveis para manter a configuração centralizada e clara.
+Ao integrar bibliotecas de **terceiros**, é importante entender seu funcionamento por meio de "testes de aprendizagem". Esses testes permitem explorar o comportamento da API sem comprometer a lógica principal da aplicação. Uma vez que a funcionalidade é compreendida, encapsule o uso da biblioteca em funções ou classes reutilizáveis para manter a configuração centralizada e clara.
 
 **Exemplo ruim:**
 
@@ -598,9 +597,9 @@ logger.info('Logger pronto para uso na aplicação.');
 
 <h2 id="descricao"> 10. Testes de Unidade ✅</h2>
 
-Testes de unidade são essenciais para garantir que o código de produção seja flexível e fácil de modificar. Testes claros e bem escritos permitem que os desenvolvedores façam mudanças com confiança, sabendo que erros serão detectados rapidamente. Para manter a qualidade, os testes devem ser rápidos, independentes, repetíveis, autovalidados e escritos no momento certo.
+Testes de unidade são **essenciais** para garantir que o código de produção seja flexível e fácil de modificar. Testes claros e bem escritos permitem que os desenvolvedores façam mudanças com confiança, sabendo que erros serão detectados rapidamente. Para manter a qualidade, os testes devem ser rápidos, independentes, repetíveis, autovalidados e escritos no momento certo.
 
-Além disso, cada teste deve se focar em um conceito por vez, evitando código duplicado ou complexidade desnecessária.
+Além disso, **cada teste** deve se focar em um conceito por vez, evitando código duplicado ou complexidade desnecessária.
 
 **Exemplo ruim:**
 
@@ -694,7 +693,7 @@ async function fetchInventory() {
 
 <h2 id="descricao"> 11. Classes 🏛️</h2>
 
-Classes devem ser pequenas, focadas em uma única responsabilidade e coesas, seguindo o Princípio da Responsabilidade Única (SRP). Isso facilita a manutenção e evita a necessidade de modificações frequentes. Organize métodos relacionados próximos uns dos outros e prefira composição sobre herança, sempre que possível. Além disso, utilize padrões de design como injeção de dependência e o princípio do aberto/fechado para criar classes extensíveis sem a necessidade de alterar código existente.
+Classes devem ser **pequenas**, focadas em uma única responsabilidade e coesas, seguindo o **Princípio da Responsabilidade Única (SRP)**. Isso facilita a manutenção e evita a necessidade de modificações frequentes. Organize métodos relacionados próximos uns dos outros e prefira composição sobre herança, sempre que possível. Além disso, utilize padrões de design como **injeção de dependência** e o princípio do aberto/fechado para criar classes extensíveis sem a necessidade de alterar código existente.
 
 **Exemplo ruim:**
 
@@ -802,11 +801,11 @@ depreciation.calculate();
 > "Complexidade mata. Ela suga a vida dos desenvolvedores, dificulta o planejamento, a construção e o teste dos produtos”.
 > —Ray Ozzie, CTO, Microsoft Corporation
 
-Assim como na construção de uma cidade, em software devemos dividir responsabilidades entre diferentes módulos e classes, mantendo a complexidade sob controle. Isso facilita o desenvolvimento, manutenção e evolução do sistema. A separação entre a construção de objetos e o uso do sistema é essencial. A inicialização e configuração de dependências devem ficar em uma camada externa, geralmente no arquivo principal (main), que instanciará os objetos e passará as dependências, desacoplando a lógica de negócio da lógica de construção.
+Assim como na construção de uma cidade, em software devemos **dividir responsabilidades** entre diferentes módulos e classes, mantendo a complexidade sob controle. Isso facilita o desenvolvimento, manutenção e evolução do sistema. A separação entre a construção de objetos e o uso do sistema é essencial. A inicialização e configuração de dependências devem ficar em uma camada externa, geralmente no arquivo principal (main), que instanciará os objetos e passará as dependências, desacoplando a lógica de negócio da lógica de construção.
 
-Injeção de Dependência (DI) é uma técnica útil para desacoplar componentes, permitindo maior flexibilidade e testabilidade. Com DI, as dependências são passadas para as classes via construtores ou setters, em vez de serem criadas internamente, facilitando a reutilização do código.
+**Injeção de Dependência (DI)** é uma técnica útil para desacoplar componentes, permitindo maior flexibilidade e testabilidade. Com DI, as dependências são passadas para as classes via construtores ou setters, em vez de serem criadas internamente, facilitando a reutilização do código.
 
-A evolução do sistema deve ser incremental. Inicie com uma arquitetura mínima e refatore conforme novas funcionalidades são adicionadas, seguindo os princípios ágeis. Padrões como Factory e DI são úteis para tornar o código modular e fácil de manter, mas devem ser usados com moderação, apenas quando trazem valor real ao projeto.
+A evolução do sistema deve ser **incremental**. Inicie com uma arquitetura mínima e refatore conforme novas funcionalidades são adicionadas, seguindo os princípios ágeis. Padrões como Factory e DI são úteis para tornar o código modular e fácil de manter, mas devem ser usados com moderação, apenas quando trazem valor real ao projeto.
 
 **Exemplo ruim:**
 
@@ -887,7 +886,7 @@ order.processOrder();
 
 <h2 id="descricao"> 13. Emergência 🚨</h2>
 
-Seguir regras simples pode ajudar a criar bons designs de software. Kent Beck sugere as Quatro Regras do Projeto Simples para auxiliar no desenvolvimento de projetos claros e eficazes:
+Seguir regras simples pode ajudar a criar bons designs de software. Kent Beck sugere as **Quatro Regras do Projeto Simples** para auxiliar no desenvolvimento de projetos claros e eficazes:
 
 - **Efetuar todos os testes:** O código deve funcionar conforme o esperado. Ter um sistema testável força o desenvolvedor a criar classes pequenas e com uma única responsabilidade, facilitando o uso de princípios como SRP e DIP.
 
@@ -960,11 +959,11 @@ class ImageProcessor {
 
 <h2 id="descricao"> 14. Concorrência ⚡</h2>
 
-Escrever programas concorrentes limpos é um desafio. Concorrência ajuda a desacoplar a execução de tarefas, mas requer cuidados extras com bugs difíceis de reproduzir, como deadlocks e race conditions.
+Escrever programas **concorrentes limpos** é um **desafio**. Concorrência ajuda a desacoplar a execução de tarefas, mas requer cuidados extras com bugs difíceis de reproduzir, como deadlocks e race conditions.
 
-Concorrência não sempre melhora o desempenho. Ela funciona bem apenas em casos onde há longas esperas ou ociosidade de processadores. Além disso, o design de projetos concorrentes frequentemente exige uma abordagem diferente, desacoplando o "o que" do "quando." Mesmo com ferramentas como Web containers, é fundamental entender as questões de concorrência para evitar deadlocks e garantir integridade.
+Concorrência *nem sempre* melhora o desempenho. Ela **funciona bem** apenas em casos onde há longas esperas ou ociosidade de processadores. Além disso, o design de projetos concorrentes frequentemente exige uma abordagem diferente, desacoplando o "o que" do "quando." Mesmo com ferramentas como Web containers, é fundamental entender as questões de concorrência para evitar deadlocks e garantir integridade.
 
-É mais eficiente usar Promessas em vez de callbacks, que criam complexidade e aninhamentos excessivos. Promessas simplificam o tratamento de erros e tornam o código mais legível. Além disso, o uso de async/await no ES2017/ES8 oferece uma maneira ainda mais clara e imperativa de lidar com tarefas assíncronas, eliminando a necessidade de encadeamentos longos de .then().
+É mais eficiente usar **Promessas** em vez de **callbacks**, que criam complexidade e aninhamentos excessivos. Promessas simplificam o tratamento de erros e tornam o código mais legível. Além disso, o uso de async/await no ES2017/ES8 oferece uma maneira ainda mais clara e imperativa de lidar com tarefas assíncronas, eliminando a necessidade de encadeamentos longos de .then().
 
 **Exemplo ruim:**
 
