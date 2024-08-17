@@ -24,6 +24,7 @@
   <a href="#descricao">11. Classes</a><br>
   <a href="#descricao">12. Sistemas</a><br>
   <a href="#descricao">13. Emergência</a><br>
+  <a href="#descricao">14. Concorrência</a><br>
 </p>
 
 ---
@@ -945,5 +946,61 @@ class ImageProcessor {
 ```
 
 **Melhorias:** A lógica de substituição de imagem foi movida para o método replaceImage, eliminando duplicação. Funções são menores e focadas, tornando o código mais legível e claro, trazendo Expressividade.
+
+---
+
+<h2 id="descricao"> 14. Concorrência</h2>
+
+Escrever programas concorrentes limpos é um desafio. Concorrência ajuda a desacoplar a execução de tarefas, mas requer cuidados extras com bugs difíceis de reproduzir, como deadlocks e race conditions.
+
+Concorrência não sempre melhora o desempenho. Ela funciona bem apenas em casos onde há longas esperas ou ociosidade de processadores. Além disso, o design de projetos concorrentes frequentemente exige uma abordagem diferente, desacoplando o "o que" do "quando." Mesmo com ferramentas como Web containers, é fundamental entender as questões de concorrência para evitar deadlocks e garantir integridade.
+
+É mais eficiente usar Promessas em vez de callbacks, que criam complexidade e aninhamentos excessivos. Promessas simplificam o tratamento de erros e tornam o código mais legível. Além disso, o uso de async/await no ES2017/ES8 oferece uma maneira ainda mais clara e imperativa de lidar com tarefas assíncronas, eliminando a necessidade de encadeamentos longos de .then().
+
+**Exemplo ruim:**
+
+```javascript
+import { get } from 'request';
+import { writeFile } from 'fs';
+
+get('https://api.exemplo.com/dados', (err, response) => {
+  if (err) {
+    console.error(err);
+  } else {
+    writeFile('dados.json', response.body, (writeErr) => {
+      if (writeErr) {
+        console.error(writeErr);
+      } else {
+        console.log('Arquivo salvo');
+      }
+    });
+  }
+});
+```
+
+**Problemas:** Esse código apresenta callbacks aninhados, que aumentam a complexidade, e o tratamento de erros é disperso, dificultando a leitura e manutenção.
+
+---
+
+**Exemplo correto segundo clean code:**
+
+```javascript
+import { get } from 'request-promise';
+import { writeFile } from 'fs-promise';
+
+async function fetchAndSaveData() {
+  try {
+    const response = await get('https://api.exemplo.com/dados');
+    await writeFile('dados.json', response);
+    console.log('Arquivo salvo');
+  } catch (err) {
+    console.error('Erro ao processar dados:', err);
+  }
+}
+
+fetchAndSaveData();
+```
+
+**Melhorias:** O uso de async/await simplifica a lógica, removendo o aninhamento, e centraliza o tratamento de erros no bloco try/catch, o que facilita o controle e a depuração.
 
 ---
