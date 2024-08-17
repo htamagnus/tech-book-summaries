@@ -22,6 +22,7 @@
   <a href="#descricao">9. Limites</a><br>
   <a href="#descricao">10. Testes de Unidade</a><br>
   <a href="#descricao">11. Classes</a><br>
+  <a href="#descricao">12. Sistemas</a><br>
 </p>
 
 ---
@@ -366,3 +367,55 @@ Para manter o código mais isolado de alterações, o uso de interfaces ou class
 
 ---
 
+<h2 id="descricao"> 12. Sistemas </h2>
+
+> "Complexidade mata. Ela suga a vida dos desenvolvedores, dificulta o planejamento, a construção e o teste dos produtos”.
+> —Ray Ozzie, CTO, Microsoft Corporation
+
+Assim como na analogia de construir uma cidade, onde diferentes equipes gerenciam partes específicas, em software, devemos dividir responsabilidades entre diferentes módulos e classes. Essa abordagem modular facilita o desenvolvimento, manutenção e crescimento do sistema.
+
+Em JavaScript, é importante separar a construção dos objetos e o uso do sistema. Uma boa prática é mover a inicialização e configuração de dependências para uma camada externa, geralmente o arquivo principal (main) ou uma função de inicialização. Esse arquivo é responsável por instanciar objetos e passar dependências para o restante do sistema, mantendo o código de lógica de negócios separado da lógica de inicialização.
+
+Um exemplo seria usar um factory para criar objetos, em vez de instanciá-los diretamente no código principal. Isso mantém o sistema desacoplado dos detalhes de implementação da construção dos objetos, permitindo mais flexibilidade. Exemplo:
+
+```javascript
+class LineItem {
+  constructor(product, quantity) {
+    this.product = product;
+    this.quantity = quantity;
+  }
+}
+
+class Order {
+  constructor() {
+    this.items = [];
+  }
+
+  addItem(item) {
+    this.items.push(item);
+  }
+}
+
+class LineItemFactory {
+  create(product, quantity) {
+    return new LineItem(product, quantity);
+  }
+}
+
+// No main, fazemos a separação
+const factory = new LineItemFactory();
+const order = new Order();
+order.addItem(factory.create('Product A', 10));
+```
+
+Nesse exemplo, a responsabilidade de criar LineItem foi movida para LineItemFactory, separando a lógica de criação da lógica de uso no Order.
+
+---
+
+A Injeção de Dependência (DI) é uma técnica poderosa para desacoplar dependências. Em JavaScript, frameworks como NestJS e InversifyJS suportam DI nativamente, mas também podemos implementá-la manualmente. O DI permite que as dependências sejam passadas para uma classe por meio de seu construtor ou setters, em vez de serem criadas dentro da própria classe, promovendo flexibilidade e testabilidade.
+
+Sistemas podem começar simples e crescer conforme as necessidades mudam. No início, podemos adotar uma arquitetura mínima e aumentar a complexidade conforme a demanda cresce. Essa prática segue a filosofia ágil de desenvolver **iterativamente**, refatorando e melhorando o sistema à medida que novas funcionalidades são adicionadas. O objetivo é implementar apenas o que é necessário hoje, sabendo que refatorações farão parte do processo de crescimento.
+
+Padrões como Factory e Dependency Injection são amplamente usados porque facilitam a reutilização e a manutenção do código. No entanto, é importante usá-los quando trazem valor real ao projeto. Não devemos adotar padrões complexos apenas por serem populares, mas sim quando eles simplificam a implementação ou oferecem vantagens claras para o sistema.
+
+---
