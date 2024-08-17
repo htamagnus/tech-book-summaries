@@ -121,7 +121,7 @@ function handleUserUpdate(user, updateType, isAdmin) {
 
 ---
 
-**Jeito correto segundo clean code:**
+**Exemplo correto segundo clean code:**
 ```javascript
 function updateUserPassword(user, newPassword) {
   user.password = newPassword;
@@ -223,7 +223,7 @@ const config = {
 
 ---
 
-**Jeito correto segundo clean code:**
+**Exemplo correto segundo clean code:**
 ```javascript
 function calculateHash(data) {
   let hash = 0;
@@ -310,7 +310,7 @@ orderManager.processOrder();
 
 ---
 
-**Jeito correto segundo clean code:**
+**Exemplo correto segundo clean code:**
 ```javascript
 const ITEMS_IN_CART = 3;
 const ITEMS_IN_STOCK = 50;
@@ -383,7 +383,7 @@ const product = createProduct();
 product.stock = 50; // Modificação direta
 ```
 
-**Jeito correto segundo clean code:**
+**Exemplo correto segundo clean code:**
 ```javascript
 function createProduct() {
   // Propriedade privada
@@ -459,7 +459,7 @@ try {
 
 ---
 
-**Jeito correto segundo clean code:**
+**Exemplo correto segundo clean code:**
 ```javascript
 function processOrder(order) {
   const customer = getCustomer(order.id) || new NullCustomer();
@@ -527,7 +527,7 @@ anotherLogger.debug('Outro logger sem configuração centralizada.');
 
 ---
 
-**Jeito correto segundo clean code:**
+**Exemplo correto segundo clean code:**
 
 ```javascript
 const winston = require('winston');
@@ -587,25 +587,97 @@ logger.info('Logger pronto para uso na aplicação.');
 
 <h2 id="descricao"> 10. Testes de Unidade </h2>
 
-Os testes de unidade bem escritos e mantidos são a chave para manter o código de produção flexível e fácil de modificar. Testes robustos permitem que os desenvolvedores façam alterações no código com confiança, sabendo que qualquer erro será rapidamente detectado. Isso, por sua vez, facilita a manutenção da arquitetura do código e permite melhorias contínuas.
+Testes de unidade são essenciais para garantir que o código de produção seja flexível e fácil de modificar. Testes claros e bem escritos permitem que os desenvolvedores façam mudanças com confiança, sabendo que erros serão detectados rapidamente. Para manter a qualidade, os testes devem ser rápidos, independentes, repetíveis, autovalidados e escritos no momento certo.
 
-A qualidade mais importante em um teste é a legibilidade. Testes legíveis são claros, simples e consistentes, facilitando a compreensão e a manutenção. A clareza e a simplicidade nos testes permitem que eles transmitam seu propósito de forma direta, sem sobrecarregar o leitor com detalhes desnecessários.
+Além disso, cada teste deve se focar em um conceito por vez, evitando código duplicado ou complexidade desnecessária.
 
-Considere testes que têm código duplicado ou excesso de detalhes que obscurecem o objetivo do teste. Um exemplo típico seria testes com muitas chamadas repetidas ou detalhes que não contribuem para a compreensão do teste. Refatorar esses testes para eliminar duplicação e tornar a intenção mais clara é essencial para manter a qualidade.
+**Exemplo ruim:**
 
----
+```javascript
+import assert from 'assert';
 
-Os testes limpos seguem cinco princípios essenciais:
+describe('InventoryManager', () => {
+  it('handles item stock and pricing', () => {
+    let item = new InventoryManager('Laptop');
+    item.addStock(50);
+    assert.equal(item.getStock(), 50);
 
-- Rápidos (Fast): Devem ser rápidos para incentivar execuções frequentes e detecção precoce de problemas.
+    item.setPrice(1200);
+    assert.equal(item.getPrice(), 1200);
 
-- Independentes (Independent): Devem rodar de forma independente, sem depender de outros testes.
+    item = new InventoryManager('Smartphone');
+    item.addStock(30);
+    assert.equal(item.getStock(), 30);
 
-- Repetíveis (Repeatable): Precisam ser repetíveis em qualquer ambiente, garantindo consistência nos resultados.
+    item.setPrice(800);
+    assert.equal(item.getPrice(), 800);
+  });
+});
 
-- Autovalidados (Self-Validating): Devem retornar um resultado claro (passou/falhou) sem necessidade de verificação manual.
+import { get } from 'request';
+import { writeFile } from 'fs';
 
-- Pontuais (Timely): Devem ser escritos no momento certo, de preferência antes do código de produção, para garantir testabilidade.
+get('https://api.shop.com/inventory', (requestErr, response) => {
+  if (requestErr) {
+    console.error(requestErr);
+  } else {
+    writeFile('inventory.json', response.body, (writeErr) => {
+      if (writeErr) {
+        console.error(writeErr);
+      } else {
+        console.log('File written');
+      }
+    });
+  }
+});
+```
+**Problemas:** os testes estão complexos por que possuem vários conceitos testados na mesma função, como estoque e preço. O código também está aninhado e difícil de manter com callbacks.
+
+**Exemplo correto segundo clean code:**
+```javascript
+import assert from 'assert';
+
+describe('InventoryManager', () => {
+  it('handles item stock', () => {
+    const item = new InventoryManager('Laptop');
+    item.addStock(50);
+    assert.equal(item.getStock(), 50);
+  });
+
+  it('handles item pricing', () => {
+    const item = new InventoryManager('Laptop');
+    item.setPrice(1200);
+    assert.equal(item.getPrice(), 1200);
+  });
+
+  it('handles different items stock', () => {
+    const item = new InventoryManager('Smartphone');
+    item.addStock(30);
+    assert.equal(item.getStock(), 30);
+  });
+
+  it('handles different items pricing', () => {
+    const item = new InventoryManager('Smartphone');
+    item.setPrice(800);
+    assert.equal(item.getPrice(), 800);
+  });
+});
+
+import { get } from 'request-promise';
+import { writeFile } from 'fs-promise';
+
+async function fetchInventory() {
+  try {
+    const response = await get('https://api.shop.com/inventory');
+    await writeFile('inventory.json', response);
+    console.log('File written');
+  } catch (err) {
+    console.error(err);
+  }
+}
+```
+
+**Melhorias:** os testes estão agora divididos por conceitos e foi simplificado com async/await, eliminando aninhamento de callbacks e melhorando a legibilidade.
 
 ---
 
