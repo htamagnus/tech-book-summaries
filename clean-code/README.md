@@ -25,7 +25,7 @@
   <a href="#sistemas">12. Sistemas 🖥️</a><br>
   <a href="#emergencia">13. Emergência 🚨</a><br>
   <a href="#concorrencia">14. Concorrência ⚡</a><br>
-  <a href="#resumao">15. Resumão</a><br>
+  <a href="#resumao">15. Resumão 📚✨</a><br>
 </p>
 
 ---
@@ -1022,7 +1022,7 @@ fetchAndSaveData();
 
 ---
 
-<h2 id="resumao"> 15. Resumão </h2>
+<h2 id="resumao"> 15. Resumão 📚✨</h2>
 
 1. **Código Limpo 🧹:** Incentiva que o código seja continuamente melhorado, fazendo pequenas mudanças como renomear variáveis ou simplificar funções, e mantendo o código organizado.
 
