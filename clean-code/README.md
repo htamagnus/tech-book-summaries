@@ -496,18 +496,43 @@ try {
 
 <h2 id="descricao"> 9. Limites </h2>
 
-Quando usamos bibliotecas de terceiros, é essencial entender como elas funcionam e como podemos integrá-las de forma eficaz ao nosso código. Em vez de apenas ler a documentação ou tentar integrar o código diretamente, podemos criar "testes de aprendizagem" para explorar o comportamento dessas APIs e entender melhor como elas funcionam.
+Ao integrar bibliotecas de terceiros, é importante entender seu funcionamento por meio de "testes de aprendizagem". Esses testes permitem explorar o comportamento da API sem comprometer a lógica principal da aplicação. Uma vez que a funcionalidade é compreendida, encapsule o uso da biblioteca em funções ou classes reutilizáveis para manter a configuração centralizada e clara.
 
-**Exemplo de Teste de Aprendizagem:**
-
-Suponha que queremos usar a biblioteca winston para logging. Podemos começar criando um teste simples para verificar se a configuração básica funciona conforme esperado.
-
-**Teste Inicial:**
+**Exemplo ruim:**
 
 ```javascript
 const winston = require('winston');
 
-// Teste simples para verificar o funcionamento básico do logger
+// Tentativa direta de uso da biblioteca sem testes ou estrutura clara
+const logger = winston.createLogger({
+    level: 'info',
+    transports: [
+        new winston.transports.Console()
+    ]
+});
+
+logger.info('Logging direto sem testes.');
+
+const anotherLogger = winston.createLogger({
+    level: 'debug',
+    transports: [
+        new winston.transports.Console()
+    ]
+});
+
+anotherLogger.debug('Outro logger sem configuração centralizada.');
+```
+
+**Problemas:** Uso direto da biblioteca sem testes para entender o comportamento, duplicação de código ao criar outro logger com configuração similar e configuração não centralizada, tornando o código mais difícil de manter e modificar.
+
+---
+
+**Jeito correto segundo clean code:**
+
+```javascript
+const winston = require('winston');
+
+// Teste de aprendizado para explorar a biblioteca de logging
 function testLogCreate() {
     const logger = winston.createLogger({
         level: 'info',
@@ -515,17 +540,9 @@ function testLogCreate() {
             new winston.transports.Console()
         ]
     });
-
-    logger.info('hello');
+    logger.info('Testando logger básico');
 }
 
-testLogCreate();
-
-```
-
-Após verificar que o logger básico funciona, podemos testar outras configurações, como formatos personalizados de saída:
-
-```javascript
 function testLogWithCustomFormat() {
     const logger = winston.createLogger({
         level: 'info',
@@ -540,16 +557,10 @@ function testLogWithCustomFormat() {
             new winston.transports.Console()
         ]
     });
-
-    logger.info('hello with custom format');
+    logger.info('Testando logger com formato personalizado');
 }
 
-testLogWithCustomFormat();
-```
-
-Depois de explorar e aprender como a biblioteca funciona, podemos encapsular esse conhecimento em uma função ou classe para uso em toda a aplicação, mantendo a lógica de configuração separada e reutilizável:
-
-```javascript
+// Centralizando a criação de loggers para uso em toda a aplicação
 function createLogger() {
     return winston.createLogger({
         level: 'info',
@@ -567,8 +578,10 @@ function createLogger() {
 }
 
 const logger = createLogger();
-logger.info('Logger is ready to use across the application.');
+logger.info('Logger pronto para uso na aplicação.');
 ```
+
+**Melhorias:** Foram criados testes para entender o comportamento do logger antes da implementação definitiva, a criação do logger foi centralizada em uma função, eliminando a duplicação e facilitando a manutenção e a função createLogger permite a reutilização da lógica de configuração em toda a aplicação.
 
 ---
 
