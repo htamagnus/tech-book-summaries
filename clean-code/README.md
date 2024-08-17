@@ -158,6 +158,50 @@ Objetos expõem as ações e ocultam os dados, o que facilita a adição de novo
 
 Em um sistema, a escolha entre objetos e estruturas de dados depende da flexibilidade desejada. Quando se busca flexibilidade para adicionar novos tipos de dados, a opção por objetos é mais adequada. Quando a necessidade é adicionar novas ações, optar por tipos de dados e procedimentos faz mais sentido.
 
+Utilizar getters e setters em objetos é uma prática recomendada porque oferece várias vantagens, como facilitar a modificação do comportamento dos acessos aos dados sem alterar os pontos de chamada no código, permite adicionar validações ao definir valores (set), por encapsular a representação interna dos dados promove maior flexibilidade, e torna mais fácil adicionar logs e tratamentos de erros.
+
+Exemplo ruim:
+```javascript
+function createProduct() {
+  return {
+    stock: 0, // Propriedade pública
+  };
+}
+
+const product = createProduct();
+product.stock = 50; // Modificação direta
+```
+
+Jeito correto segundo clean code:
+```javascript
+function createProduct() {
+  // Propriedade privada
+  let stock = 0;
+
+  // Getter para acessar o estoque
+  function getStock() {
+    return stock;
+  }
+
+  // Setter para modificar o estoque, com validação
+  function setStock(quantity) {
+    if (quantity < 0) {
+      throw new Error("A quantidade de estoque não pode ser negativa");
+    }
+    stock = quantity;
+  }
+
+  return {
+    getStock,
+    setStock,
+  };
+}
+
+const product = createProduct();
+product.setStock(50); // Modificação controlada
+console.log(product.getStock()); // Acesso controlado
+```
+
 ---
 
 <h2 id="descricao"> 8. Tratamento de Erro </h2>
