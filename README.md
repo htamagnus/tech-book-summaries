@@ -18,7 +18,7 @@
   
   - [Desconstruindo a Web: As tecnologias por trás de uma requisição 🔍](desconstruindo-a-web/README.md)
   - [Scrum 360: Um guia completo e prático de agilidade ⚙️](scrum-360/README.md)
-  - [Código limpo: Habilidades Práticas de Agile Software](clean-code/README.md)
+  - [Código limpo: Habilidades Práticas de Agile Software 🧹](clean-code/README.md)
 
 </p>
 

@@ -1,4 +1,4 @@
-<h1 align="center" style="font-weight: bold;">Código limpo: Habilidades Práticas de Agile Software</h1>
+<h1 align="center" style="font-weight: bold;">Código limpo: Habilidades Práticas de Agile Software 🧹</h1>
 
 <div align="center">
   
