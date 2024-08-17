@@ -21,6 +21,7 @@
   <a href="#descricao">8. Tratamento de Erro</a><br>
   <a href="#descricao">9. Limites</a><br>
   <a href="#descricao">10. Testes de Unidade</a><br>
+  <a href="#descricao">11. Classes</a><br>
 </p>
 
 ---
@@ -92,35 +93,11 @@ Evite adicionar contextos desnecessários aos nomes no seu código. Por exemplo,
 
 <h2 id="descricao"> 4. Funções</h2>
 
-1. **Funções Pequenas:** Funções devem ser pequenas, idealmente com poucas linhas. Funções menores são mais fáceis de entender e manter.
+Funções devem ser pequenas e focadas em fazer apenas uma coisa, mantendo a clareza e facilitando a manutenção. Idealmente, devem ter poucos parâmetros, preferencialmente zero, e evitar a complexidade de múltiplos níveis de abstração. Usar nomes descritivos ajuda a entender o código sem necessidade de comentários adicionais.
 
-2. **Blocos e Indentação:** Blocos de código dentro de estruturas como if, else, e while devem conter apenas uma linha, preferencialmente uma chamada de função. Isso mantém a função pequena e permite usar nomes descritivos.
+Funções com um ou dois parâmetros são aceitáveis, mas, quando há mais, recomenda-se encapsulá-los em objetos. Evitar booleanos como parâmetros também é importante, pois indica que a função está fazendo mais de uma tarefa. Se necessário passar um número variável de parâmetros, listas ou varargs são preferíveis.
 
-3. **Faça Apenas Uma Coisa:** Cada função deve fazer apenas uma coisa. Se você pode extrair outra função a partir do nome, a função original está fazendo mais de uma coisa.
-
-4. **Um Nível de Abstração por Função:** Funções devem operar em um único nível de abstração. Misturar níveis de abstração dentro de uma função cria confusão e dificulta a leitura do código.
-
-5. **Regra Decrescente:** O código deve ser lido de cima para baixo, como uma narrativa, onde cada função chama a próxima no nível de abstração seguinte, facilitando a compreensão.
-
-6. **Instruções Switch:** Estruturas switch são difíceis de manter pequenas e focadas. Devem ser usadas com cautela, preferencialmente encapsuladas em classes de baixo nível e evitadas em favor do polimorfismo.
-
-7. **Use Nomes Descritivos:** Funções devem ter nomes descritivos que expliquem exatamente o que fazem. Nomes longos e claros são preferíveis a curtos e enigmáticos. Bons nomes ajudam a entender o código sem a necessidade de comentários extensos.
-
-8. **Parâmetros de Funções:** A quantidade ideal de parâmetros para uma função é zero. Funções com um ou dois parâmetros são aceitáveis, mas três ou mais devem ser evitados devido à complexidade de testes e entendimento.
-
-9. **Formas Mônades Comuns:** Funções com um único parâmetro (mônades) geralmente fazem uma pergunta sobre o parâmetro (e.g., fileExists("MyFile")) ou o transformam em outra coisa (e.g., fileOpen("MyFile")). Nomes de funções devem deixar clara essa distinção. Evite funções com parâmetros de saída; prefira retornar o valor modificado.
-
-10. **Parâmetros Lógicos:** Evite usar booleanos como parâmetros, pois isso indica que a função faz mais de uma coisa, o que pode ser confuso. Em vez disso, divida a função em duas, cada uma tratando um caso específico.
-
-11. **Objetos como Parâmetros:** Quando uma função precisa de mais de dois ou três parâmetros, considere encapsulá-los em um objeto. Isso não apenas reduz a complexidade da função, mas também agrupa parâmetros relacionados em uma única entidade, tornando o código mais claro.
-
-12. **Listas como Parâmetros:** Quando é necessário passar um número variável de parâmetros, use listas ou varargs. Isso ainda mantém as regras para mônades, díades e tríades aplicáveis, sem sobrecarregar a função com muitos parâmetros.
-
-13. **Evite Efeitos Colaterais:** Funções devem fazer apenas o que o nome indica. Efeitos colaterais, como alterar o estado de variáveis externas ou iniciar sessões, criam dependências inesperadas e confusão. Funções devem ser focadas e livres de ações ocultas.
-
-14. **Prefira Exceções a Códigos de Erro:** Usar exceções em vez de retornar códigos de erro mantém o código limpo e evita estruturas aninhadas complexas. O tratamento de erros fica separado do fluxo normal de execução, melhorando a clareza.
-
-15. **Extraia Blocos Try/Catch:** Blocos try/catch podem confundir a lógica do código se misturados com o processamento normal. Extraia-os para funções separadas para isolar o tratamento de erros, tornando o código mais legível e fácil de manter.
+Estruturas como switch devem ser usadas com cautela e encapsuladas em classes, enquanto blocos try/catch devem ser extraídos para manter a lógica clara. Efeitos colaterais, como modificar estados externos, devem ser evitados. Exceções são preferíveis a códigos de erro, separando o fluxo de tratamento de erros da lógica principal.
 
 ---
 
@@ -376,3 +353,5 @@ Os testes limpos seguem cinco princípios essenciais:
 - Pontuais (Timely): Devem ser escritos no momento certo, de preferência antes do código de produção, para garantir testabilidade.
 
 ---
+
+<h2 id="descricao"> 11. Classes </h2>
