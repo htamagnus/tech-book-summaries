@@ -169,43 +169,86 @@ function handleUserUpdate(user, updateType, isAdmin = false) {
 
 <h2 id="descricao"> 5. Comentários</h2>
 
-Comentários são uma forma de compensar a falta de clareza no código. No entanto, idealmente, o código deve ser tão claro que comentários se tornem desnecessários. Comentários podem se tornar desatualizados e enganosos, enquanto o código em si é a fonte mais confiável de verdade sobre o que o software faz.
+Comentários devem ser evitados sempre que o código puder ser autoexplicativo. Refatorar o código para torná-lo claro é preferível a adicionar comentários explicativos. Nomes descritivos para funções, variáveis e classes podem substituir a maioria dos comentários, tornando o código mais legível e menos propenso a se tornar desatualizado.
 
-Comentários muitas vezes são usados para explicar código confuso ou mal estruturado. Em vez de adicionar um comentário, é melhor refatorar o código para que ele seja autoexplicativo.
+Comentários só são úteis em casos de lógica de negócio complexa ou para alertar sobre algo específico e potencialmente problemático. Comentários como TODO podem ser usados para marcar áreas que precisam de atenção futura.
 
-Comentários que fornecem informações básicas podem ser úteis, mas muitas vezes podem ser substituídos por bons nomes de funções ou variáveis. Exemplo:
+Evite manter código comentado na base de código e não registre alterações diretamente nos comentários, pois o controle de versão já lida com isso. Não use marcadores de posição, como linhas de divisão, para separar seções do código.
 
-```javascript
-// Retorna uma instância do Responder sendo testado
-function getResponderInstance() {
-}
-```
-
-Como melhorar:
+**Exemplo ruim:**
 
 ```javascript
-function getResponderBeingTested() {
+function calculateHash(data) {
+  // Cria uma hash
+  let hash = 0;
+
+  // Comprimento da string
+  const length = data.length;
+
+  // Loop em cada caractere
+  for (let i = 0; i < length; i++) {
+    // Pega o código do caractere
+    const char = data.charCodeAt(i);
+    // Gera a hash
+    hash = ((hash << 5) - hash) + char;
+    // Converte para inteiro 32-bit
+    hash &= hash;
+  }
+
+  // TODO: adicionar suporte a outras codificações
+  return hash;
 }
+
+// doSomeWork();
+// doOtherStuff();  // código desnecessário comentado
+
+/**
+ * 2023-08-17: Adicionada função de hash (TS)
+ * 2023-07-22: Melhorada função de hash (JP)
+ */
+function combine(a, b) {
+  return a + b;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Configuração inicial do sistema
+////////////////////////////////////////////////////////////////////////////////
+const config = {
+  retries: 5,
+  timeout: 2000
+};
 ```
+**Problemas:** comentários explicando o óbvio (como "Cria uma hash"), código comentado deixado na base de código, registro de alterações desnecessário e marcadores de posição sem valor real
+
 
 ---
 
-Às vezes, comentários são necessários para alertar sobre consequências específicas de uma função ou bloco de código. Esse tipo de comentário avisa aos desenvolvedores sobre potenciais problemas, como a longa duração de um teste.
-
-Comentários `TODO` são úteis para marcar partes do código que precisam ser revisadas ou completadas no futuro. Esses comentários indicam claramente que algo precisa ser feito, e as IDEs modernas podem rastrear esses TODOs para garantir que não sejam esquecidos.
-
-Use comentários para destacar a importância de certos detalhes que podem parecer triviais, mas são cruciais para o funcionamento correto do código. Exemplo:
-
+**Jeito correto segundo clean code:**
 ```javascript
-const listItemContent = match[3].trim();
-// A função trim é importante. Remove espaços
-// que poderiam causar problemas no reconhecimento do item como outra lista.
-new ListItemWidget(this, listItemContent, this.level + 1);
+function calculateHash(data) {
+  let hash = 0;
+  const length = data.length;
+
+  for (let i = 0; i < length; i++) {
+    const char = data.charCodeAt(i);
+    hash = ((hash << 5) - hash) + char;
+    hash &= hash;  // Converte para 32-bit
+  }
+
+  return hash;
+}
+
+function combine(a, b) {
+  return a + b;
+}
+
+const config = {
+  retries: 5,
+  timeout: 2000
+};
 ```
 
----
-
-Quando você se depara com a necessidade de adicionar um comentário explicativo em seu código, considere primeiro se é possível substituir o comentário por uma função ou variável bem nomeada. Isso não apenas elimina a necessidade do comentário, mas também melhora a clareza e a legibilidade do código.
+**Melhorias:** sem comentários desnecessários, remoção do código comentado, sem registros de alterações no código e eliminação de mercadores de posição.
 
 ---
 
