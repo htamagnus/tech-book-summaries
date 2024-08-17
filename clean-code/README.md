@@ -35,60 +35,53 @@ Não basta apenas escrever um código que funcione; é essencial mantê-lo limpo
 
 <h2 id="descricao"> 3. Nomes Significativos</h2>
 
-Um nome deve indicar claramente por que algo existe, o que faz e como é usado. Se um nome precisa de um comentário para ser entendido, ele não é bom o suficiente.
+Nomes no código devem ser claros e significativos, refletindo seu propósito sem a necessidade de comentários. Bons nomes tornam o código mais fácil de entender e mantêm a complexidade baixa. Ao lidar com listas, por exemplo, prefira nomes descritivos como gameBoard para uma lista de células e getFlaggedCells() para uma função que retorna células marcadas.
 
-Em um código que manipula uma lista, usar nomes mais descritivos, como `gameBoard` para uma lista de células em um jogo de campo minado, e `getFlaggedCells()` para uma função que retorna células marcadas, torna o código muito mais compreensível. No final, escolher bons nomes torna o código mais explícito e fácil de entender, sem alterar sua complexidade.
+Evite nomes que possam causar confusão ou contenham informações erradas, como variáveis ou classes com nomes semelhantes. Prefira nomes que sejam fáceis de buscar e usar no código, evitando nomes curtos e confusos, especialmente em escopos amplos. Exemplo:
 
-Evitar informações erradas em nomes de variáveis, funções e classes é essencial para manter o código claro. Nomes devem refletir seu propósito real, evitando confusões e interpretações erradas. Evite nomes semelhantes ou visivelmente parecidos, como l e 1, pois podem causar erros. Nomes devem ter significados distintos, e palavras comuns ou redundantes devem ser evitadas. A clareza nos nomes facilita a compreensão do código e previne mal-entendidos.
+```javascript
+// Ruim:
+setTimeout(blastOff, 86400000);
 
-Use nomes que sejam fáceis de buscar no código. Nomes de uma só letra ou números são difíceis de localizar e podem levar a erros, especialmente quando números grandes são usados incorretamente. Prefira nomes descritivos e longos quando necessário, para facilitar a busca e o entendimento do código. Variáveis com nomes curtos devem ser usadas apenas em escopos pequenos.
+// Melhor:
+const MILLISECONDS_PER_DAY = 86400000;
+setTimeout(blastOff, MILLISECONDS_PER_DAY);
+```
 
----
+Para classes, use substantivos como Customer ou Account, enquanto métodos devem ser nomeados com verbos que descrevem suas ações, como save, delete, ou getName. Ao nomear interfaces e implementações, evite prefixos desnecessários como "I", e mantenha os nomes simples e descritivos. Exemplo:
 
-**3.1 Interfaces e Implementações:**
+```javascript
+// Ruim:
+class Processador {
+  save() { /* ... */ }
+}
 
-Ao nomear interfaces e implementações, evite codificações desnecessárias, como prefixar interfaces com "I". Prefira nomear a interface como `ShapeFactory` e, se necessário, adicione uma distinção na implementação, como ShapeFactoryImp. Isso mantém o código mais limpo e fácil de entender, evitando distrações e informações excessivas.
+// Melhor:
+class UserAccount {
+  save() { /* ... */ }
+}
+```
 
----
-
-**3.2 Classes:**
-
-Para nomes de classes, utilize substantivos como `Customer` ou `Account`. Evite termos genéricos como `Gerente` ou `Processador`, e nunca use verbos para nomear classes. Já os métodos devem ser nomeados com verbos que descrevam a ação que executam, como `save`, `delete`, ou `getName`.
-
----
-
-**3.3 Métodos:**
-
-Use verbos que descrevam claramente a ação que a função realiza. Métodos de acesso, modificação e verificação devem seguir um padrão semelhante ao de outras linguagens, como `get`, `set`, ou `is`.
-
----
-
-**3.4 Contextos:**
-
-Para tornar os nomes mais significativos, é importante garantir que eles estejam dentro de um contexto claro. Muitas vezes, nomes isolados podem perder o significado, especialmente se forem usados fora de seu contexto original. Uma forma de resolver isso é organizá-los dentro de classes, funções, ou namespaces que descrevam o contexto ao qual pertencem.
-
-Por exemplo, variáveis como firstName, lastName, street, houseNumber, city, state, e zipcode. Quando vistas juntas, é evidente que formam um endereço. Porém, se você encontrar apenas a variável state em um método isolado, pode não ser claro que ela faz parte de um endereço.
+Contexto é essencial. Nomes devem ser claros dentro de seu escopo, como no exemplo de uma classe Address que agrupa variáveis relacionadas a um endereço. Evite prefixos redundantes que tornam o código prolixo e desnecessariamente longo. Prefira variáveis explicativas e substitua números "mágicos" por constantes com nomes significativos, como MILLISECONDS_PER_DAY em vez de 86400000. Exemplo:
 
 ```javascript
 class Address {
-    constructor(firstName, lastName, street, houseNumber, city, state, zipcode) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.street = street;
-        this.houseNumber = houseNumber;
-        this.city = city;
-        this.state = state;
-        this.zipcode = zipcode;
-    }
+  constructor(firstName, lastName, street, houseNumber, city, state, zipcode) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.street = street;
+    this.houseNumber = houseNumber;
+    this.city = city;
+    this.state = state;
+    this.zipcode = zipcode;
+  }
 }
 
-let address = new Address("John", "Doe", "Main St", "123", "Springfield", "IL", "62701");
+const address = new Address("John", "Doe", "Main St", "123", "Springfield", "IL", "62701");
 console.log(address.state);
 ```
 
-Agora as variáveis state, city, etc., agora fazem parte de um contexto claro `(Address)`, o que elimina a necessidade de prefixos adicionais e melhora a clareza do código.
-
-Evite adicionar contextos desnecessários aos nomes no seu código. Por exemplo, em um aplicativo fictício chamado "Gas Station Deluxe" (GSD), adicionar o prefixo GSD a todas as classes, como `GSDAccountAddress`, é redundante e pode atrapalhar mais do que ajudar. Isso pode fazer com que a lista de sugestões de autocompletar na IDE fique cheia de nomes longos e repetitivos, dificultando a navegação.
+Em loops e funções, use nomes descritivos para parâmetros, evitando mapeamentos mentais. Finalmente, ao invés de usar curto-circuito para definir valores padrões, utilize argumentos padrões em funções para garantir maior clareza.
 
 ---
 
