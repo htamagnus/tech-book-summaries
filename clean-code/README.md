@@ -39,36 +39,44 @@ Não basta apenas escrever um código que funcione; é essencial mantê-lo limpo
 
 <h2 id="descricao"> 3. Nomes Significativos 🏷️</h2>
 
-Nomes no código devem ser claros e significativos, refletindo seu propósito sem a necessidade de comentários. Bons nomes tornam o código mais fácil de entender e mantêm a complexidade baixa. Ao lidar com listas, por exemplo, prefira nomes descritivos como gameBoard para uma lista de células e getFlaggedCells() para uma função que retorna células marcadas.
+Os nomes no código devem ser claros e autodescritivos, refletindo sua finalidade sem a necessidade de comentários adicionais. Bons nomes tornam o código mais legível e fácil de manter, ajudando a reduzir a complexidade. Evite nomes confusos ou que possam gerar mal-entendidos. Nomes descritivos facilitam a busca no código e previnem erros.
 
-Evite nomes que possam causar confusão ou contenham informações erradas, como variáveis ou classes com nomes semelhantes. Prefira nomes que sejam fáceis de buscar e usar no código, evitando nomes curtos e confusos, especialmente em escopos amplos. Exemplo:
+**Exemplo ruim:**
 
 ```javascript
-// Ruim:
+// Código com variáveis não descritivas e números "mágicos"
 setTimeout(blastOff, 86400000);
 
-// Melhor:
-const MILLISECONDS_PER_DAY = 86400000;
-setTimeout(blastOff, MILLISECONDS_PER_DAY);
-```
-
-Para classes, use substantivos como Customer ou Account, enquanto métodos devem ser nomeados com verbos que descrevem suas ações, como save, delete, ou getName. Ao nomear interfaces e implementações, evite prefixos desnecessários como "I", e mantenha os nomes simples e descritivos. Exemplo:
-
-```javascript
-// Ruim:
 class Processador {
   save() { /* ... */ }
 }
 
-// Melhor:
-class UserAccount {
-  save() { /* ... */ }
+function getData(d, n) {
+  // Função sem clareza sobre o que faz
 }
 ```
 
-Contexto é essencial. Nomes devem ser claros dentro de seu escopo, como no exemplo de uma classe Address que agrupa variáveis relacionadas a um endereço. Evite prefixos redundantes que tornam o código prolixo e desnecessariamente longo. Prefira variáveis explicativas e substitua números "mágicos" por constantes com nomes significativos, como MILLISECONDS_PER_DAY em vez de 86400000. Exemplo:
+**Exemplo correto segundo clean code:**
+```javascript
+// Código com nomes claros e números significativos
+const MILLISECONDS_PER_DAY = 86400000;
+setTimeout(blastOff, MILLISECONDS_PER_DAY);
+
+class UserAccount {
+  save() { /* ... */ }
+}
+
+function fetchData(date, numberOfRecords) {
+  // Função clara sobre seus parâmetros e propósito
+}
+```
+
+---
+
+Além disso, nomes de classes devem ser substantivos, como Customer, enquanto métodos devem ser verbos, como save. Interfaces não precisam de prefixos desnecessários, e constantes devem substituir números "mágicos". O contexto deve ser claro, evitando prefixos redundantes.
 
 ```javascript
+// Exemplo claro e organizado de uma classe Address
 class Address {
   constructor(firstName, lastName, street, houseNumber, city, state, zipcode) {
     this.firstName = firstName;
@@ -83,9 +91,8 @@ class Address {
 
 const address = new Address("John", "Doe", "Main St", "123", "Springfield", "IL", "62701");
 console.log(address.state);
-```
 
-Em loops e funções, use nomes descritivos para parâmetros, evitando mapeamentos mentais. Finalmente, ao invés de usar curto-circuito para definir valores padrões, utilize argumentos padrões em funções para garantir maior clareza.
+```
 
 ---
 
