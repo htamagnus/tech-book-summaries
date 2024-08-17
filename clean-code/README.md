@@ -791,11 +791,13 @@ depreciation.calculate();
 > "Complexidade mata. Ela suga a vida dos desenvolvedores, dificulta o planejamento, a construção e o teste dos produtos”.
 > —Ray Ozzie, CTO, Microsoft Corporation
 
-Assim como na analogia de construir uma cidade, onde diferentes equipes gerenciam partes específicas, em software, devemos dividir responsabilidades entre diferentes módulos e classes. Essa abordagem modular facilita o desenvolvimento, manutenção e crescimento do sistema.
+Assim como na construção de uma cidade, em software devemos dividir responsabilidades entre diferentes módulos e classes, mantendo a complexidade sob controle. Isso facilita o desenvolvimento, manutenção e evolução do sistema. A separação entre a construção de objetos e o uso do sistema é essencial. A inicialização e configuração de dependências devem ficar em uma camada externa, geralmente no arquivo principal (main), que instanciará os objetos e passará as dependências, desacoplando a lógica de negócio da lógica de construção.
 
-Em JavaScript, é importante separar a construção dos objetos e o uso do sistema. Uma boa prática é mover a inicialização e configuração de dependências para uma camada externa, geralmente o arquivo principal (main) ou uma função de inicialização. Esse arquivo é responsável por instanciar objetos e passar dependências para o restante do sistema, mantendo o código de lógica de negócios separado da lógica de inicialização.
+Injeção de Dependência (DI) é uma técnica útil para desacoplar componentes, permitindo maior flexibilidade e testabilidade. Com DI, as dependências são passadas para as classes via construtores ou setters, em vez de serem criadas internamente, facilitando a reutilização do código.
 
-Um exemplo seria usar um factory para criar objetos, em vez de instanciá-los diretamente no código principal. Isso mantém o sistema desacoplado dos detalhes de implementação da construção dos objetos, permitindo mais flexibilidade. Exemplo:
+A evolução do sistema deve ser incremental. Inicie com uma arquitetura mínima e refatore conforme novas funcionalidades são adicionadas, seguindo os princípios ágeis. Padrões como Factory e DI são úteis para tornar o código modular e fácil de manter, mas devem ser usados com moderação, apenas quando trazem valor real ao projeto.
+
+**Exemplo ruim:**
 
 ```javascript
 class LineItem {
@@ -810,8 +812,32 @@ class Order {
     this.items = [];
   }
 
-  addItem(item) {
+  addItem(product, quantity) {
+    const item = new LineItem(product, quantity);
     this.items.push(item);
+  }
+
+  processOrder() {
+    console.log("Order processed");
+  }
+}
+
+const order = new Order();
+order.addItem("Product A", 5);
+order.processOrder();
+```
+
+**Problemas:** existe uma alta acoplagem por que a classe Order cria diretamente os objetos LineItem, dificultando a reutilização e a testabilidade. A responsabilidade de instanciar LineItem deveria ser separada da lógica de Order.
+
+---
+
+**Exemplo correto segundo clean code:**
+
+```javascript
+class LineItem {
+  constructor(product, quantity) {
+    this.product = product;
+    this.quantity = quantity;
   }
 }
 
@@ -821,20 +847,29 @@ class LineItemFactory {
   }
 }
 
-// No main, fazemos a separação
+class Order {
+  constructor(itemFactory) {
+    this.items = [];
+    this.itemFactory = itemFactory;
+  }
+
+  addItem(product, quantity) {
+    const item = this.itemFactory.create(product, quantity);
+    this.items.push(item);
+  }
+
+  processOrder() {
+    console.log("Order processed");
+  }
+}
+
+// Separação no main
 const factory = new LineItemFactory();
-const order = new Order();
-order.addItem(factory.create('Product A', 10));
+const order = new Order(factory);
+order.addItem("Product A", 5);
+order.processOrder();
 ```
 
-Nesse exemplo, a responsabilidade de criar LineItem foi movida para LineItemFactory, separando a lógica de criação da lógica de uso no Order.
-
----
-
-A Injeção de Dependência (DI) é uma técnica poderosa para desacoplar dependências. Em JavaScript, frameworks como NestJS e InversifyJS suportam DI nativamente, mas também podemos implementá-la manualmente. O DI permite que as dependências sejam passadas para uma classe por meio de seu construtor ou setters, em vez de serem criadas dentro da própria classe, promovendo flexibilidade e testabilidade.
-
-Sistemas podem começar simples e crescer conforme as necessidades mudam. No início, podemos adotar uma arquitetura mínima e aumentar a complexidade conforme a demanda cresce. Essa prática segue a filosofia ágil de desenvolver **iterativamente**, refatorando e melhorando o sistema à medida que novas funcionalidades são adicionadas. O objetivo é implementar apenas o que é necessário hoje, sabendo que refatorações farão parte do processo de crescimento.
-
-Padrões como Factory e Dependency Injection são amplamente usados porque facilitam a reutilização e a manutenção do código. No entanto, é importante usá-los quando trazem valor real ao projeto. Não devemos adotar padrões complexos apenas por serem populares, mas sim quando eles simplificam a implementação ou oferecem vantagens claras para o sistema.
+**Melhorias:** a criação de LineItem foi movida para a LineItemFactory, desacoplando a lógica de criação da classe Order. Order recebe a LineItemFactory via seu construtor, permitindo maior flexibilidade e testabilidade.
 
 ---
