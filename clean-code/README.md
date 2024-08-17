@@ -254,9 +254,111 @@ const config = {
 
 <h2 id="descricao"> 6. Formatação </h2>
 
-A formatação do código é um aspecto crucial para transmitir profissionalismo e atenção aos detalhes. Um código bem formatado não só facilita a leitura e manutenção, mas também reflete a disciplina e o cuidado dos desenvolvedores.
+A formatação é essencial para garantir um código legível e profissional. Um código bem formatado facilita a leitura, a manutenção e reflete o cuidado do desenvolvedor. Arquivos menores, bem divididos, são mais fáceis de gerenciar. Ferramentas automáticas de formatação, como linters e formatadores, são recomendadas para evitar discussões desnecessárias sobre estilo.
 
-Não há um tamanho ideal absoluto, mas arquivos menores tendem a ser mais fáceis de gerenciar e compreender. Em JavaScript, isso pode significar dividir grandes módulos em arquivos menores e mais focados, cada um responsável por uma única responsabilidade ou funcionalidade. Use quebras de linha para dividir logicamente diferentes seções de código, como separando funções, classes ou blocos de código relacionados. Isso ajuda a evitar que o código pareça um bloco monolítico e facilita a navegação.
+Seja consistente com a capitalização em variáveis, funções e classes. Funções e chamadas de funções devem estar próximas verticalmente para facilitar a leitura, respeitando o fluxo natural de leitura de cima para baixo.
+
+**Exemplo ruim:**
+
+```javascript
+const ITEMS_IN_CART = 3;
+const items_in_stock = 50;
+
+const products = ['Laptop', 'Smartphone', 'Headphones'];
+const Categories = ['Electronics', 'Accessories', 'Home Appliances'];
+
+function place_order() {}
+function cancel_order() {}
+
+class user {}
+class Order {}
+
+class OrderManager {
+  constructor(order) {
+    this.order = order;
+  }
+
+  checkStock() {
+    return db.lookup(this.order, 'stock');
+  }
+
+  getOrderDetails() {
+    const stock = this.checkStock();
+    // ...
+  }
+
+  processOrder() {
+    this.getOrderDetails();
+    this.sendInvoice();
+    this.updateStock();
+  }
+
+  sendInvoice() {
+    // ...
+  }
+
+  updateStock() {
+    const stock = this.checkStock();
+  }
+}
+
+const orderManager = new OrderManager(order);
+orderManager.processOrder();
+```
+
+**Problemas:** inconsistência na capitalização de variáveis, funções e classes, funções e chamadas de funções estão separadas, dificultando a leitura do fluxo, e a função processOrder deveria estar mais próxima de suas dependências.
+
+---
+
+**Jeito correto segundo clean code:**
+```javascript
+const ITEMS_IN_CART = 3;
+const ITEMS_IN_STOCK = 50;
+
+const PRODUCTS = ['Laptop', 'Smartphone', 'Headphones'];
+const CATEGORIES = ['Electronics', 'Accessories', 'Home Appliances'];
+
+function placeOrder() {}
+function cancelOrder() {}
+
+class User {}
+class Order {}
+
+class OrderManager {
+  constructor(order) {
+    this.order = order;
+  }
+
+  processOrder() {
+    this.getOrderDetails();
+    this.sendInvoice();
+    this.updateStock();
+  }
+
+  getOrderDetails() {
+    const stock = this.checkStock();
+    // ...
+  }
+
+  checkStock() {
+    return db.lookup(this.order, 'stock');
+  }
+
+  sendInvoice() {
+    // ...
+  }
+
+  updateStock() {
+    const stock = this.checkStock();
+    // ...
+  }
+}
+
+const orderManager = new OrderManager(order);
+orderManager.processOrder();
+```
+
+**Melhorias:** A capitalização está consistente, teve um uso adequado de maiúsculas e minúsculas nas variáveis, funções e classes, como ITEMS_IN_STOCK e placeOrder. A função processOrder está diretamente acima das funções auxiliares que ela utiliza, como getOrderDetails, sendInvoice, e updateStock, facilitando o fluxo de leitura. O código segue uma estrutura lógica de cima para baixo, refletindo um fluxo claro e fácil de entender.
 
 ---
 
