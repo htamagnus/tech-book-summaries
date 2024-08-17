@@ -25,6 +25,7 @@
   <a href="#descricao">12. Sistemas 🖥️</a><br>
   <a href="#descricao">13. Emergência 🚨</a><br>
   <a href="#descricao">14. Concorrência ⚡</a><br>
+   <a href="#descricao">15. Resumão</a><br>
 </p>
 
 ---
@@ -1010,5 +1011,35 @@ fetchAndSaveData();
 ```
 
 **Melhorias:** O uso de async/await simplifica a lógica, removendo o aninhamento, e centraliza o tratamento de erros no bloco try/catch, o que facilita o controle e a depuração.
+
+---
+
+<h2 id="descricao"> 15. Resumão </h2>
+
+1. **Código Limpo 🧹:** Incentiva que o código seja continuamente melhorado, fazendo pequenas mudanças como renomear variáveis ou simplificar funções, e mantendo o código organizado.
+
+2. **Nomes Significativos 🏷️:** O uso de nomes claros e autodescritivos para variáveis e funções torna o código mais compreensível e evita a necessidade de comentários desnecessários.
+
+3. **Funções ⚙️:** Devem ser pequenas e focadas em uma única responsabilidade. Parâmetros devem ser limitados e a função precisa ser autoexplicativa, sem efeitos colaterais.
+
+4. **Comentários 💬:** Devem ser evitados quando o código é claro. Se forem necessários, devem agregar valor em áreas complexas e não explicar o óbvio.
+
+5. **Formatação 🖊️:** Um código bem formatado, com capitalização consistente e estrutura lógica, facilita a leitura e a manutenção.
+
+6. **Objetos e Estruturas de Dados 🧱:** Deve-se optar por getters e setters ao acessar propriedades de objetos, mantendo o encapsulamento e flexibilidade.
+
+7. **Tratamento de Erros 🛠️:** Exceções são preferíveis a retornos de erro ou null, facilitando a separação da lógica principal do tratamento de erros.
+
+8. **Limites 🚧:** Ao integrar bibliotecas externas, testes de aprendizado devem ser usados para entender o funcionamento antes de usá-las diretamente no código.
+
+9. **Testes de Unidade ✅:** São essenciais para garantir a qualidade e flexibilidade do código. Devem ser rápidos e focar em um conceito por vez.
+
+10. **Classes 🏛️:** Devem ser pequenas e coesas, focando em uma única responsabilidade. Princípios como SRP (Responsabilidade Única) são essenciais.
+
+11. **Sistemas 🖥️:** A separação entre a construção e o uso de objetos, utilizando técnicas como injeção de dependência, ajuda a manter o código modular e fácil de evoluir.
+
+12. **Emergência 🚨:** Seguir princípios como evitar duplicação de código e expressar claramente a intenção ajuda a criar um design simples e eficaz.
+
+13. **Concorrência ⚡:** É útil, mas deve ser aplicada com cuidado, utilizando técnicas como Promessas e async/await para simplificar a lógica e evitar bugs.
 
 ---
