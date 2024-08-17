@@ -23,6 +23,7 @@
   <a href="#descricao">10. Testes de Unidade</a><br>
   <a href="#descricao">11. Classes</a><br>
   <a href="#descricao">12. Sistemas</a><br>
+  <a href="#descricao">13. Emergência</a><br>
 </p>
 
 ---
@@ -871,5 +872,78 @@ order.processOrder();
 ```
 
 **Melhorias:** a criação de LineItem foi movida para a LineItemFactory, desacoplando a lógica de criação da classe Order. Order recebe a LineItemFactory via seu construtor, permitindo maior flexibilidade e testabilidade.
+
+---
+
+<h2 id="descricao"> 13. Emergência </h2>
+
+Seguir regras simples pode ajudar a criar bons designs de software. Kent Beck sugere as Quatro Regras do Projeto Simples para auxiliar no desenvolvimento de projetos claros e eficazes:
+
+- **Efetuar todos os testes:** O código deve funcionar conforme o esperado. Ter um sistema testável força o desenvolvedor a criar classes pequenas e com uma única responsabilidade, facilitando o uso de princípios como SRP e DIP.
+
+- **Eliminar duplicação de código:** Duplicação de código gera complexidade desnecessária. Remova duplicações, mesmo que sejam pequenas, para manter o código limpo e eficiente.
+
+- **Expressar a intenção do programador:** O código deve ser claro, com nomes descritivos para classes e funções. Pequenas classes e funções são mais fáceis de entender e mantê-las expressivas reduz o custo de manutenção.
+
+- **Minimizar o número de classes e métodos:** Embora devamos eliminar duplicações e manter o código expressivo, é importante não exagerar na criação de classes e métodos pequenos. A simplicidade deve ser o objetivo.
+
+**Exemplo ruim:**
+
+```javascript
+class ImageProcessor {
+  scaleImage(desiredDimension, imageDimension) {
+    if (Math.abs(desiredDimension - imageDimension) < 0.01) return;
+    let scalingFactor = desiredDimension / imageDimension;
+    scalingFactor = Math.floor(scalingFactor * 100) * 0.01;
+    const newImage = this.getScaledImage(scalingFactor);
+    this.image.dispose();
+    System.gc();
+    this.image = newImage;
+  }
+
+  rotateImage(degrees) {
+    const newImage = this.getRotatedImage(degrees);
+    this.image.dispose();
+    System.gc();
+    this.image = newImage;
+  }
+
+  getScaledImage(factor) { /* ... */ }
+
+  getRotatedImage(degrees) { /* ... */ }
+}
+```
+
+**Problemas:** a lógica de substituição de imagem é repetida nas funções scaleImage e rotateImage e isso gera duplicação. Existe uma baixa expressividade por que as funções fazem muito e os nomes não refletem totalmente suas responsabilidades.
+
+---
+
+**Exemplo correto segundo clean code:**
+
+```javascript
+class ImageProcessor {
+  replaceImage(newImage) {
+    this.image.dispose();
+    System.gc();
+    this.image = newImage;
+  }
+
+  scaleImage(desiredDimension, imageDimension) {
+    if (Math.abs(desiredDimension - imageDimension) < 0.01) return;
+    let scalingFactor = Math.floor((desiredDimension / imageDimension) * 100) * 0.01;
+    this.replaceImage(this.getScaledImage(scalingFactor));
+  }
+
+  rotateImage(degrees) {
+    this.replaceImage(this.getRotatedImage(degrees));
+  }
+
+  getScaledImage(factor) { /* ... */ }
+
+  getRotatedImage(degrees) { /* ... */ }
+}
+```
+
+**Melhorias:** A lógica de substituição de imagem foi movida para o método replaceImage, eliminando duplicação. Funções são menores e focadas, tornando o código mais legível e claro, trazendo Expressividade.
 
 ---
