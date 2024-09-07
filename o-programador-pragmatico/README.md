@@ -161,4 +161,7 @@ Equipes eficientes funcionam melhor quando cada membro tem responsabilidades cla
 
 Desenvolvedores costumam projetar sistemas ortogonais, mesmo que utilizem termos como modular ou baseado em camadas. Um sistema ortogonal é composto por módulos independentes, organizados em camadas que abstraem funcionalidades, permitindo alterar implementações sem afetar o restante do sistema.
 
+![image](https://github.com/user-attachments/assets/dde11c33-0cf0-4966-855e-62c2371cd5c3)
+
+
 Um teste simples para verificar a ortogonalidade de um projeto é se perguntar quantos módulos seriam afetados por uma mudança específica. Idealmente, apenas um módulo deve ser impactado. Por exemplo, mudar a interface gráfica de um sistema não deve alterar a lógica de controle subjacente. Além disso, evite confiar em propriedades externas que não pode controlar, como números de telefone para identificar clientes, pois podem mudar inesperadamente.
