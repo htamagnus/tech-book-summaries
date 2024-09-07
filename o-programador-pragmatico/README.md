@@ -122,3 +122,17 @@ Ter boas ideias e um código excelente é inútil se você não souber se comuni
 ---
 
 <h2 id="abordagem"> 3. Uma abordagem Pragmática 🔍</h2>
+
+### Os males da duplicação
+
+A duplicação de informações torna a manutenção complexa e propensa a erros. Quando um dado é representado em mais de um lugar, qualquer alteração deve ser feita em todas as instâncias, o que aumenta o risco de inconsistências. Para evitar esses problemas, devemos seguir o princípio NSR (Não Se Repita): Cada bloco de informações deve ter uma representação única e oficial no sistema, sem ambiguidades.
+
+**Categorias de Duplicação:**
+
+- **Duplicação imposta:** Quando o ambiente parece exigir duplicação.
+- **Duplicação inadvertida:** Quando os desenvolvedores não percebem que estão duplicando.
+- **Duplicação impaciente:** Quando a duplicação é usada por preguiça ou para economizar tempo.
+- **Duplicação entre desenvolvedores:** Quando membros da equipe repetem informações entre si.
+
+---
+
