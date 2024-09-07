@@ -1,4 +1,4 @@
-<h1 align="center" style="font-weight: bold;">O Programador Pragmático: De Aprendiz a Mestre</h1>
+<h1 align="center" style="font-weight: bold;">O Programador Pragmático: De Aprendiz a Mestre 👨‍💻➡️🧙‍♂️</h1>
 
 <div align="center">
   
@@ -12,6 +12,15 @@
 <h3 align="left">Sumário 📄</h3>
 <p align="left">
   <a href="#descricao">1. Descrição 📝</a><br>
+  <a href="#filosofia">2. Uma filosofia Pragmática 💡</a><br>
+  <a href="#abordagem">3. Uma abordagem Pragmática 🔍</a><br>
+  <a href="#ferramentas">4. As ferramentas básicas 🛠️</a><br>
+  <a href="#paranoia">5. Paranoia Pragmática 🤔</a><br>
+  <a href="#flexivel">6. Seja flexível 🧘‍♂️</a><br>
+  <a href="#codificando">7. Enquanto você está codificando 👨‍💻</a><br>
+  <a href="#antes">8. Antes do projeto 🏗️</a><br>
+  <a href="#projetos">9. Projetos pragmáticos 📊</a><br>
+  <a href="#recursos">10. Recursos 📚</a><br>
 </p>
 
 ---
