@@ -180,3 +180,17 @@ Ao programar, há o risco de comprometer a ortogonalidade do sistema, duplicando
 - **Evite dados globais:** Referenciar dados globais cria dependências entre componentes. Prefira passar o contexto necessário por parâmetros ou objetos específicos, mantendo o código mais modular e fácil de gerenciar.
 
 - **Evite funções semelhantes:** Se encontrar funções com códigos duplicados, considere usar padrões como Strategy para resolver o problema, ao invés de repetir blocos de código.
+
+---
+
+### Reversibilidade
+
+Muitas vezes, os engenheiros e gerentes buscam soluções simples e definitivas para os problemas. No entanto, o mundo real está em constante mudança, e uma solução que funciona hoje pode não ser a melhor amanhã. Há sempre mais de uma maneira de implementar algo, e as decisões tomadas durante um projeto podem limitar suas opções futuras.
+
+Por exemplo, se você escolhe um banco de dados relacional e depois descobre que outro é mais adequado, a flexibilidade de isolar o banco de dados do restante do código permite trocar de tecnologia sem grandes problemas. O mesmo vale para alterações de modelo de implantação, como de cliente-servidor para autônomo, que, se bem projetado, pode ser feito sem dificuldade.
+
+O erro comum é acreditar que decisões são definitivas. Na verdade, elas devem ser tratadas como temporárias e ajustáveis, prontas para serem alteradas conforme necessário.
+
+A verdade é que não há decisões definitivas. 
+
+---
