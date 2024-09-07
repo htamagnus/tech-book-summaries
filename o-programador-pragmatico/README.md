@@ -136,3 +136,14 @@ A duplicação de informações torna a manutenção complexa e propensa a erros
 
 ---
 
+### Ortogonalidade
+
+Ortogonalidade é um princípio fundamental para criar sistemas fáceis de projetar, construir, testar e estender. Ela significa que diferentes componentes de um sistema são independentes: uma mudança em um não afeta os outros. Um exemplo de um sistema não ortogonal são os controles de um helicóptero, onde qualquer ajuste em um controle afeta todos os outros, complicando o manejo. Em sistemas ortogonais, por outro lado, as partes são autossuficientes e não causam efeitos colaterais em outros componentes.
+
+**Vantagens:**
+
+- **Maior produtividade:** Alterações são localizadas, o que facilita o desenvolvimento, testes e a reutilização de componentes. Componentes ortogonais podem ser combinados de maneiras novas, aumentando a funcionalidade.
+
+- **Menor risco:** Se um componente falhar, os efeitos colaterais são minimizados. Sistemas ortogonais são mais robustos, fáceis de testar e menos dependentes de tecnologias específicas.
+
+---
