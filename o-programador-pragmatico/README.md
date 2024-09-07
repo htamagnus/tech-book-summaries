@@ -159,9 +159,24 @@ Equipes eficientes funcionam melhor quando cada membro tem responsabilidades cla
 
 ### Projeto
 
-Desenvolvedores costumam projetar sistemas ortogonais, mesmo que utilizem termos como modular ou baseado em camadas. Um sistema ortogonal é composto por módulos independentes, organizados em camadas que abstraem funcionalidades, permitindo alterar implementações sem afetar o restante do sistema.
+Quando desenvolvemos sistemas, muitas vezes usamos termos como modular ou baseado em camadas para falar sobre a criação de sistemas ortogonais. Isso significa que cada parte do sistema funciona de forma independente das outras, facilitando a manutenção e mudanças. A organização em camadas ajuda a isolar funções, permitindo que alterações em uma parte não afetem o restante.
+
+<div align="center">
 
 ![image](https://github.com/user-attachments/assets/dde11c33-0cf0-4966-855e-62c2371cd5c3)
 
+</div>
 
-Um teste simples para verificar a ortogonalidade de um projeto é se perguntar quantos módulos seriam afetados por uma mudança específica. Idealmente, apenas um módulo deve ser impactado. Por exemplo, mudar a interface gráfica de um sistema não deve alterar a lógica de controle subjacente. Além disso, evite confiar em propriedades externas que não pode controlar, como números de telefone para identificar clientes, pois podem mudar inesperadamente.
+Um bom teste para ver se o sistema é ortogonal é se perguntar: "Se eu mudar algo específico, quantos módulos serão afetados?" Em um sistema bem projetado, apenas um módulo deve ser impactado. Por exemplo, alterar a interface de usuário não deve modificar a lógica principal do sistema. Também é importante evitar depender de fatores externos que você não pode controlar, como números de telefone, que podem mudar e gerar problemas.
+
+---
+
+### Codificando
+
+Ao programar, há o risco de comprometer a ortogonalidade do sistema, duplicando funcionalidades ou informações já existentes. Para evitar isso, algumas práticas ajudam a manter o código mais limpo e independente:
+
+- **Mantenha seu código isolado:** Escreva módulos que não revelem informações desnecessárias e não dependam de outros módulos. Aplique a Lei de Deméter, deixando os objetos gerenciarem seus próprios estados para evitar dependências desnecessárias.
+
+- **Evite dados globais:** Referenciar dados globais cria dependências entre componentes. Prefira passar o contexto necessário por parâmetros ou objetos específicos, mantendo o código mais modular e fácil de gerenciar.
+
+- **Evite funções semelhantes:** Se encontrar funções com códigos duplicados, considere usar padrões como Strategy para resolver o problema, ao invés de repetir blocos de código.
