@@ -138,7 +138,11 @@ A duplicação de informações torna a manutenção complexa e propensa a erros
 
 ### Ortogonalidade
 
+<div align="center">
+
 ![image](https://github.com/user-attachments/assets/63c8aa92-6eb6-47b2-8503-ced66a7370c5)
+
+</div>
 
 
 Ortogonalidade é um princípio fundamental para criar sistemas fáceis de projetar, construir, testar e estender. Ela significa que diferentes componentes de um sistema são independentes: uma mudança em um não afeta os outros. Um exemplo de um sistema não ortogonal são os controles de um helicóptero, onde qualquer ajuste em um controle afeta todos os outros, complicando o manejo. Em sistemas ortogonais, por outro lado, as partes são autossuficientes e não causam efeitos colaterais em outros componentes.
@@ -149,4 +153,12 @@ Ortogonalidade é um princípio fundamental para criar sistemas fáceis de proje
 
 - **Menor risco:** Se um componente falhar, os efeitos colaterais são minimizados. Sistemas ortogonais são mais robustos, fáceis de testar e menos dependentes de tecnologias específicas.
 
+Equipes eficientes funcionam melhor quando cada membro tem responsabilidades claras e pouca sobreposição de tarefas, evitando confusões. Para organizar uma equipe de forma mais prática, divida as áreas, como infraestrutura e funcionalidades, em subgrupos com funções bem definidas. Quanto menos pessoas forem necessárias para tomar decisões, mais ágil a equipe será. Mas, mesmo com funções separadas, é importante manter uma boa comunicação entre os grupos.
+
 ---
+
+### Projeto
+
+Desenvolvedores costumam projetar sistemas ortogonais, mesmo que utilizem termos como modular ou baseado em camadas. Um sistema ortogonal é composto por módulos independentes, organizados em camadas que abstraem funcionalidades, permitindo alterar implementações sem afetar o restante do sistema.
+
+Um teste simples para verificar a ortogonalidade de um projeto é se perguntar quantos módulos seriam afetados por uma mudança específica. Idealmente, apenas um módulo deve ser impactado. Por exemplo, mudar a interface gráfica de um sistema não deve alterar a lógica de controle subjacente. Além disso, evite confiar em propriedades externas que não pode controlar, como números de telefone para identificar clientes, pois podem mudar inesperadamente.
