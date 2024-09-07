@@ -85,3 +85,19 @@ Gerenciar seu conhecimento é semelhante a administrar uma carteira de investime
 
 A chave é continuar aprendendo constantemente. Mesmo que não use imediatamente o que aprendeu, o processo de aprendizado expandirá seu raciocínio e abrirá novas possibilidades em sua carreira.
 
+### Comunique-se!
+
+Ter boas ideias e um código excelente é inútil se você não souber se comunicar. Como desenvolvedores, precisamos nos comunicar em diferentes níveis, desde reuniões com colegas até escrever documentação para o futuro. Uma comunicação eficaz garante que suas ideias sejam compreendidas e valorizadas.
+
+**Dicas para uma boa comunicação:**
+
+- **Saiba o que você quer dizer:** Planeje suas ideias antes de falar ou escrever.
+- **Conheça seu público-alvo:** Entenda as necessidades e o nível de compreensão de quem vai ouvir ou ler.
+- **Escolha seu momento:** Aborde assuntos no momento certo, levando em consideração o contexto e as prioridades.
+- **Adapte seu estilo:** Ajuste seu estilo de comunicação ao público, seja formal ou mais descontraído.
+- **Dê uma boa aparência:** Apresente suas ideias de forma organizada e visualmente agradável.
+- **Envolva seu público:** Envolva as pessoas no processo, pedindo feedback e promovendo um diálogo.
+- **Seja um bom ouvinte:** Escutar é essencial para garantir que os outros também escutem você.
+- **Dê retorno:** Responda às perguntas e e-mails, mesmo que seja para informar que vai responder depois.
+
+**É o que você diz e como você diz:** A comunicação eficaz aumenta sua influência e garante que suas ideias sejam bem recebidas. Planeje o que vai dizer, conheça seu público, escolha o momento certo, adapte seu estilo, dê uma boa aparência, escute os outros e dê retorno.
