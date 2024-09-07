@@ -194,3 +194,13 @@ O erro comum é acreditar que decisões são definitivas. Na verdade, elas devem
 A verdade é que não há decisões definitivas. 
 
 ---
+
+### Arquitetura flexível
+
+Além de manter o código flexível, é importante garantir que a arquitetura, a implantação e a integração com fornecedores também sejam adaptáveis. Tecnologias como CORBA permitem isolar partes de um projeto, facilitando mudanças sem afetar o sistema como um todo. Se precisar alterar um componente, como reescrever um cliente em outra linguagem, apenas o componente modificado precisa ser ajustado, mantendo o restante intacto.
+
+A chave é criar uma arquitetura que possa se ajustar ao inesperado. Nenhum de nós pode prever o futuro, mas ao construir uma base flexível, seu sistema estará preparado para dançar conforme a música das mudanças.
+
+**Desafio:** Pense na evolução do código como o experimento do gato de Schrödinger: cada decisão resulta em diferentes futuros possíveis. Quantos futuros seu código pode suportar? Você está preparado para quando essas mudanças ocorrerem?
+
+---
