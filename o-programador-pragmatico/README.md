@@ -120,3 +120,5 @@ Ter boas ideias e um código excelente é inútil se você não souber se comuni
 **É o que você diz e como você diz:** A comunicação eficaz aumenta sua influência e garante que suas ideias sejam bem recebidas. Planeje o que vai dizer, conheça seu público, escolha o momento certo, adapte seu estilo, dê uma boa aparência, escute os outros e dê retorno.
 
 ---
+
+<h2 id="abordagem"> 3. Uma abordagem Pragmática 🔍</h2>
