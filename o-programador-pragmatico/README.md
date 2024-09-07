@@ -91,6 +91,9 @@ Ter boas ideias e um código excelente é inútil se você não souber se comuni
 
 **Dicas para uma boa comunicação:**
 
+![image](https://github.com/user-attachments/assets/c65a2a33-c6fd-4fea-b403-94650f75b3f3)
+
+
 - **Saiba o que você quer dizer:** Planeje suas ideias antes de falar ou escrever.
 - **Conheça seu público-alvo:** Entenda as necessidades e o nível de compreensão de quem vai ouvir ou ler.
 - **Escolha seu momento:** Aborde assuntos no momento certo, levando em consideração o contexto e as prioridades.
