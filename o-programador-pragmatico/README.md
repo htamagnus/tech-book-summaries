@@ -56,3 +56,7 @@ No desenvolvimento de software, quando algo não é corrigido — como um códig
 > Rei Lear 1.4
 
 Nem sempre é possível alcançar a perfeição, especialmente no desenvolvimento de software, onde fatores como tempo e tecnologia limitam os resultados. A busca pelo "melhor" pode prejudicar o que já é "bom". A ideia de software satisfatório é criar algo que atenda às necessidades dos usuários, seja fácil de manter e traga paz de espírito ao desenvolvedor. O importante é envolver os usuários para definir quando o software é suficientemente bom, evitando a obsessão por perfeição e focando na funcionalidade adequada.
+
+### Saiba quando parar
+
+Programar é como pintar: você começa com uma ideia e vai refinando com ciência, arte e técnica. Porém, assim como na pintura, saber quando parar é crucial. Exagerar nos detalhes pode ofuscar o resultado final. Um programa que funciona bem não deve ser arruinado com melhorias excessivas. O código nunca será perfeito, e tentar alcançá-lo pode ser contraproducente. Às vezes, é melhor seguir em frente e deixar o trabalho falar por si.
