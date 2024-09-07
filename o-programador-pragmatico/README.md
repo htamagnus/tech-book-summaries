@@ -44,11 +44,15 @@ Entre as características dos programadores pragmáticos, estão a capacidade de
 
 Os programadores pragmáticos se diferenciam pela forma como encaram os desafios. Eles não se limitam ao problema do momento, sempre buscando entender o cenário mais amplo. Outra característica marcante é a responsabilidade que assumem sobre o que fazem, não esperando os problemas piorarem, mas agindo para corrigi-los. Embora seja comum resistir a mudanças, eles reconhecem a necessidade de adaptação e conseguem equilibrar a busca pela perfeição com soluções práticas. Além disso, sabem a importância de se comunicar bem. Quando algo dá errado, eles admitem suas falhas e, em vez de desculpas, oferecem soluções para resolver a situação, ganhando mais confiança e respeito no processo. Em vez de desculpas, fornecem opções.
 
+---
+
 ### Entropia de Software
 
 A entropia no software é como a desordem na física: com o tempo, projetos tendem a se deteriorar. Isso pode acontecer por vários motivos, mas o principal está ligado à cultura e psicologia envolvidas no projeto. Mesmo com ótimos planos e equipes talentosas, um projeto pode sofrer desgaste se pequenos problemas forem ignorados. Isso é comparado à "Teoria da Janela Quebrada", que mostra que, ao deixar algo quebrado sem conserto, como uma janela, a sensação de abandono se espalha, levando a uma deterioração mais rápida.
 
 No desenvolvimento de software, quando algo não é corrigido — como um código mal feito ou uma má decisão —, isso pode comprometer todo o projeto. Por isso, é importante agir rapidamente e corrigir essas "janelas quebradas" antes que se tornem problemas maiores. O exemplo dos bombeiros que protegem o carpete antes de apagar o fogo mostra como, em projetos bem organizados, as equipes tendem a manter a qualidade. Porém, se a desordem começar, o projeto pode desandar rapidamente.
+
+---
 
 ### Software Satisfatório
 
@@ -57,9 +61,13 @@ No desenvolvimento de software, quando algo não é corrigido — como um códig
 
 Nem sempre é possível alcançar a perfeição, especialmente no desenvolvimento de software, onde fatores como tempo e tecnologia limitam os resultados. A busca pelo "melhor" pode prejudicar o que já é "bom". A ideia de software satisfatório é criar algo que atenda às necessidades dos usuários, seja fácil de manter e traga paz de espírito ao desenvolvedor. O importante é envolver os usuários para definir quando o software é suficientemente bom, evitando a obsessão por perfeição e focando na funcionalidade adequada.
 
+---
+
 ### Saiba quando parar
 
 Programar é como pintar: você começa com uma ideia e vai refinando com ciência, arte e técnica. Porém, assim como na pintura, saber quando parar é crucial. Exagerar nos detalhes pode ofuscar o resultado final. Um programa que funciona bem não deve ser arruinado com melhorias excessivas. O código nunca será perfeito, e tentar alcançá-lo pode ser contraproducente. Às vezes, é melhor seguir em frente e deixar o trabalho falar por si.
+
+---
 
 ### Sua Carteira de Conhecimentos
 
@@ -85,13 +93,19 @@ Gerenciar seu conhecimento é semelhante a administrar uma carteira de investime
 
 A chave é continuar aprendendo constantemente. Mesmo que não use imediatamente o que aprendeu, o processo de aprendizado expandirá seu raciocínio e abrirá novas possibilidades em sua carreira.
 
+---
+
 ### Comunique-se!
 
 Ter boas ideias e um código excelente é inútil se você não souber se comunicar. Como desenvolvedores, precisamos nos comunicar em diferentes níveis, desde reuniões com colegas até escrever documentação para o futuro. Uma comunicação eficaz garante que suas ideias sejam compreendidas e valorizadas.
 
 **Dicas para uma boa comunicação:**
 
+<div align="center">
+
 ![image](https://github.com/user-attachments/assets/c65a2a33-c6fd-4fea-b403-94650f75b3f3)
+
+</div>
 
 
 - **Saiba o que você quer dizer:** Planeje suas ideias antes de falar ou escrever.
@@ -104,3 +118,5 @@ Ter boas ideias e um código excelente é inútil se você não souber se comuni
 - **Dê retorno:** Responda às perguntas e e-mails, mesmo que seja para informar que vai responder depois.
 
 **É o que você diz e como você diz:** A comunicação eficaz aumenta sua influência e garante que suas ideias sejam bem recebidas. Planeje o que vai dizer, conheça seu público, escolha o momento certo, adapte seu estilo, dê uma boa aparência, escute os outros e dê retorno.
+
+---
